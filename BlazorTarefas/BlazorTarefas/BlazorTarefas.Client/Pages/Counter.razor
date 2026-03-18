@@ -1,0 +1,37 @@
+﻿@page "/counter"
+@rendermode InteractiveAuto
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+
+<div class="alert alert-primary mt-4 p-3 style=border-left: 5px solid #0d6e">
+    <h5 class="alert-heading fw-bold">Diagnóstico de renderização</h5>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-4">Local de Execução:</dt>
+        <dd class="col-sm-8"><code>@RendererInfo.Name</code></dd>
+
+        <dt class="col-sm-4">É interativo:</dt>
+        <dd class="col-sm-8"><code>@RendererInfo.IsInteractive</code></dd>
+
+        <dt class="col-sm-4">Atribuido:</dt>
+        <dd class="col-sm-8"><code>@(AssignedRenderMode?.ToString() ?? "Nenhum (Estático)")</code></dd>
+        <dd class="col-sm-8">O modo <strong>@AssignedRenderMode?.GetType() )</strong>Foi atribuido</dd>
+    </dl>
+
+</div>
+
+<button class="btn btn-primary" @onclick="IncrementCount" disabled="@(!RendererInfo.IsInteractive)">Click aqui</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}

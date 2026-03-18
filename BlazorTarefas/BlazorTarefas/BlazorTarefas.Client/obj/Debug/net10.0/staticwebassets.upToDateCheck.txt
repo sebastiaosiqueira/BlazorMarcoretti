@@ -1,0 +1,4 @@
+C:\Users\3346.ADM-UCDB\source\repos\BlazorTarefas\BlazorTarefas\BlazorTarefas.Client\wwwroot\appsettings.Development.json
+C:\Users\3346.ADM-UCDB\source\repos\BlazorTarefas\BlazorTarefas\BlazorTarefas.Client\wwwroot\appsettings.json
+wwwroot\appsettings.Development.json
+wwwroot\appsettings.json

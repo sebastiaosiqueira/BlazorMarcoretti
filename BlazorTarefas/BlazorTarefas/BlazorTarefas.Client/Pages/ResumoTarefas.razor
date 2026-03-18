@@ -1,0 +1,43 @@
+﻿@page "/resumotarefas"
+@layout LayoutSimples
+@rendermode InteractiveWebAssembly
+
+<h4>Resumos Tarefas</h4>
+<div class="mb-4">
+    <NavLink href="/" class="btn btn-secondary">
+        <i class="bi bi-arrow-left-circle"/>
+        Voltar para Home
+            </NavLink>
+</div>
+<h5>Usando<b> rendermode InteractiveWebAssembly</b></h5>
+
+<br />
+@if (tarefas == null)
+{
+    <p class="text-muted">Carregando dados ...</p>
+    
+}
+else if (!tarefas.Any())
+{
+    <p class="text-muted">Nenhuma tarefa registrada.</p>
+}
+else
+{
+    <ul class="list-group">
+        <li class="list-group-item"><strong>Total de Tarefas:</strong>@tarefas.Count</li>
+        <li class="list-group-item"><strong>Concluídas:</strong>@tarefas.Count(t=> t.Concluida)</li>
+        <li class="list-group-item"><strong>Pendentes:</strong>@tarefas.Count(t => !t.Concluida)</li>
+        <li class="list-group-item"><strong>Data da Primeira Tarefa:</strong>@tarefas.Min(t => t.DataCriacao)</li>
+        <li class="list-group-item"><strong>Data da Última TArefa:</strong>@tarefas.Max(t => t.DataCriacao)</li>
+    </ul>
+    
+}
+@code {
+
+    private List<Tarefa>? tarefas;
+
+    protected override void OnInitialized()
+    {
+        tarefas = TarefaDados.ObterTarefas();
+    }
+}

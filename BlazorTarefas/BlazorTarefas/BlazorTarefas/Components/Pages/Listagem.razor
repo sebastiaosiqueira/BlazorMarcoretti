@@ -1,0 +1,181 @@
+﻿
+
+@page "/listagem"
+@using BlazorTarefas.Shared.Entities
+@using BlazorTarefas.Shared.Helpers
+@using BlazorTarefas.Shared.Data
+@inject IBuscaService BuscaService
+@rendermode InteractiveServer
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>📋 Lista de Tarefas</h2>
+        <span class="badge bg-primary">Total: @(dadosPaginados?.TotalItens ?? 0)</span>
+    </div>
+
+    <div class="row g-3 mb-4">
+        <div class="col-md-8">
+            <input type="text" class="form-control" 
+                   placeholder="Pesquisar descrição da tarefa..."
+                   @bind="termoBusca" @bind:event="oninput" @onkeyup="Atualizar" />
+        </div>
+       
+    </div>
+
+ 
+
+    @if (dadosPaginados == null)
+    {
+        <div class="text-center">
+            <div class="spinner-border text-primary" role="status"></div>
+            <p><em>Carregando tarefas...</em></p>
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive shadow-sm rounded">
+            <table class="table table-hover align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th @onclick='() => Ordenar("Descricao")' style="cursor:pointer">
+                            Descrição @GetIcone("Descricao")
+                        </th>
+                        <th @onclick='() => Ordenar("DataCriacao")' style="cursor:pointer">
+                            Criação @GetIcone("DataCriacao")
+                        </th>
+                        <th @onclick='() => Ordenar("Concluida")' style="cursor:pointer" class="text-center">
+                            Status @GetIcone("Concluida")
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var tarefa in dadosPaginados)
+                    {
+                        <tr>
+                            <td>@tarefa.Descricao</td>
+                            <td>@tarefa.DataCriacao.ToShortDateString()</td>
+                            <td class="text-center">
+                                @if (tarefa.Concluida)
+                                {
+                                    <span class="badge bg-success">Concluída</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-warning text-dark">Pendente</span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        @* Paginador Genérico *@
+        <div class="d-flex justify-content-center mt-4">
+            <PaginadorGenerico> 
+                PaginaAtual="dadosPaginados.PaginaAtual"
+                TotalPaginas="dadosPaginados.TotalPaginas"
+                PodeVoltar="dadosPaginados.TemPaginaAnterior"
+                PodeAvancar="dadosPaginados.TemProximaPagina"
+                AoMudarPagina="MudarPagina" />
+                </PaginadorGenerico> 
+        </div>
+    }
+    @* Botões de Navegação Superiores *@
+    <div class="row g-3 mb-4">
+
+    <div class="col-md-3">
+        <select class="form-select" @onchange="MudarTamanho">
+            <option value="3">3 por página</option>
+            <option value="5" selected>5 por página</option>
+            <option value="10">10 por página</option>
+                <option value="15">15 por página</option>
+        </select>
+    </div>
+
+   
+
+            <div class="col-md-4">
+            <button class="btn btn-outline-primary"
+                    disabled="@(dadosPaginados == null || !dadosPaginados.TemPaginaAnterior)"
+                    @onclick="() => MudarPagina(paginaAtual - 1)">
+                Anterior
+            </button>
+
+            <span class="btn btn-light disabled">
+                Página @(dadosPaginados?.PaginaAtual ?? 1) de @(dadosPaginados?.TotalPaginas ?? 1)
+            </span>
+
+            <button class="btn btn-outline-primary"
+                    disabled="@(dadosPaginados == null || !dadosPaginados.TemProximaPagina)"
+                    @onclick="() => MudarPagina(paginaAtual + 1)">
+                Próximo
+            </button>
+        </div>
+  
+    </div>
+   
+</div>
+
+@code {
+    private List<Tarefa> todasAsTarefas = new();
+    private ListaPaginada<Tarefa> dadosPaginados;
+
+    private string termoBusca = "";
+    private int paginaAtual = 1;
+    private int tamanhoPagina = 5;
+    private string campoOrdenacao = "DataCriacao";
+    private bool asc = false;
+
+    protected override void OnInitialized()
+    {
+        // Carrega os dados iniciais
+        todasAsTarefas = TarefaDados.ObterTarefas();
+        Atualizar();
+    }
+
+    private void Atualizar()
+    {
+        // Chama o serviço passando o estado atual das variáveis privadas
+        dadosPaginados = BuscaService.FiltrarEPaginar(
+            todasAsTarefas,
+            termoBusca,
+            paginaAtual,
+            tamanhoPagina,
+            (t, termo) => t.Descricao.Contains(termo, StringComparison.OrdinalIgnoreCase),
+            campoOrdenacao,
+            asc
+        );
+    }
+
+    private void MudarPagina(int nova) 
+    { 
+        paginaAtual = nova; 
+        Atualizar(); 
+    }
+    
+    private void MudarTamanho(ChangeEventArgs e) 
+    { 
+        if (int.TryParse(e.Value?.ToString(), out int novoTamanho))
+        {
+            tamanhoPagina = novoTamanho;
+            paginaAtual = 1; // Reseta para a primeira página ao mudar o tamanho
+            Atualizar();
+        }
+    }
+
+    private void Ordenar(string campo)
+    {
+        if (campoOrdenacao == campo) asc = !asc;
+        else asc = true;
+        campoOrdenacao = campo;
+        Atualizar();
+    }
+
+    private string GetIcone(string campo)
+    {
+        if (campoOrdenacao != campo) return "↕";
+        return asc ? "↑" : "↓";
+    }
+}
+

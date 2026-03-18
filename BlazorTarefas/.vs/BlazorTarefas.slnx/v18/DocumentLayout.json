@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorTarefas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{754C1FDE-721F-E456-BF3D-5FA1F83AD313}|BlazorTarefas\\BlazorTarefas\\BlazorTarefas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazortarefas\\blazortarefas\\blazortarefas\\components\\pages\\weatherpersistente.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{754C1FDE-721F-E456-BF3D-5FA1F83AD313}|BlazorTarefas\\BlazorTarefas\\BlazorTarefas.csproj|solutionrelative:blazortarefas\\blazortarefas\\components\\pages\\weatherpersistente.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{754C1FDE-721F-E456-BF3D-5FA1F83AD313}|BlazorTarefas\\BlazorTarefas\\BlazorTarefas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazortarefas\\blazortarefas\\blazortarefas\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{754C1FDE-721F-E456-BF3D-5FA1F83AD313}|BlazorTarefas\\BlazorTarefas\\BlazorTarefas.csproj|solutionrelative:blazortarefas\\blazortarefas\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5299CE33-3184-1EC1-D090-FA5128212DC0}|BlazorTarefas\\BlazorTarefas.Client\\BlazorTarefas.Client.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazortarefas\\blazortarefas\\blazortarefas.client\\pages\\resumotarefas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5299CE33-3184-1EC1-D090-FA5128212DC0}|BlazorTarefas\\BlazorTarefas.Client\\BlazorTarefas.Client.csproj|solutionrelative:blazortarefas\\blazortarefas.client\\pages\\resumotarefas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5299CE33-3184-1EC1-D090-FA5128212DC0}|BlazorTarefas\\BlazorTarefas.Client\\BlazorTarefas.Client.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazortarefas\\blazortarefas\\blazortarefas.client\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5299CE33-3184-1EC1-D090-FA5128212DC0}|BlazorTarefas\\BlazorTarefas.Client\\BlazorTarefas.Client.csproj|solutionrelative:blazortarefas\\blazortarefas.client\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{754C1FDE-721F-E456-BF3D-5FA1F83AD313}|BlazorTarefas\\BlazorTarefas\\BlazorTarefas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazortarefas\\blazortarefas\\blazortarefas\\components\\pages\\listagem.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{754C1FDE-721F-E456-BF3D-5FA1F83AD313}|BlazorTarefas\\BlazorTarefas\\BlazorTarefas.csproj|solutionrelative:blazortarefas\\blazortarefas\\components\\pages\\listagem.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{754C1FDE-721F-E456-BF3D-5FA1F83AD313}|BlazorTarefas\\BlazorTarefas\\BlazorTarefas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazortarefas\\blazortarefas\\blazortarefas\\components\\pages\\tarefas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{754C1FDE-721F-E456-BF3D-5FA1F83AD313}|BlazorTarefas\\BlazorTarefas\\BlazorTarefas.csproj|solutionrelative:blazortarefas\\blazortarefas\\components\\pages\\tarefas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{754C1FDE-721F-E456-BF3D-5FA1F83AD313}|BlazorTarefas\\BlazorTarefas\\BlazorTarefas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazortarefas\\blazortarefas\\blazortarefas\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{754C1FDE-721F-E456-BF3D-5FA1F83AD313}|BlazorTarefas\\BlazorTarefas\\BlazorTarefas.csproj|solutionrelative:blazortarefas\\blazortarefas\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorTarefas\\BlazorTarefas\\BlazorTarefas\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "BlazorTarefas\\BlazorTarefas\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorTarefas\\BlazorTarefas\\BlazorTarefas\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "BlazorTarefas\\BlazorTarefas\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABwAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T18:34:12.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WeatherPersistente.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorTarefas\\BlazorTarefas\\BlazorTarefas\\Components\\Pages\\WeatherPersistente.razor",
+              "RelativeDocumentMoniker": "BlazorTarefas\\BlazorTarefas\\Components\\Pages\\WeatherPersistente.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorTarefas\\BlazorTarefas\\BlazorTarefas\\Components\\Pages\\WeatherPersistente.razor",
+              "RelativeToolTip": "BlazorTarefas\\BlazorTarefas\\Components\\Pages\\WeatherPersistente.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T18:25:23.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ResumoTarefas.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorTarefas\\BlazorTarefas\\BlazorTarefas.Client\\Pages\\ResumoTarefas.razor",
+              "RelativeDocumentMoniker": "BlazorTarefas\\BlazorTarefas.Client\\Pages\\ResumoTarefas.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorTarefas\\BlazorTarefas\\BlazorTarefas.Client\\Pages\\ResumoTarefas.razor",
+              "RelativeToolTip": "BlazorTarefas\\BlazorTarefas.Client\\Pages\\ResumoTarefas.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T17:11:52.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Listagem.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorTarefas\\BlazorTarefas\\BlazorTarefas\\Components\\Pages\\Listagem.razor",
+              "RelativeDocumentMoniker": "BlazorTarefas\\BlazorTarefas\\Components\\Pages\\Listagem.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorTarefas\\BlazorTarefas\\BlazorTarefas\\Components\\Pages\\Listagem.razor",
+              "RelativeToolTip": "BlazorTarefas\\BlazorTarefas\\Components\\Pages\\Listagem.razor",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T17:11:20.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Tarefas.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorTarefas\\BlazorTarefas\\BlazorTarefas\\Components\\Pages\\Tarefas.razor",
+              "RelativeDocumentMoniker": "BlazorTarefas\\BlazorTarefas\\Components\\Pages\\Tarefas.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorTarefas\\BlazorTarefas\\BlazorTarefas\\Components\\Pages\\Tarefas.razor",
+              "RelativeToolTip": "BlazorTarefas\\BlazorTarefas\\Components\\Pages\\Tarefas.razor",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T17:01:50.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorTarefas\\BlazorTarefas\\BlazorTarefas.Client\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "BlazorTarefas\\BlazorTarefas.Client\\Pages\\Counter.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorTarefas\\BlazorTarefas\\BlazorTarefas.Client\\Pages\\Counter.razor",
+              "RelativeToolTip": "BlazorTarefas\\BlazorTarefas.Client\\Pages\\Counter.razor",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T17:00:22.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorTarefas\\BlazorTarefas\\BlazorTarefas\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "BlazorTarefas\\BlazorTarefas\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorTarefas\\BlazorTarefas\\BlazorTarefas\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "BlazorTarefas\\BlazorTarefas\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T15:22:37.984Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+C:\Users\3346.ADM-UCDB\source\repos\BlazorTarefas\BlazorTarefas.Shared\bin\Debug\net10.0\BlazorTarefas.Shared.deps.json
+C:\Users\3346.ADM-UCDB\source\repos\BlazorTarefas\BlazorTarefas.Shared\bin\Debug\net10.0\BlazorTarefas.Shared.dll
+C:\Users\3346.ADM-UCDB\source\repos\BlazorTarefas\BlazorTarefas.Shared\bin\Debug\net10.0\BlazorTarefas.Shared.pdb
+C:\Users\3346.ADM-UCDB\source\repos\BlazorTarefas\BlazorTarefas.Shared\obj\Debug\net10.0\BlazorTarefas.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\3346.ADM-UCDB\source\repos\BlazorTarefas\BlazorTarefas.Shared\obj\Debug\net10.0\BlazorTarefas.Shared.AssemblyInfoInputs.cache
+C:\Users\3346.ADM-UCDB\source\repos\BlazorTarefas\BlazorTarefas.Shared\obj\Debug\net10.0\BlazorTarefas.Shared.AssemblyInfo.cs
+C:\Users\3346.ADM-UCDB\source\repos\BlazorTarefas\BlazorTarefas.Shared\obj\Debug\net10.0\BlazorTarefas.Shared.csproj.CoreCompileInputs.cache
+C:\Users\3346.ADM-UCDB\source\repos\BlazorTarefas\BlazorTarefas.Shared\obj\Debug\net10.0\BlazorTarefas.Shared.dll
+C:\Users\3346.ADM-UCDB\source\repos\BlazorTarefas\BlazorTarefas.Shared\obj\Debug\net10.0\refint\BlazorTarefas.Shared.dll
+C:\Users\3346.ADM-UCDB\source\repos\BlazorTarefas\BlazorTarefas.Shared\obj\Debug\net10.0\BlazorTarefas.Shared.pdb
+C:\Users\3346.ADM-UCDB\source\repos\BlazorTarefas\BlazorTarefas.Shared\obj\Debug\net10.0\ref\BlazorTarefas.Shared.dll
