@@ -1,0 +1,25 @@
+﻿@using Tarefas.Entities
+<tr>
+    <td>
+        <button @onclick="@(() => RemoveTarefa(TarefaItem.ID))">
+            <i class="bi bi-trash"></i>
+        </button>
+    </td>
+    <td>@TarefaItem.DataCriacao</td>
+    <td>@TarefaItem.Descricao</td>
+    <td><input type="checkbox" @bind="TarefaItem.Concluida" />@TarefaItem.Concluida</td>
+</tr>
+
+@code {
+    [Parameter, EditorRequired]
+    public Tarefa TarefaItem { get; set; } = null;
+
+    [Parameter]
+    public EventCallback<Guid> OnRemoverTarefa{ get; set; }
+
+    private async Task RemoveTarefa(Guid id)
+    {
+        await OnRemoverTarefa.InvokeAsync(id);
+    }
+
+}

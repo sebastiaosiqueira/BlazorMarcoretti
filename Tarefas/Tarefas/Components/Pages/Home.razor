@@ -1,0 +1,58 @@
+﻿@page "/"
+@using Tarefas.Entities
+@rendermode InteractiveServer
+@inject HttpClient http
+@inject NavigationManager navManager
+
+<PageTitle>Home</PageTitle>
+<Painel>
+    <Aviso>
+        <Aviso><Conteudo1>Lista de Tarefas</Conteudo1></Aviso>
+    </Aviso>
+    <ListaTarefa ListaDeTarefas="tarefas" OnRemoverTarefa="RemoveTarefa"></ListaTarefa>
+
+</Painel>
+
+    @if (tarefas != null)
+    {
+    <Painel>
+        <label>Tarefa</label>
+        <input type="Text" placeholder="Informe a tarefa" @bind="novaTarefa" />
+        <button class="btn btn-primary" @onclick="AdicionarNovaTarefa">Registrar Tarefa</button>
+    </Painel>
+       
+    }
+
+@code {
+    List<Tarefa> tarefas = new List<Tarefa>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        //obtem a url base
+        var url = navManager.BaseUri + "Dados/tarefas.json";
+        var resultado = await http.GetFromJsonAsync<List<Tarefa>>(url);
+        tarefas = resultado ?? new List<Tarefa>();
+    }
+
+    private string novaTarefa = "";
+
+    void AdicionarNovaTarefa()
+    {
+        if (!string.IsNullOrWhiteSpace(novaTarefa))
+        {
+            tarefas.Add(new Tarefa
+            {
+                DataCriacao = DateTime.Now,
+                Descricao = novaTarefa,
+                ID = Guid.NewGuid()
+            });
+            novaTarefa = "";
+        }
+    }
+    private void RemoveTarefa(Guid id)
+    {
+        tarefas.Remove(tarefas.First(x => x.ID == id));
+    }
+
+
+}

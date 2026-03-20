@@ -1,0 +1,75 @@
+﻿@page "/eventos-demo"
+@rendermode InteractiveServer
+
+<h3>Demostração de Evento</h3>
+
+<h4>1 . Evento com Método Nomeado</h4>
+
+<button class="btn btn-primary" @onclick="HandleClick"> Clique Aqui</button>
+
+<p> Mensagem: <strong>@mensagem</strong></p>
+
+<hr />
+<h4>2 . Evento com Expressão Lambda</h4>
+<button class="btn btn-success" @onclick="@(()=>mensagemLambda="Botão verde clicado!")">Clique aqui</button>
+
+<p> Mensagem: <strong>@mensagemLambda</strong></p>
+
+<hr />
+<h4> 3 - Acessando MouseEventsArgs</h4>
+<div class="alert alert-info" @onclick="HandleDivClick">
+    Clique em qualquer lugar dentro desta área azul.
+</div>
+<p>@mensagemCoordenadas</p>
+
+<hr />
+<h4> 4 -Event CallBack Comunicação Filho -> Pai</h4>
+<BotaoFilho OnClicouNoFilho="HandlCliqueDoFilho">
+
+</BotaoFilho>
+<p>@mensagemDoFilho</p>
+<hr />
+<h4>5. Modificadores de Eventos</h4>
+<div class="alert alert-success" @onclick="@(()=> logEventos.Add("Evento da Div externa disparado"))">
+    DIV Externa
+    <div class="alert alert-warning p-3" @onclick="@(()=> logEventos.Add("Evento da DIV interna disparado."))">
+        Div Interna
+        <button class="btn btn-danger" @onclick="HandleBotaoComStop" @onclick:stopPropagation>
+            Clique (com stoppropagation)
+        </button>
+        <button class="btn btn-secondary" @onclick="@(()=> logEventos.Add("Evento do botão normal disparado."))">
+            Clique normal
+        </button>
+    </div>
+</div>
+<ul class="mt-2">
+    @foreach(var log in logEventos)
+    {
+        <li>@log</li>
+    }
+</ul>
+@code {
+
+    private string mensagem = "Aguardando um clique...";
+    private string mensagemLambda = "Aguardando (lambda)...";
+    private string mensagemCoordenadas = "Clique área acima";
+    private string mensagemDoFilho = "Aguardando evento do filho";
+    private List<string> logEventos = new();
+    private void HandleClick()
+    {
+        mensagem = $"O botão foi clicado ás {DateTime.Now:HH:mm:ss}!";
+        Console.WriteLine("O método HandlClick foi executado");
+    }
+    private void HandleDivClick(MouseEventArgs e)
+    {
+        mensagemCoordenadas = $"Você clicou nas coordenadas: X = {e.ClientX}, Y={e.ClientY}";
+    }
+    private void HandlCliqueDoFilho()
+    {
+        mensagemDoFilho = "Recebi o evento do componente filho!";
+    }
+    private void HandleBotaoComStop()
+    {
+        logEventos.Add("Evento do botão com Stop disparado.");
+    }
+}

@@ -1,0 +1,22 @@
+﻿
+@page "/bind-after"
+@rendermode InteractiveServer
+
+<h3>Exemplo de bind:afterr</h3>
+
+<p>
+    Digite algo:
+    <input @bind="Nome" @bind:after="AoAtualizarNome"/>
+</p>
+
+<p style="font-size:30px; color: blue"> Nome Digitado: @Nome</p>
+
+@code {
+    private string Nome { get; set; } = "";
+
+    private void AoAtualizarNome()
+    {
+        Console.WriteLine($"O valor do Nome foi atualizado para: {Nome}");
+    }
+
+}

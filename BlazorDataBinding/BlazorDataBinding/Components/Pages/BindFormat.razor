@@ -1,0 +1,17 @@
+﻿@page "/bind-format"
+@rendermode InteractiveServer
+<h3>Exemplo de bind:format com Data</h3>
+
+<p>
+    <label> Data de Nascimento: 
+        <input type="text" @bind="dataNascimento" @bind:format="dd/MM/yyyy" />
+    </label>
+</p>
+<p> Data no modelo: @dataNascimento</p>
+
+
+
+@code {
+    private DateTime dataNascimento = new DateTime(2025, 8, 25);
+
+}

@@ -1,0 +1,14 @@
+﻿<button class="btn btn-warning" @onclick="NotificarPai">
+    Botao no Componente Filho
+</button>
+
+@code {
+    [Parameter]
+    public EventCallback OnClicouNoFilho{ get; set; }
+
+    private  Task NotificarPai()
+    {
+        return OnClicouNoFilho.InvokeAsync();
+    }
+
+}

@@ -1,0 +1,13 @@
+﻿<div>@Conteudo1</div>
+<div>@Conteudo2</div>
+
+
+@code {
+    [Parameter]
+    public RenderFragment? Conteudo1 { get; set; } 
+
+    [Parameter]
+    public RenderFragment? Conteudo2 { get; set; }
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+}

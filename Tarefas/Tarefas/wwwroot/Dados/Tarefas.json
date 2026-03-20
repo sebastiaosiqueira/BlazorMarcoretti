@@ -1,0 +1,44 @@
+[
+  {
+    "id": "f0dcda47-1f23-4538-92e0-a47dcdcc7850",
+    "descricao": "Fazer o curso de Blazor",
+    "concluida": false,
+    "datacriacao": "2019-08-11"
+  },
+  {
+    "id": "d21b0f7e-a5a9-45ee-ad9b-eafd911e22fa",
+    "descricao": "Estudar Blazor",
+    "concluida": false,
+    "datacriacao": "2019-09-05"
+  },
+  {
+    "id": "a12b3c45-d678-4e90-b123-4567abcdef12",
+    "descricao": "Criar projeto de exemplo em Blazor",
+    "concluida": false,
+    "datacriacao": "2019-09-10"
+  },
+  {
+    "id": "b23c4d56-e789-4f01-c234-5678abcdef23",
+    "descricao": "Implementar componente ListaGenerica",
+    "concluida": false,
+    "datacriacao": "2019-09-12"
+  },
+  {
+    "id": "c34d5e67-f890-4123-d345-6789abcdef34",
+    "descricao": "Testar integração com JSON",
+    "concluida": true,
+    "datacriacao": "2019-09-15"
+  },
+  {
+    "id": "d45e6f78-0a12-4234-e456-789abcdef456",
+    "descricao": "Refatorar componente Tarefas",
+    "concluida": false,
+    "datacriacao": "2019-09-20"
+  },
+  {
+    "id": "e56f7a89-1b23-4345-f567-89abcdef5678",
+    "descricao": "Adicionar persistência local com localStorage",
+    "concluida": false,
+    "datacriacao": "2019-09-25"
+  }
+]

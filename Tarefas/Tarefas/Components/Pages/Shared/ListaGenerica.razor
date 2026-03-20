@@ -1,0 +1,32 @@
+﻿@typeparam TItem
+
+@if (Itens == null)
+{
+    <Aviso>
+        <Conteudo1> <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" /></Conteudo1>
+        <Conteudo2>
+            <span style="color:blue">
+                <h3>Carregando Tarefas...</h3>
+            </span>
+        </Conteudo2>
+    </Aviso>
+}
+else
+{
+    <ul class="list-group">
+            @foreach(var item in Itens)
+            {
+                <li class="list-group-item">
+                    @ItemTemplate(item)
+                </li>
+            }
+        </ul>
+}
+@code {
+    [Parameter, EditorRequired]
+    public IEnumerable<TItem> Itens { get; set; } = Enumerable.Empty<TItem>();
+
+    [Parameter, EditorRequired]
+    public RenderFragment<TItem> ItemTemplate { get; set; } = default;
+
+}

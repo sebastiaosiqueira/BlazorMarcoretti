@@ -1,0 +1,13 @@
+﻿@page "/twoway"
+@rendermode InteractiveServer
+<h3>Exemplo Two-Way</h3>
+
+<input @bind="nome" />
+<p> Digite o nome: </p>
+
+<p>Nome digitado: @nome</p>
+
+@code {
+    private string nome = "Maria";
+
+}

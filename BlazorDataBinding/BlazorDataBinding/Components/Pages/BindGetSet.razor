@@ -1,0 +1,14 @@
+﻿@page "/bind-get-set"
+@rendermode InteractiveServer
+
+<h3>Bind Get Set</h3>
+<input @bind:get="texto" @bind:set="AtualizarTexto" />
+<p>Valor armazenado: @texto</p>
+
+@code {
+    private string texto = "";
+    private void AtualizarTexto(string valor)
+    {
+        texto = string.IsNullOrWhiteSpace(valor) ? "Valor inválido" : valor.Trim().ToUpper();
+    }
+}

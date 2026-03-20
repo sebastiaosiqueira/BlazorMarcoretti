@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorDataBinding\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{92DB3918-F4CF-48D9-9C57-8AA29165090A}|BlazorDataBinding\\BlazorDataBinding.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazordatabinding\\blazordatabinding\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{92DB3918-F4CF-48D9-9C57-8AA29165090A}|BlazorDataBinding\\BlazorDataBinding.csproj|solutionrelative:blazordatabinding\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92DB3918-F4CF-48D9-9C57-8AA29165090A}|BlazorDataBinding\\BlazorDataBinding.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazordatabinding\\blazordatabinding\\components\\pages\\bindformat.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{92DB3918-F4CF-48D9-9C57-8AA29165090A}|BlazorDataBinding\\BlazorDataBinding.csproj|solutionrelative:blazordatabinding\\components\\pages\\bindformat.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorDataBinding\\BlazorDataBinding\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "BlazorDataBinding\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorDataBinding\\BlazorDataBinding\\Components\\Layout\\NavMenu.razor*",
+              "RelativeToolTip": "BlazorDataBinding\\Components\\Layout\\NavMenu.razor*",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADUAAABpAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-19T20:02:49.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BindFormat.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorDataBinding\\BlazorDataBinding\\Components\\Pages\\BindFormat.razor",
+              "RelativeDocumentMoniker": "BlazorDataBinding\\Components\\Pages\\BindFormat.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorDataBinding\\BlazorDataBinding\\Components\\Pages\\BindFormat.razor",
+              "RelativeToolTip": "BlazorDataBinding\\Components\\Pages\\BindFormat.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-19T19:59:09.376Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

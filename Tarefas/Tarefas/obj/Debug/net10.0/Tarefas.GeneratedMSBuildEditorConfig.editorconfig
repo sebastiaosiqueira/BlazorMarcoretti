@@ -1,0 +1,107 @@
+is_global = true
+build_property.TargetFramework = net10.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Tarefas
+build_property.RootNamespace = Tarefas
+build_property.ProjectDir = C:\Users\3346.ADM-UCDB\source\repos\Tarefas\Tarefas\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\3346.ADM-UCDB\source\repos\Tarefas\Tarefas
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/3346.ADM-UCDB/source/repos/Tarefas/Tarefas/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/3346.ADM-UCDB/source/repos/Tarefas/Tarefas/Components/Pages/ComponentPai.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb21wb25lbnRQYWkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/3346.ADM-UCDB/source/repos/Tarefas/Tarefas/Components/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/3346.ADM-UCDB/source/repos/Tarefas/Tarefas/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/3346.ADM-UCDB/source/repos/Tarefas/Tarefas/Components/Pages/EventosDemo.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFdmVudG9zRGVtby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/3346.ADM-UCDB/source/repos/Tarefas/Tarefas/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/3346.ADM-UCDB/source/repos/Tarefas/Tarefas/Components/Pages/Lista.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMaXN0YS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/3346.ADM-UCDB/source/repos/Tarefas/Tarefas/Components/Pages/ListaTarefa.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMaXN0YVRhcmVmYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/3346.ADM-UCDB/source/repos/Tarefas/Tarefas/Components/Pages/NotFound.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xOb3RGb3VuZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/3346.ADM-UCDB/source/repos/Tarefas/Tarefas/Components/Pages/Shared/Aviso.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTaGFyZWRcQXZpc28ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/3346.ADM-UCDB/source/repos/Tarefas/Tarefas/Components/Pages/Shared/BotaoFilho.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTaGFyZWRcQm90YW9GaWxoby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/3346.ADM-UCDB/source/repos/Tarefas/Tarefas/Components/Pages/Shared/ComponenteFilho.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTaGFyZWRcQ29tcG9uZW50ZUZpbGhvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/3346.ADM-UCDB/source/repos/Tarefas/Tarefas/Components/Pages/Shared/ListaGenerica.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTaGFyZWRcTGlzdGFHZW5lcmljYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/3346.ADM-UCDB/source/repos/Tarefas/Tarefas/Components/Pages/Shared/Painel.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTaGFyZWRcUGFpbmVsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/3346.ADM-UCDB/source/repos/Tarefas/Tarefas/Components/Pages/TarefaIndividual.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUYXJlZmFJbmRpdmlkdWFsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/3346.ADM-UCDB/source/repos/Tarefas/Tarefas/Components/Pages/Weather.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/3346.ADM-UCDB/source/repos/Tarefas/Tarefas/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/3346.ADM-UCDB/source/repos/Tarefas/Tarefas/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/3346.ADM-UCDB/source/repos/Tarefas/Tarefas/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-8fufde2mtk
+
+[C:/Users/3346.ADM-UCDB/source/repos/Tarefas/Tarefas/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-cuwityvphc
+
+[C:/Users/3346.ADM-UCDB/source/repos/Tarefas/Tarefas/Components/Layout/ReconnectModal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcUmVjb25uZWN0TW9kYWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-v4im8zv6vp
