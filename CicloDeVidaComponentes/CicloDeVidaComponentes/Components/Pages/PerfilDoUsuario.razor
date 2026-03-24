@@ -1,0 +1,41 @@
+﻿@page "/perfil/{NomeDoUsuario}"
+@rendermode RenderMode.InteractiveServer
+
+<PageTitle> Perfil de @NomeDoUsuario</PageTitle>
+<h2>Perfil do Usuário</h2>
+
+@if (carregando)
+{
+    <p> <em>Carregando perfil de @NomeDoUsuario...</em></p>
+}
+else
+{
+    <div class="alert alert-success">
+        <p>@mensagem</p>
+    </div>
+}
+<hr>
+<h4>Navegue para outros perfis...</h4>
+<a href="/perfil/Ana" class="btn btn-primary">Ver Perfil de Ana</a>
+<a href="/perfil/Bruno" class="btn btn-primary">Ver Perfil de Bruno</a>
+<a href="/perfil/Carla" class="btn btn-primary">Ver Perfil de Carla</a>
+
+@code {
+    private bool carregando = true;
+    private string mensagem = string.Empty;
+
+    [Parameter]
+    public string NomeDoUsuario { get; set; } = string.Empty;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        carregando = true;
+        mensagem = string.Empty;
+
+        await Task.Delay(1000);
+
+        mensagem = $"Bem vindo(a) ao perfil de {NomeDoUsuario}! Os dados foram carregados.";
+        carregando = false;
+
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "CicloDeVidaComponentes/1.0.0": {
+        "runtime": {
+          "CicloDeVidaComponentes.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CicloDeVidaComponentes/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

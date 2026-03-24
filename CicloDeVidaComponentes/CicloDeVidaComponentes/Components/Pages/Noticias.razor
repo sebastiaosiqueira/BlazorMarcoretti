@@ -1,0 +1,37 @@
+﻿@page "/noticias"
+@rendermode InteractiveServer
+<h3>Notícias</h3>
+
+@if (isLoading)
+{
+    <p>Carregando notícias....</p>
+}
+else
+{
+    <p> Notícias: (@noticias.Count)</p>
+    <ul>
+        @foreach(var noticia in noticias)
+        {
+            <li>@noticia.Titulo - @noticia.Data</li>
+        }
+    </ul>
+}
+@code {
+    private bool isLoading = true;
+    private List<Noticia> noticias = new();
+    public record Noticia(string Titulo, string Data);
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(2000);
+
+        noticias = new List<Noticia>
+        {
+            new Noticia("Notícia 1", DateTime.Now.ToString("dd/MM/yyyy")),
+            new Noticia("Notícia 2", DateTime.Now.AddDays(-1).ToString("dd/MM/yyyy")),
+            new Noticia("Notícia 3", DateTime.Now.AddDays(-2).ToString("dd/MM/yyyy"))
+        };
+        isLoading = false;
+    }
+
+}

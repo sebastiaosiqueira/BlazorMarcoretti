@@ -1,0 +1,33 @@
+﻿@page "/formulario-semvalidacao"
+@rendermode InteractiveServer
+
+
+<h3>Cadastro de Aluno</h3>
+
+<EditForm Model="@aluno" OnSubmit="Enviar" >
+   
+    <label for="nome">Nome: </label>
+    <InputText id="nome" @bind-Value="aluno.Nome"></InputText>
+    <br />
+    <label for="email">Email: </label>
+    <InputText id="email" @bind-Value="aluno.Email"></InputText>
+    <br />
+    <label for="idade">Idade: </label>
+   <InputNumber id="idade" @bind-Value="aluno.Idade"></InputNumber>
+   <br />
+   <input type="submit" value="Enviar" class="btn btn-success" />
+  
+</EditForm>
+
+@code {
+    Aluno aluno = new();
+
+    private void Enviar(EditContext context)
+    {
+        if (context.Validate())
+            Console.WriteLine($"{aluno.Nome} - {aluno.Email} - {aluno.Idade}");
+        else
+            Console.WriteLine($"Formulario contem erro!");
+    }
+    
+}

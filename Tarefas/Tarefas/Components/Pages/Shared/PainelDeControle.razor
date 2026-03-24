@@ -1,0 +1,11 @@
+﻿@using static ComponenteDinamico
+<div style="background-color: @Tema.CorFundo; color:@Tema.CorTexto; border: 1px solid red; padding:15px;">
+    <h4>Eu sou o Painel de Controle</h4>
+    <p> O tema que recebi dinamicmaente é: <strong>@Tema.Nome</strong></p>
+</div>
+
+@code {
+    [CascadingParameter]
+    private TemaInfo Tema { get; set; } = new();
+
+}

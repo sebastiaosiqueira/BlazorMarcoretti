@@ -1,0 +1,37 @@
+﻿@page "/contador-inteligente"
+@rendermode RenderMode.InteractiveServer
+<h3>ContadorInteligente</h3>
+
+<div class="alert alert-warning" style="font-size:20px">
+    <p> O Valor na tela só será atualizado quando o contador for <strong>PAR</strong></p>
+    <p>
+        Abra o <strong>Console de Saida</strong> do seu editor para ver o valor real do contador a cada clique.
+    </p>
+</div>
+<h2>Valor na tela: @valorNaTela</h2>
+<button class="btn btn-primary" @onclick="IncrementarContador">
+    Clique Aqui
+</button>
+@code {
+    private int contador = 0;
+    private int valorNaTela = 0;
+
+    private void IncrementarContador()
+    {
+        contador++;
+        Console.WriteLine($"--> Clique! Valor interno real agora é: {contador}");
+    }
+    protected override bool ShouldRender()
+    {
+        if(contador % 2 == 0)
+        {
+            valorNaTela = contador;
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+}

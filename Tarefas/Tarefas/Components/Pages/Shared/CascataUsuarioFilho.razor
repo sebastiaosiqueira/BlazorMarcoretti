@@ -1,0 +1,17 @@
+﻿@using static CascataUsuarioPai
+<h3>CascataUsuarioFilho</h3>
+
+@if (UsuarioAtual?.Autenticado == true)
+{
+    <p> Bem vindo, @UsuarioAtual.Nome</p>
+}
+else
+{
+    <p> Usuário não autenticado</p>
+}
+
+@code {
+    [CascadingParameter]
+    public Usuario? UsuarioAtual{ get; set; }
+
+}

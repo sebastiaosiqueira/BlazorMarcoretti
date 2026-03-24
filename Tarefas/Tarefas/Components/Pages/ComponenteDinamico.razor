@@ -1,0 +1,39 @@
+﻿@page "/aula-cascata-dinamica"
+@rendermode InteractiveServer
+<h3>ComponenteDinamico</h3>
+
+<CascadingValue Value="@informacaoesTema">
+    <div style="border: 2px solid black; padding: 15px;">
+        <h2>Eu sou o componente Pai</h2>
+        <button @onclick="TrocarTema">Trocar Tema</button>
+        <p> Tema atual do Pai: <strong>@informacaoesTema.Nome</strong></p>
+        <PainelDeControle/>
+    </div>
+</CascadingValue>
+
+
+@code {
+    private TemaInfo informacaoesTema = new TemaInfo
+        {
+            Nome = "dark", CorFundo = "#333", CorTexto = "#FFF"
+        };
+
+    private void TrocarTema(){
+        if (informacaoesTema.Nome == "dark")
+        {
+            informacaoesTema = new TemaInfo { Nome = "light", CorFundo = "#EEE", CorTexto = "#000" };
+            }
+    else
+    {
+            informacaoesTema = new TemaInfo { Nome = "dark", CorFundo = "#333", CorTexto = "#FFF" };
+            }
+    }
+
+    public class TemaInfo
+{
+    public string Nome { get; set; } = "light";
+    public string CorFundo { get; set; } = "#EEE";
+    public string CorTexto{ get; set; }="#000";
+}
+
+}

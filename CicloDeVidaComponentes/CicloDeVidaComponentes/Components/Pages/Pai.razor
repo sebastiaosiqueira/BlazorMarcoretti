@@ -1,0 +1,19 @@
+﻿@page "/pai"
+@rendermode InteractiveServer
+
+<button @onclick='()=> MudarParametros(1, "João")' class="btn btn-primary">ID 1, Nome João</button>
+<button @onclick='() => MudarParametros(1, "Maria")' class="btn btn-primary">ID 1, Nome João</button>
+<button @onclick='() => MudarParametros(0, "")' class="btn btn-warning">ID 1, Nome João</button>
+
+<Filho1 itemid="@idAtual" Nome="@nomeAtual"></Filho1>
+@code {
+    private int idAtual = 1;
+    private string nomeAtual = "João";
+
+    private void MudarParametros(int novoId, string novoNome)
+    {
+        idAtual = novoId;
+        nomeAtual = novoNome;
+    }
+
+}

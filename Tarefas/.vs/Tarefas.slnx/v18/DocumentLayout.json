@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Tarefas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C682A039-E458-DEBE-D53E-A97F8ED2BD0E}|Tarefas\\Tarefas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\tarefas\\tarefas\\components\\pages\\shared\\componentefilho.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C682A039-E458-DEBE-D53E-A97F8ED2BD0E}|Tarefas\\Tarefas.csproj|solutionrelative:tarefas\\components\\pages\\shared\\componentefilho.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C682A039-E458-DEBE-D53E-A97F8ED2BD0E}|Tarefas\\Tarefas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\tarefas\\tarefas\\components\\pages\\lista.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C682A039-E458-DEBE-D53E-A97F8ED2BD0E}|Tarefas\\Tarefas.csproj|solutionrelative:tarefas\\components\\pages\\lista.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C682A039-E458-DEBE-D53E-A97F8ED2BD0E}|Tarefas\\Tarefas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\tarefas\\tarefas\\components\\pages\\componentpai.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C682A039-E458-DEBE-D53E-A97F8ED2BD0E}|Tarefas\\Tarefas.csproj|solutionrelative:tarefas\\components\\pages\\componentpai.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C682A039-E458-DEBE-D53E-A97F8ED2BD0E}|Tarefas\\Tarefas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\tarefas\\tarefas\\components\\pages\\shared\\listagenerica.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C682A039-E458-DEBE-D53E-A97F8ED2BD0E}|Tarefas\\Tarefas.csproj|solutionrelative:tarefas\\components\\pages\\shared\\listagenerica.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C682A039-E458-DEBE-D53E-A97F8ED2BD0E}|Tarefas\\Tarefas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\tarefas\\tarefas\\components\\pages\\cascatausuariopai.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C682A039-E458-DEBE-D53E-A97F8ED2BD0E}|Tarefas\\Tarefas.csproj|solutionrelative:tarefas\\components\\pages\\cascatausuariopai.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C682A039-E458-DEBE-D53E-A97F8ED2BD0E}|Tarefas\\Tarefas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\tarefas\\tarefas\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C682A039-E458-DEBE-D53E-A97F8ED2BD0E}|Tarefas\\Tarefas.csproj|solutionrelative:tarefas\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C682A039-E458-DEBE-D53E-A97F8ED2BD0E}|Tarefas\\Tarefas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\tarefas\\tarefas\\components\\pages\\shared\\cascatausuariofilho.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C682A039-E458-DEBE-D53E-A97F8ED2BD0E}|Tarefas\\Tarefas.csproj|solutionrelative:tarefas\\components\\pages\\shared\\cascatausuariofilho.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C682A039-E458-DEBE-D53E-A97F8ED2BD0E}|Tarefas\\Tarefas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\tarefas\\tarefas\\components\\pages\\componentedinamico.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C682A039-E458-DEBE-D53E-A97F8ED2BD0E}|Tarefas\\Tarefas.csproj|solutionrelative:tarefas\\components\\pages\\componentedinamico.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C682A039-E458-DEBE-D53E-A97F8ED2BD0E}|Tarefas\\Tarefas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\tarefas\\tarefas\\components\\pages\\shared\\paineldecontrole.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C682A039-E458-DEBE-D53E-A97F8ED2BD0E}|Tarefas\\Tarefas.csproj|solutionrelative:tarefas\\components\\pages\\shared\\paineldecontrole.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +43,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ComponenteFilho.razor",
-              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Tarefas\\Tarefas\\Components\\Pages\\Shared\\ComponenteFilho.razor",
-              "RelativeDocumentMoniker": "Tarefas\\Components\\Pages\\Shared\\ComponenteFilho.razor",
-              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Tarefas\\Tarefas\\Components\\Pages\\Shared\\ComponenteFilho.razor",
-              "RelativeToolTip": "Tarefas\\Components\\Pages\\Shared\\ComponenteFilho.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Title": "Lista.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Tarefas\\Tarefas\\Components\\Pages\\Lista.razor",
+              "RelativeDocumentMoniker": "Tarefas\\Components\\Pages\\Lista.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Tarefas\\Tarefas\\Components\\Pages\\Lista.razor",
+              "RelativeToolTip": "Tarefas\\Components\\Pages\\Lista.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-20T19:13:10.209Z",
+              "WhenOpened": "2026-03-23T15:16:29.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CascataUsuarioFilho.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Tarefas\\Tarefas\\Components\\Pages\\Shared\\CascataUsuarioFilho.razor",
+              "RelativeDocumentMoniker": "Tarefas\\Components\\Pages\\Shared\\CascataUsuarioFilho.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Tarefas\\Tarefas\\Components\\Pages\\Shared\\CascataUsuarioFilho.razor",
+              "RelativeToolTip": "Tarefas\\Components\\Pages\\Shared\\CascataUsuarioFilho.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-23T15:11:28.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CascataUsuarioPai.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Tarefas\\Tarefas\\Components\\Pages\\CascataUsuarioPai.razor",
+              "RelativeDocumentMoniker": "Tarefas\\Components\\Pages\\CascataUsuarioPai.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Tarefas\\Tarefas\\Components\\Pages\\CascataUsuarioPai.razor",
+              "RelativeToolTip": "Tarefas\\Components\\Pages\\CascataUsuarioPai.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-23T15:09:40.847Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ComponentPai.razor",
-              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Tarefas\\Tarefas\\Components\\Pages\\ComponentPai.razor",
-              "RelativeDocumentMoniker": "Tarefas\\Components\\Pages\\ComponentPai.razor",
-              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Tarefas\\Tarefas\\Components\\Pages\\ComponentPai.razor",
-              "RelativeToolTip": "Tarefas\\Components\\Pages\\ComponentPai.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA2AAAAAAAAAA==",
+              "Title": "ListaGenerica.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Tarefas\\Tarefas\\Components\\Pages\\Shared\\ListaGenerica.razor",
+              "RelativeDocumentMoniker": "Tarefas\\Components\\Pages\\Shared\\ListaGenerica.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Tarefas\\Tarefas\\Components\\Pages\\Shared\\ListaGenerica.razor",
+              "RelativeToolTip": "Tarefas\\Components\\Pages\\Shared\\ListaGenerica.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-20T19:11:11.207Z",
+              "WhenOpened": "2026-03-23T15:09:12.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Tarefas\\Tarefas\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Tarefas\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Tarefas\\Tarefas\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Tarefas\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC8AAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-23T14:55:38.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PainelDeControle.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Tarefas\\Tarefas\\Components\\Pages\\Shared\\PainelDeControle.razor",
+              "RelativeDocumentMoniker": "Tarefas\\Components\\Pages\\Shared\\PainelDeControle.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Tarefas\\Tarefas\\Components\\Pages\\Shared\\PainelDeControle.razor",
+              "RelativeToolTip": "Tarefas\\Components\\Pages\\Shared\\PainelDeControle.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-23T14:51:06.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ComponenteDinamico.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Tarefas\\Tarefas\\Components\\Pages\\ComponenteDinamico.razor",
+              "RelativeDocumentMoniker": "Tarefas\\Components\\Pages\\ComponenteDinamico.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Tarefas\\Tarefas\\Components\\Pages\\ComponenteDinamico.razor",
+              "RelativeToolTip": "Tarefas\\Components\\Pages\\ComponenteDinamico.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-23T14:36:26.783Z",
               "EditorCaption": ""
             }
           ]
