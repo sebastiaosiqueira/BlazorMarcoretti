@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="BlzRenderModes/BlzRenderModes.Client/BlzRenderModes.Client.csproj" />
+  <Project Path="BlzRenderModes/BlzRenderModes/BlzRenderModes.csproj" />
+</Solution>

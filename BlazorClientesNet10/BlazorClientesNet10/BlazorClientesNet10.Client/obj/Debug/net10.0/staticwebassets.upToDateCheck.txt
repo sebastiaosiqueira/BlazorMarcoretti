@@ -1,0 +1,4 @@
+C:\Users\3346.ADM-UCDB\source\repos\BlazorClientesNet10\BlazorClientesNet10\BlazorClientesNet10.Client\wwwroot\appsettings.json
+C:\Users\3346.ADM-UCDB\source\repos\BlazorClientesNet10\BlazorClientesNet10\BlazorClientesNet10.Client\wwwroot\appsettings.Development.json
+wwwroot\appsettings.Development.json
+wwwroot\appsettings.json

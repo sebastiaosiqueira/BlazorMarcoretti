@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LTbxQ3/Ygi4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorDemo\\BlazorDemo\\BlazorDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\3346.ADM-UCDB\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.3\\microsoft.aspnetcore.app.internal.assets.10.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

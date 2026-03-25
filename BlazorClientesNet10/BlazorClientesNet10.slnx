@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="BlazorClientesNet10/BlazorClientesNet10.Client/BlazorClientesNet10.Client.csproj">
+    <BuildDependency Project="BlazorClientesNet8.Shared/BlazorClientesNet8.Shared.csproj" />
+  </Project>
+  <Project Path="BlazorClientesNet10/BlazorClientesNet10/BlazorClientesNet10.csproj">
+    <BuildDependency Project="BlazorClientesNet8.Shared/BlazorClientesNet8.Shared.csproj" />
+  </Project>
+  <Project Path="BlazorClientesNet8.Shared/BlazorClientesNet8.Shared.csproj" />
+</Solution>

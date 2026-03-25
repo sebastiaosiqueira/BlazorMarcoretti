@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorQuickGridEF\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2CD4F2C4-AB90-6F2F-B252-489FB8C3D8D1}|BlazorQuickGridEF\\BlazorQuickGridEF.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorquickgridef\\blazorquickgridef\\components\\pages\\brasileirao.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2CD4F2C4-AB90-6F2F-B252-489FB8C3D8D1}|BlazorQuickGridEF\\BlazorQuickGridEF.csproj|solutionrelative:blazorquickgridef\\components\\pages\\brasileirao.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CD4F2C4-AB90-6F2F-B252-489FB8C3D8D1}|BlazorQuickGridEF\\BlazorQuickGridEF.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorquickgridef\\blazorquickgridef\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2CD4F2C4-AB90-6F2F-B252-489FB8C3D8D1}|BlazorQuickGridEF\\BlazorQuickGridEF.csproj|solutionrelative:blazorquickgridef\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CD4F2C4-AB90-6F2F-B252-489FB8C3D8D1}|BlazorQuickGridEF\\BlazorQuickGridEF.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorquickgridef\\blazorquickgridef\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CD4F2C4-AB90-6F2F-B252-489FB8C3D8D1}|BlazorQuickGridEF\\BlazorQuickGridEF.csproj|solutionrelative:blazorquickgridef\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CD4F2C4-AB90-6F2F-B252-489FB8C3D8D1}|BlazorQuickGridEF\\BlazorQuickGridEF.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorquickgridef\\blazorquickgridef\\entities\\time.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CD4F2C4-AB90-6F2F-B252-489FB8C3D8D1}|BlazorQuickGridEF\\BlazorQuickGridEF.csproj|solutionrelative:blazorquickgridef\\entities\\time.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorQuickGridEF\\BlazorQuickGridEF\\wwwroot\\app.css",
+              "RelativeDocumentMoniker": "BlazorQuickGridEF\\wwwroot\\app.css",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorQuickGridEF\\BlazorQuickGridEF\\wwwroot\\app.css",
+              "RelativeToolTip": "BlazorQuickGridEF\\wwwroot\\app.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-03-25T16:50:13.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorQuickGridEF\\BlazorQuickGridEF\\Program.cs",
+              "RelativeDocumentMoniker": "BlazorQuickGridEF\\Program.cs",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorQuickGridEF\\BlazorQuickGridEF\\Program.cs",
+              "RelativeToolTip": "BlazorQuickGridEF\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T14:49:08.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Brasileirao.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorQuickGridEF\\BlazorQuickGridEF\\Components\\Pages\\Brasileirao.razor",
+              "RelativeDocumentMoniker": "BlazorQuickGridEF\\Components\\Pages\\Brasileirao.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorQuickGridEF\\BlazorQuickGridEF\\Components\\Pages\\Brasileirao.razor",
+              "RelativeToolTip": "BlazorQuickGridEF\\Components\\Pages\\Brasileirao.razor",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-25T14:13:48.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Time.cs",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorQuickGridEF\\BlazorQuickGridEF\\Entities\\Time.cs",
+              "RelativeDocumentMoniker": "BlazorQuickGridEF\\Entities\\Time.cs",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorQuickGridEF\\BlazorQuickGridEF\\Entities\\Time.cs",
+              "RelativeToolTip": "BlazorQuickGridEF\\Entities\\Time.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T13:59:34.063Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+C:\Users\3346.ADM-UCDB\source\repos\BlazorClientesNet10\BlazorClientesNet8.Shared\bin\Debug\net10.0\BlazorClientesNet8.Shared.deps.json
+C:\Users\3346.ADM-UCDB\source\repos\BlazorClientesNet10\BlazorClientesNet8.Shared\bin\Debug\net10.0\BlazorClientesNet8.Shared.dll
+C:\Users\3346.ADM-UCDB\source\repos\BlazorClientesNet10\BlazorClientesNet8.Shared\bin\Debug\net10.0\BlazorClientesNet8.Shared.pdb
+C:\Users\3346.ADM-UCDB\source\repos\BlazorClientesNet10\BlazorClientesNet8.Shared\obj\Debug\net10.0\BlazorClientesNet8.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\3346.ADM-UCDB\source\repos\BlazorClientesNet10\BlazorClientesNet8.Shared\obj\Debug\net10.0\BlazorClientesNet8.Shared.AssemblyInfoInputs.cache
+C:\Users\3346.ADM-UCDB\source\repos\BlazorClientesNet10\BlazorClientesNet8.Shared\obj\Debug\net10.0\BlazorClientesNet8.Shared.AssemblyInfo.cs
+C:\Users\3346.ADM-UCDB\source\repos\BlazorClientesNet10\BlazorClientesNet8.Shared\obj\Debug\net10.0\BlazorClientesNet8.Shared.csproj.CoreCompileInputs.cache
+C:\Users\3346.ADM-UCDB\source\repos\BlazorClientesNet10\BlazorClientesNet8.Shared\obj\Debug\net10.0\BlazorClientesNet8.Shared.sourcelink.json
+C:\Users\3346.ADM-UCDB\source\repos\BlazorClientesNet10\BlazorClientesNet8.Shared\obj\Debug\net10.0\BlazorClientesNet8.Shared.dll
+C:\Users\3346.ADM-UCDB\source\repos\BlazorClientesNet10\BlazorClientesNet8.Shared\obj\Debug\net10.0\refint\BlazorClientesNet8.Shared.dll
+C:\Users\3346.ADM-UCDB\source\repos\BlazorClientesNet10\BlazorClientesNet8.Shared\obj\Debug\net10.0\BlazorClientesNet8.Shared.pdb
+C:\Users\3346.ADM-UCDB\source\repos\BlazorClientesNet10\BlazorClientesNet8.Shared\obj\Debug\net10.0\ref\BlazorClientesNet8.Shared.dll

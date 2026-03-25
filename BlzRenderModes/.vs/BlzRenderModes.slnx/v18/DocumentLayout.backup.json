@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlzRenderModes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8EA2ED02-E60D-7D3F-5B2E-4603D56A8115}|BlzRenderModes\\BlzRenderModes\\BlzRenderModes.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blzrendermodes\\blzrendermodes\\blzrendermodes\\components\\exibirmensagem.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8EA2ED02-E60D-7D3F-5B2E-4603D56A8115}|BlzRenderModes\\BlzRenderModes\\BlzRenderModes.csproj|solutionrelative:blzrendermodes\\blzrendermodes\\components\\exibirmensagem.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EA2ED02-E60D-7D3F-5B2E-4603D56A8115}|BlzRenderModes\\BlzRenderModes\\BlzRenderModes.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blzrendermodes\\blzrendermodes\\blzrendermodes\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8EA2ED02-E60D-7D3F-5B2E-4603D56A8115}|BlzRenderModes\\BlzRenderModes\\BlzRenderModes.csproj|solutionrelative:blzrendermodes\\blzrendermodes\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EA2ED02-E60D-7D3F-5B2E-4603D56A8115}|BlzRenderModes\\BlzRenderModes\\BlzRenderModes.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blzrendermodes\\blzrendermodes\\blzrendermodes\\components\\pages\\rendermodes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8EA2ED02-E60D-7D3F-5B2E-4603D56A8115}|BlzRenderModes\\BlzRenderModes\\BlzRenderModes.csproj|solutionrelative:blzrendermodes\\blzrendermodes\\components\\pages\\rendermodes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EA2ED02-E60D-7D3F-5B2E-4603D56A8115}|BlzRenderModes\\BlzRenderModes\\BlzRenderModes.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blzrendermodes\\blzrendermodes\\blzrendermodes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EA2ED02-E60D-7D3F-5B2E-4603D56A8115}|BlzRenderModes\\BlzRenderModes\\BlzRenderModes.csproj|solutionrelative:blzrendermodes\\blzrendermodes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlzRenderModes\\BlzRenderModes\\BlzRenderModes\\Components\\App.razor",
+              "RelativeDocumentMoniker": "BlzRenderModes\\BlzRenderModes\\Components\\App.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlzRenderModes\\BlzRenderModes\\BlzRenderModes\\Components\\App.razor",
+              "RelativeToolTip": "BlzRenderModes\\BlzRenderModes\\Components\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-25T12:42:35.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExibirMensagem.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlzRenderModes\\BlzRenderModes\\BlzRenderModes\\Components\\ExibirMensagem.razor",
+              "RelativeDocumentMoniker": "BlzRenderModes\\BlzRenderModes\\Components\\ExibirMensagem.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlzRenderModes\\BlzRenderModes\\BlzRenderModes\\Components\\ExibirMensagem.razor",
+              "RelativeToolTip": "BlzRenderModes\\BlzRenderModes\\Components\\ExibirMensagem.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-24T20:40:00.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RenderModes.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlzRenderModes\\BlzRenderModes\\BlzRenderModes\\Components\\Pages\\RenderModes.razor",
+              "RelativeDocumentMoniker": "BlzRenderModes\\BlzRenderModes\\Components\\Pages\\RenderModes.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlzRenderModes\\BlzRenderModes\\BlzRenderModes\\Components\\Pages\\RenderModes.razor",
+              "RelativeToolTip": "BlzRenderModes\\BlzRenderModes\\Components\\Pages\\RenderModes.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-24T20:37:03.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlzRenderModes\\BlzRenderModes\\BlzRenderModes\\Program.cs",
+              "RelativeDocumentMoniker": "BlzRenderModes\\BlzRenderModes\\Program.cs",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlzRenderModes\\BlzRenderModes\\BlzRenderModes\\Program.cs",
+              "RelativeToolTip": "BlzRenderModes\\BlzRenderModes\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T20:33:26.967Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
