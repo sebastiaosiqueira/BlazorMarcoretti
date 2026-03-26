@@ -1,0 +1,19 @@
+﻿@page "/counter"
+@rendermode InteractiveAuto
+
+<PageTitle>Counter</PageTitle>
+
+
+<SectionContent SectionName="pagina-conteudo">
+<pre><img src="image/counter.gif" />Contador</pre>
+</SectionContent>
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}

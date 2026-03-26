@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorFluentDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A8B1EA0B-B5C3-40A7-A960-E2F7F5870678}|BlazorFluentDemo\\BlazorFluentDemo\\BlazorFluentDemo.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorfluentdemo\\blazorfluentdemo\\blazorfluentdemo\\components\\pages\\fluentuidemo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8B1EA0B-B5C3-40A7-A960-E2F7F5870678}|BlazorFluentDemo\\BlazorFluentDemo\\BlazorFluentDemo.csproj|solutionrelative:blazorfluentdemo\\blazorfluentdemo\\components\\pages\\fluentuidemo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FluentUIDemo.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorFluentDemo\\BlazorFluentDemo\\BlazorFluentDemo\\Components\\Pages\\FluentUIDemo.razor",
+              "RelativeDocumentMoniker": "BlazorFluentDemo\\BlazorFluentDemo\\Components\\Pages\\FluentUIDemo.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorFluentDemo\\BlazorFluentDemo\\BlazorFluentDemo\\Components\\Pages\\FluentUIDemo.razor",
+              "RelativeToolTip": "BlazorFluentDemo\\BlazorFluentDemo\\Components\\Pages\\FluentUIDemo.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-26T18:47:29.665Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

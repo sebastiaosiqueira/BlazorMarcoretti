@@ -1,0 +1,4 @@
+wwwroot\appsettings.Development.json
+wwwroot\appsettings.json
+C:\Users\3346.ADM-UCDB\source\repos\BlazorSectionDemo\BlazorSectionDemo\BlazorSectionDemo.Client\wwwroot\appsettings.Development.json
+C:\Users\3346.ADM-UCDB\source\repos\BlazorSectionDemo\BlazorSectionDemo\BlazorSectionDemo.Client\wwwroot\appsettings.json

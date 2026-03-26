@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="BlazorFluentDemo/BlazorFluentDemo.Client/BlazorFluentDemo.Client.csproj" />
+  <Project Path="BlazorFluentDemo/BlazorFluentDemo/BlazorFluentDemo.csproj" />
+</Solution>

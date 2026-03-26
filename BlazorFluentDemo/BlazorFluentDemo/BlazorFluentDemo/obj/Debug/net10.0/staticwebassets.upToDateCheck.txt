@@ -1,0 +1,12 @@
+wwwroot\app.css
+wwwroot\favicon.ico
+Components\Account\Shared\PasskeySubmit.razor.js
+Components\Layout\ReconnectModal.razor.js
+C:\Users\3346.ADM-UCDB\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.3\build\..\_framework\blazor.web.js
+C:\Users\3346.ADM-UCDB\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.3\build\..\_framework\blazor.server.js
+C:\Users\3346.ADM-UCDB\source\repos\BlazorFluentDemo\BlazorFluentDemo\BlazorFluentDemo\wwwroot\app.css
+C:\Users\3346.ADM-UCDB\source\repos\BlazorFluentDemo\BlazorFluentDemo\BlazorFluentDemo\wwwroot\favicon.ico
+C:\Users\3346.ADM-UCDB\source\repos\BlazorFluentDemo\BlazorFluentDemo\BlazorFluentDemo\Components\Account\Shared\PasskeySubmit.razor.js
+C:\Users\3346.ADM-UCDB\source\repos\BlazorFluentDemo\BlazorFluentDemo\BlazorFluentDemo\Components\Layout\ReconnectModal.razor.js
+C:\Users\3346.ADM-UCDB\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.3\_framework\blazor.web.js
+C:\Users\3346.ADM-UCDB\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.3\_framework\blazor.server.js
