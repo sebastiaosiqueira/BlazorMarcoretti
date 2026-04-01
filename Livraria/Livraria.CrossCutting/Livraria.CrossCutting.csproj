@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SQLitePCLRaw.lib.e_sqlite3" Version="2.1.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Livraria.Application\Livraria.Application.csproj" />
+    <ProjectReference Include="..\Livraria.Domain\Livraria.Domain.csproj" />
+    <ProjectReference Include="..\Livraria.Infrastructure\Livraria.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

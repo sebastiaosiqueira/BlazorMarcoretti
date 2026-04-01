@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Livraria.Application/Livraria.Application.csproj" />
+  <Project Path="Livraria.Blazor/Livraria.Blazor.csproj" />
+  <Project Path="Livraria.CrossCutting/Livraria.CrossCutting.csproj" />
+  <Project Path="Livraria.Domain/Livraria.Domain.csproj" />
+  <Project Path="Livraria.Infrastructure/Livraria.Infrastructure.csproj" />
+</Solution>

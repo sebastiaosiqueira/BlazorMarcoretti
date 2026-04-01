@@ -1,13 +1,14 @@
 ﻿@page "/alunos"
 @rendermode InteractiveServer
 
+
 @if (alunos == null)
 {
-  <FluentProgressRing Style="width:30px;height:30px" />
+    <FluentProgressRing Style="width:30px;height:30px" />
 }
 else
 {
-   @*  <FluentStack>
+    @*  <FluentStack>
         <FluentButton Appearance="Appearance.Neutral"
                       IconStart="@Icon.FromImageUrl("/images/add.svg")"> 
             Novo Aluno
@@ -22,33 +23,33 @@ else
     </FluentStack>
 
     <div class="grid">
-    <FluentDataGrid Id="alunogrid" Items=@alunos TGridItem=Aluno Pagination="@pagination">
-           <TemplateColumn Title="Avatar" Align="Align.Start">
+        <FluentDataGrid Id="alunogrid" Items=@alunos TGridItem=Aluno Pagination="@pagination">
+            <TemplateColumn Title="Avatar" Align="Align.Start">
                 @if (@context.Foto is not null)
                 {
-                    <FluentPersona ImageSize ="50px" Image="@context.Foto" />
+                    <FluentPersona ImageSize="20px" Image="@context.Foto" />
                 }
                 else
                 {
-                    <FluentPersona ImageSize="50px"  Initials="@context!.Nome[0]!.ToString().ToUpper()" />
+                    <FluentPersona ImageSize="20px" Initials="@context!.Nome[0]!.ToString().ToUpper()" />
                 }
             </TemplateColumn>
-        <PropertyColumn Title="Nome" Property="@(c => c!.Nome)" Sortable="true" Align=Align.Start/>
-        <PropertyColumn Title="Email" Property="@(c => c!.Email)" Sortable="true" Align=Align.Start/>
-        <PropertyColumn Title="Idade" Property="@(c => c!.Idade)" Sortable="true" Align=Align.Center/>
-        <TemplateColumn Align="@Align.End">
-            <FluentButton Appearance="Appearance.Outline" OnClick="()=>ConfirmarExclusao(context.Id)"
-                          IconStart="@(new Icons.Regular.Size24.Delete().WithColor(Color.Error))">Deleta</FluentButton>
+            <PropertyColumn Title="Nome" Property="@(c => c!.Nome)" Sortable="true" Align=Align.Start />
+            <PropertyColumn Title="Email" Property="@(c => c!.Email)" Sortable="true" Align=Align.Start />
+            <PropertyColumn Title="Idade" Property="@(c => c!.Idade)" Sortable="true" Align=Align.Center />
+            <TemplateColumn Align="@Align.End">
+                <FluentButton Appearance="Appearance.Outline" OnClick="() => ConfirmarExclusao(context.Id)"
+                              IconStart="@(new Icons.Regular.Size12.Delete().WithColor(Color.Error))"></FluentButton>
 
-            <FluentAnchor IconStart="@(new Icons.Regular.Size24.Edit().WithColor(Color.Success))"
-                          Appearance="Appearance.Outline"
-                          Href="@($"/aluno-form/{context.Id}")">Edita</FluentAnchor>
-        </TemplateColumn>
-    </FluentDataGrid>
+                <FluentAnchor IconStart="@(new Icons.Regular.Size12.Edit().WithColor(Color.Success))"
+                              Appearance="Appearance.Outline"
+                              Href="@($"/aluno-form/{context.Id}")"></FluentAnchor>
+            </TemplateColumn>
+        </FluentDataGrid>
     </div>
     <br />
-    <div class="page-buttons" >
-       
+    <div class="page-buttons">
+
         @if (pagination.TotalItemCount.HasValue)
         {
             for (var pageIndex = 0; pageIndex <= pagination.LastPageIndex; pageIndex++)
@@ -68,7 +69,7 @@ else
 @code {
     private IQueryable<Aluno>? alunos;
 
-    PaginationState pagination = new PaginationState { ItemsPerPage = 3 };
+    PaginationState pagination = new PaginationState { ItemsPerPage = 10 };
 
     // Neste exemplo, AsQueryable() é um método de extensão que converte a 
     // lista para um IQueryable. No entanto, a execução da consulta ocorrerá 
@@ -148,3 +149,4 @@ else
 
     private string AriaLabel(int pageIndex) => $"Ir para pag. {pageIndex}";
 }
+

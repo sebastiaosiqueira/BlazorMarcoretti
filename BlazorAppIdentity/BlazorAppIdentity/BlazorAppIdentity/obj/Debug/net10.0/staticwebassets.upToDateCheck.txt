@@ -1,0 +1,13 @@
+wwwroot\app.css
+wwwroot\favicon.ico
+wwwroot\images\semfoto.jpg
+Components\Account\Shared\PasskeySubmit.razor.js
+Components\Layout\ReconnectModal.razor.js
+C:\Users\3346.ADM-UCDB\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.3\build\..\_framework\blazor.web.js
+C:\Users\3346.ADM-UCDB\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.3\build\..\_framework\blazor.server.js
+C:\Users\3346.ADM-UCDB\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.3\_framework\blazor.server.js
+C:\Users\3346.ADM-UCDB\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.3\_framework\blazor.web.js
+C:\Users\3346.ADM-UCDB\source\repos\BlazorAppIdentity\BlazorAppIdentity\BlazorAppIdentity\Components\Layout\ReconnectModal.razor.js
+C:\Users\3346.ADM-UCDB\source\repos\BlazorAppIdentity\BlazorAppIdentity\BlazorAppIdentity\Components\Account\Shared\PasskeySubmit.razor.js
+C:\Users\3346.ADM-UCDB\source\repos\BlazorAppIdentity\BlazorAppIdentity\BlazorAppIdentity\wwwroot\favicon.ico
+C:\Users\3346.ADM-UCDB\source\repos\BlazorAppIdentity\BlazorAppIdentity\BlazorAppIdentity\wwwroot\app.css

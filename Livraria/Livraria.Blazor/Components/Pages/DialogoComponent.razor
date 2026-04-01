@@ -1,0 +1,37 @@
+﻿@if (Exibir)
+{
+    <div class="confirm-dialog-container">
+        <div class="confirm-dialog">
+            @*   <h3 style="color:red;font-weight:bold">
+                Confirma exclusão deste livro ?
+            </h3> *@
+            @ChildContent
+            <div class="d-flex flex-row justify-content-end mt-5">
+                <button @onclick="OnCancel" class="btn btn-primary">
+                    Cancelar
+                </button>
+                <button @onclick="OnDelete" class="btn btn-danger">
+                    Deletar
+                </button>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public bool Exibir { get; set; }
+
+    [Parameter]
+    public EventCallback OnCancel { get; set; }
+
+    //OnDelete será usado para notificar o componente pai quando o botão "Deletar"
+    // for clicado.
+    // O componente pai vaid definir um método manipulador de eventos que será
+    // chamado quando esse evento ocorrer.
+    [Parameter]
+    public EventCallback OnDelete { get; set; }
+
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+}

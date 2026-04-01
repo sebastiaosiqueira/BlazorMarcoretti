@@ -1,0 +1,16 @@
+C:\Users\3346.ADM-UCDB\source\repos\Livraria\Livraria.Application\bin\Debug\net10.0\Livraria.Application.deps.json
+C:\Users\3346.ADM-UCDB\source\repos\Livraria\Livraria.Application\bin\Debug\net10.0\Livraria.Application.dll
+C:\Users\3346.ADM-UCDB\source\repos\Livraria\Livraria.Application\bin\Debug\net10.0\Livraria.Application.pdb
+C:\Users\3346.ADM-UCDB\source\repos\Livraria\Livraria.Application\bin\Debug\net10.0\Livraria.Domain.dll
+C:\Users\3346.ADM-UCDB\source\repos\Livraria\Livraria.Application\bin\Debug\net10.0\Livraria.Domain.pdb
+C:\Users\3346.ADM-UCDB\source\repos\Livraria\Livraria.Application\obj\Debug\net10.0\Livraria.Application.csproj.AssemblyReference.cache
+C:\Users\3346.ADM-UCDB\source\repos\Livraria\Livraria.Application\obj\Debug\net10.0\Livraria.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\3346.ADM-UCDB\source\repos\Livraria\Livraria.Application\obj\Debug\net10.0\Livraria.Application.AssemblyInfoInputs.cache
+C:\Users\3346.ADM-UCDB\source\repos\Livraria\Livraria.Application\obj\Debug\net10.0\Livraria.Application.AssemblyInfo.cs
+C:\Users\3346.ADM-UCDB\source\repos\Livraria\Livraria.Application\obj\Debug\net10.0\Livraria.Application.csproj.CoreCompileInputs.cache
+C:\Users\3346.ADM-UCDB\source\repos\Livraria\Livraria.Application\obj\Debug\net10.0\Livraria.Application.sourcelink.json
+C:\Users\3346.ADM-UCDB\source\repos\Livraria\Livraria.Application\obj\Debug\net10.0\Livraria.422A9370.Up2Date
+C:\Users\3346.ADM-UCDB\source\repos\Livraria\Livraria.Application\obj\Debug\net10.0\Livraria.Application.dll
+C:\Users\3346.ADM-UCDB\source\repos\Livraria\Livraria.Application\obj\Debug\net10.0\refint\Livraria.Application.dll
+C:\Users\3346.ADM-UCDB\source\repos\Livraria\Livraria.Application\obj\Debug\net10.0\Livraria.Application.pdb
+C:\Users\3346.ADM-UCDB\source\repos\Livraria\Livraria.Application\obj\Debug\net10.0\ref\Livraria.Application.dll

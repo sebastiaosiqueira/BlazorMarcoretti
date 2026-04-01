@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorSqlServer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D817FFF6-E0AE-E937-1F7A-B3312E36F9A4}|BlazorSqlServer\\BlazorSqlServer.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorsqlserver\\blazorsqlserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D817FFF6-E0AE-E937-1F7A-B3312E36F9A4}|BlazorSqlServer\\BlazorSqlServer.csproj|solutionrelative:blazorsqlserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorsqlserver\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorsqlserver\\docker-compose.override.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.override.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D817FFF6-E0AE-E937-1F7A-B3312E36F9A4}|BlazorSqlServer\\BlazorSqlServer.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorsqlserver\\blazorsqlserver\\blazorsqlserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D817FFF6-E0AE-E937-1F7A-B3312E36F9A4}|BlazorSqlServer\\BlazorSqlServer.csproj|solutionrelative:blazorsqlserver\\blazorsqlserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D817FFF6-E0AE-E937-1F7A-B3312E36F9A4}|BlazorSqlServer\\BlazorSqlServer.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorsqlserver\\blazorsqlserver\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D817FFF6-E0AE-E937-1F7A-B3312E36F9A4}|BlazorSqlServer\\BlazorSqlServer.csproj|solutionrelative:blazorsqlserver\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorSqlServer\\BlazorSqlServer\\appsettings.json",
+              "RelativeDocumentMoniker": "BlazorSqlServer\\appsettings.json",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorSqlServer\\BlazorSqlServer\\appsettings.json",
+              "RelativeToolTip": "BlazorSqlServer\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-01T14:43:53.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "docker-compose.override.yml",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorSqlServer\\docker-compose.override.yml",
+              "RelativeDocumentMoniker": "docker-compose.override.yml",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorSqlServer\\docker-compose.override.yml",
+              "RelativeToolTip": "docker-compose.override.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-04-01T14:33:44.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorSqlServer\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorSqlServer\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-04-01T14:33:30.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BlazorSqlServer",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorSqlServer\\BlazorSqlServer\\BlazorSqlServer.csproj",
+              "RelativeDocumentMoniker": "BlazorSqlServer\\BlazorSqlServer.csproj",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorSqlServer\\BlazorSqlServer\\BlazorSqlServer.csproj",
+              "RelativeToolTip": "BlazorSqlServer\\BlazorSqlServer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-01T14:20:11.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorSqlServer\\BlazorSqlServer\\Dockerfile",
+              "RelativeDocumentMoniker": "BlazorSqlServer\\Dockerfile",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorSqlServer\\BlazorSqlServer\\Dockerfile",
+              "RelativeToolTip": "BlazorSqlServer\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-01T14:21:50.513Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

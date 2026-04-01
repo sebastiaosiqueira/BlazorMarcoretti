@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorUploads\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0FBC6783-BAB9-3DDB-A48A-90E62B0DCB59}|BlazorUploads\\BlazorUploads.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazoruploads\\blazoruploads\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FBC6783-BAB9-3DDB-A48A-90E62B0DCB59}|BlazorUploads\\BlazorUploads.csproj|solutionrelative:blazoruploads\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FBC6783-BAB9-3DDB-A48A-90E62B0DCB59}|BlazorUploads\\BlazorUploads.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazoruploads\\blazoruploads\\entities\\arquivoupload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FBC6783-BAB9-3DDB-A48A-90E62B0DCB59}|BlazorUploads\\BlazorUploads.csproj|solutionrelative:blazoruploads\\entities\\arquivoupload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FBC6783-BAB9-3DDB-A48A-90E62B0DCB59}|BlazorUploads\\BlazorUploads.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazoruploads\\blazoruploads\\repositories\\iuploadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FBC6783-BAB9-3DDB-A48A-90E62B0DCB59}|BlazorUploads\\BlazorUploads.csproj|solutionrelative:blazoruploads\\repositories\\iuploadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FBC6783-BAB9-3DDB-A48A-90E62B0DCB59}|BlazorUploads\\BlazorUploads.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazoruploads\\blazoruploads\\services\\uploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FBC6783-BAB9-3DDB-A48A-90E62B0DCB59}|BlazorUploads\\BlazorUploads.csproj|solutionrelative:blazoruploads\\services\\uploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FBC6783-BAB9-3DDB-A48A-90E62B0DCB59}|BlazorUploads\\BlazorUploads.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazoruploads\\blazoruploads\\services\\iuploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FBC6783-BAB9-3DDB-A48A-90E62B0DCB59}|BlazorUploads\\BlazorUploads.csproj|solutionrelative:blazoruploads\\services\\iuploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ArquivoUpload.cs",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorUploads\\BlazorUploads\\Entities\\ArquivoUpload.cs",
+              "RelativeDocumentMoniker": "BlazorUploads\\Entities\\ArquivoUpload.cs",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorUploads\\BlazorUploads\\Entities\\ArquivoUpload.cs",
+              "RelativeToolTip": "BlazorUploads\\Entities\\ArquivoUpload.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T17:17:42.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IUploadRepository.cs",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorUploads\\BlazorUploads\\Repositories\\IUploadRepository.cs",
+              "RelativeDocumentMoniker": "BlazorUploads\\Repositories\\IUploadRepository.cs",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorUploads\\BlazorUploads\\Repositories\\IUploadRepository.cs",
+              "RelativeToolTip": "BlazorUploads\\Repositories\\IUploadRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T17:17:25.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UploadService.cs",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorUploads\\BlazorUploads\\Services\\UploadService.cs",
+              "RelativeDocumentMoniker": "BlazorUploads\\Services\\UploadService.cs",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorUploads\\BlazorUploads\\Services\\UploadService.cs",
+              "RelativeToolTip": "BlazorUploads\\Services\\UploadService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAkwCMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T15:27:12.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IUploadService.cs",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorUploads\\BlazorUploads\\Services\\IUploadService.cs",
+              "RelativeDocumentMoniker": "BlazorUploads\\Services\\IUploadService.cs",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorUploads\\BlazorUploads\\Services\\IUploadService.cs",
+              "RelativeToolTip": "BlazorUploads\\Services\\IUploadService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T15:25:05.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorUploads\\BlazorUploads\\Program.cs",
+              "RelativeDocumentMoniker": "BlazorUploads\\Program.cs",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorUploads\\BlazorUploads\\Program.cs*",
+              "RelativeToolTip": "BlazorUploads\\Program.cs*",
+              "ViewState": "AgIAACcAAAAAAAAAAAAhwBEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T15:22:20.131Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

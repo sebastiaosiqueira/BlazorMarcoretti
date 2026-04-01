@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="BlazorScaffolding/BlazorScaffolding.Client/BlazorScaffolding.Client.csproj" />
+  <Project Path="BlazorScaffolding/BlazorScaffolding/BlazorScaffolding.csproj" />
+</Solution>

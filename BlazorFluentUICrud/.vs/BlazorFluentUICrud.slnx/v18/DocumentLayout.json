@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorFluentUICrud\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{810741AA-C8AA-49F3-8F62-536C368FFC5B}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorfluentuicrud\\blazorfluentuicrud\\components\\pages\\alunos\\alunosform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{810741AA-C8AA-49F3-8F62-536C368FFC5B}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|solutionrelative:blazorfluentuicrud\\components\\pages\\alunos\\alunosform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5C5D249E-E9F6-9F7E-4D32-6696C2AED747}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorfluentuicrud\\blazorfluentuicrud\\components\\pages\\alunos\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C5D249E-E9F6-9F7E-4D32-6696C2AED747}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|solutionrelative:blazorfluentuicrud\\components\\pages\\alunos\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{810741AA-C8AA-49F3-8F62-536C368FFC5B}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorfluentuicrud\\blazorfluentuicrud\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{810741AA-C8AA-49F3-8F62-536C368FFC5B}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|solutionrelative:blazorfluentuicrud\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5C5D249E-E9F6-9F7E-4D32-6696C2AED747}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorfluentuicrud\\blazorfluentuicrud\\components\\pages\\alunos\\alunosform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C5D249E-E9F6-9F7E-4D32-6696C2AED747}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|solutionrelative:blazorfluentuicrud\\components\\pages\\alunos\\alunosform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{810741AA-C8AA-49F3-8F62-536C368FFC5B}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorfluentuicrud\\blazorfluentuicrud\\components\\pages\\alunos\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{810741AA-C8AA-49F3-8F62-536C368FFC5B}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|solutionrelative:blazorfluentuicrud\\components\\pages\\alunos\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5C5D249E-E9F6-9F7E-4D32-6696C2AED747}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorfluentuicrud\\blazorfluentuicrud\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5C5D249E-E9F6-9F7E-4D32-6696C2AED747}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|solutionrelative:blazorfluentuicrud\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{810741AA-C8AA-49F3-8F62-536C368FFC5B}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorfluentuicrud\\blazorfluentuicrud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{810741AA-C8AA-49F3-8F62-536C368FFC5B}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|solutionrelative:blazorfluentuicrud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C5D249E-E9F6-9F7E-4D32-6696C2AED747}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorfluentuicrud\\blazorfluentuicrud\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C5D249E-E9F6-9F7E-4D32-6696C2AED747}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|solutionrelative:blazorfluentuicrud\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{810741AA-C8AA-49F3-8F62-536C368FFC5B}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorfluentuicrud\\blazorfluentuicrud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{810741AA-C8AA-49F3-8F62-536C368FFC5B}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|solutionrelative:blazorfluentuicrud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{5C5D249E-E9F6-9F7E-4D32-6696C2AED747}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorfluentuicrud\\blazorfluentuicrud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5C5D249E-E9F6-9F7E-4D32-6696C2AED747}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|solutionrelative:blazorfluentuicrud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{810741AA-C8AA-49F3-8F62-536C368FFC5B}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorfluentuicrud\\blazorfluentuicrud\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{810741AA-C8AA-49F3-8F62-536C368FFC5B}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|solutionrelative:blazorfluentuicrud\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C5D249E-E9F6-9F7E-4D32-6696C2AED747}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorfluentuicrud\\blazorfluentuicrud\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C5D249E-E9F6-9F7E-4D32-6696C2AED747}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|solutionrelative:blazorfluentuicrud\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C5D249E-E9F6-9F7E-4D32-6696C2AED747}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorfluentuicrud\\blazorfluentuicrud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C5D249E-E9F6-9F7E-4D32-6696C2AED747}|BlazorFluentUICrud\\BlazorFluentUICrud.csproj|solutionrelative:blazorfluentuicrud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,37 +38,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorFluentUICrud\\BlazorFluentUICrud\\wwwroot\\app.css",
+              "RelativeDocumentMoniker": "BlazorFluentUICrud\\wwwroot\\app.css",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorFluentUICrud\\BlazorFluentUICrud\\wwwroot\\app.css",
+              "RelativeToolTip": "BlazorFluentUICrud\\wwwroot\\app.css",
+              "ViewState": "AgIAAMsAAAAAAAAAAAAUwNsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-03-27T11:29:12.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AlunosForm.razor",
               "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorFluentUICrud\\BlazorFluentUICrud\\Components\\Pages\\Alunos\\AlunosForm.razor",
               "RelativeDocumentMoniker": "BlazorFluentUICrud\\Components\\Pages\\Alunos\\AlunosForm.razor",
               "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorFluentUICrud\\BlazorFluentUICrud\\Components\\Pages\\Alunos\\AlunosForm.razor",
               "RelativeToolTip": "BlazorFluentUICrud\\Components\\Pages\\Alunos\\AlunosForm.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-26T20:42:29.462Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-26T20:42:29.462Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Index.razor",
               "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorFluentUICrud\\BlazorFluentUICrud\\Components\\Pages\\Alunos\\Index.razor",
               "RelativeDocumentMoniker": "BlazorFluentUICrud\\Components\\Pages\\Alunos\\Index.razor",
               "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorFluentUICrud\\BlazorFluentUICrud\\Components\\Pages\\Alunos\\Index.razor",
               "RelativeToolTip": "BlazorFluentUICrud\\Components\\Pages\\Alunos\\Index.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAUwEcAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-03-26T20:41:55.269Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorFluentUICrud\\BlazorFluentUICrud\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "BlazorFluentUICrud\\Components\\Layout\\NavMenu.razor",
@@ -72,8 +87,7 @@
               "RelativeToolTip": "BlazorFluentUICrud\\Components\\Layout\\NavMenu.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-26T20:41:35.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-26T20:41:35.061Z"
             },
             {
               "$type": "Document",
@@ -85,8 +99,7 @@
               "RelativeToolTip": "BlazorFluentUICrud\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-26T20:39:13.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-26T20:39:13.564Z"
             },
             {
               "$type": "Document",
@@ -98,12 +111,11 @@
               "RelativeToolTip": "BlazorFluentUICrud\\Context\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T20:38:35.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-26T20:38:35.876Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorFluentUICrud\\BlazorFluentUICrud\\Program.cs",
               "RelativeDocumentMoniker": "BlazorFluentUICrud\\Program.cs",
@@ -111,8 +123,7 @@
               "RelativeToolTip": "BlazorFluentUICrud\\Program.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T20:24:18.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-26T20:24:18.714Z"
             }
           ]
         }

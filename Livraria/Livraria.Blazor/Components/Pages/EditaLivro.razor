@@ -1,0 +1,89 @@
+﻿@page "/editalivro/{id:int}"
+
+<PageTitle>Editar Livro</PageTitle>
+
+@if (Livro is not null)
+{
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <EditForm Enhance="true" method="post" FormName="EditaLivroForm"
+                      OnValidSubmit="EditarLivro" Model="Livro" id="EditaLivro">
+                <h3>Editar Livro : @Id</h3>
+                <input type="hidden" name="Livro.LivroId" value="@Livro.LivroId" />
+                <div class="mb-3">
+                    <label for="titulo" class="form-label">Titulo</label>
+                    <InputText id="titulo" @bind-Value="Livro.Titulo" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label for="autor" class="form-label">Autor</label>
+                    <InputText id="autor" @bind-Value="Livro.Autor" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label for="lancamento" class="form-label">Lancamento</label>
+                    <InputDate id="lancamento" @bind-Value="Livro.Lancamento" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label for="editora" class="form-label">Editora</label>
+                    <InputSelect id="editora" @bind-Value="Livro.Editora" class="form-control">
+                        <option value="0">
+                            Selecione a Editora
+                        </option>
+                        @foreach (var editora in Enum.GetValues(typeof(Editora)))
+                        {
+                            <option value="@editora">
+                                @editora.ToString()
+                            </option>
+                        }
+                    </InputSelect>
+                </div>
+                <div class="mb-3">
+                    <label for="capa" class="form-label">Capa</label>
+                    <InputText id="capa" @bind-Value="Livro.Capa" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label for="categoria" class="form-label">Categoria</label>
+                    <InputSelect id="categoria" @bind-Value="Livro.Categoria" class="form-control">
+                        <option value="0">
+                            Selecione a Categoria
+                        </option>
+                        @foreach (var categoria in Enum.GetValues(typeof(Categoria)))
+                        {
+                            <option value="@categoria">
+                                @categoria.ToString()
+                            </option>
+                        }
+                    </InputSelect>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-primary shadow-none">
+                        Enviar
+                    </button>
+                    <a href="/livros" class="btn btn-secondary ms-3" @* data-enhance-nav="false" *@>
+                        Retornar para livros
+                    </a>
+                </div>
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+            </EditForm>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    [SupplyParameterFromForm(FormName = "EditaLivroForm")]
+    public Livro? Livro { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Livro ??= await livroRepository.ObterLivro(Id);
+    }
+
+    private async Task EditarLivro()
+    {
+        await livroRepository.AtualizarLivro(Livro);
+        navigation.NavigateTo("/livros");
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "81REqguMu8A=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Livraria\\Livraria.Blazor\\Livraria.Blazor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\3346.ADM-UCDB\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
+    "C:\\Users\\3346.ADM-UCDB\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.1.1\\fluentvalidation.dependencyinjectionextensions.12.1.1.nupkg.sha512",
+    "C:\\Users\\3346.ADM-UCDB\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.3\\microsoft.aspnetcore.app.internal.assets.10.0.3.nupkg.sha512",
+    "C:\\Users\\3346.ADM-UCDB\\.nuget\\packages\\microsoft.data.sqlite.core\\10.0.5\\microsoft.data.sqlite.core.10.0.5.nupkg.sha512",
+    "C:\\Users\\3346.ADM-UCDB\\.nuget\\packages\\microsoft.entityframeworkcore\\10.0.5\\microsoft.entityframeworkcore.10.0.5.nupkg.sha512",
+    "C:\\Users\\3346.ADM-UCDB\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\10.0.5\\microsoft.entityframeworkcore.abstractions.10.0.5.nupkg.sha512",
+    "C:\\Users\\3346.ADM-UCDB\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\10.0.5\\microsoft.entityframeworkcore.analyzers.10.0.5.nupkg.sha512",
+    "C:\\Users\\3346.ADM-UCDB\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\10.0.5\\microsoft.entityframeworkcore.relational.10.0.5.nupkg.sha512",
+    "C:\\Users\\3346.ADM-UCDB\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\10.0.5\\microsoft.entityframeworkcore.sqlite.core.10.0.5.nupkg.sha512",
+    "C:\\Users\\3346.ADM-UCDB\\.nuget\\packages\\microsoft.extensions.dependencymodel\\10.0.5\\microsoft.extensions.dependencymodel.10.0.5.nupkg.sha512",
+    "C:\\Users\\3346.ADM-UCDB\\.nuget\\packages\\sourcegear.sqlite3\\3.50.4.2\\sourcegear.sqlite3.3.50.4.2.nupkg.sha512",
+    "C:\\Users\\3346.ADM-UCDB\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\3.0.2\\sqlitepclraw.bundle_e_sqlite3.3.0.2.nupkg.sha512",
+    "C:\\Users\\3346.ADM-UCDB\\.nuget\\packages\\sqlitepclraw.config.e_sqlite3\\3.0.2\\sqlitepclraw.config.e_sqlite3.3.0.2.nupkg.sha512",
+    "C:\\Users\\3346.ADM-UCDB\\.nuget\\packages\\sqlitepclraw.core\\3.0.2\\sqlitepclraw.core.3.0.2.nupkg.sha512",
+    "C:\\Users\\3346.ADM-UCDB\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.11\\sqlitepclraw.lib.e_sqlite3.2.1.11.nupkg.sha512",
+    "C:\\Users\\3346.ADM-UCDB\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\3.0.2\\sqlitepclraw.provider.e_sqlite3.3.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -108,7 +108,6 @@ C:\Users\3346.ADM-UCDB\source\repos\BlazorFluentUICrud\BlazorFluentUICrud\obj\De
 C:\Users\3346.ADM-UCDB\source\repos\BlazorFluentUICrud\BlazorFluentUICrud\obj\Debug\net10.0\compressed\kwrall9b0s-{0}-zbg73p58hc-zbg73p58hc.gz
 C:\Users\3346.ADM-UCDB\source\repos\BlazorFluentUICrud\BlazorFluentUICrud\obj\Debug\net10.0\compressed\m3ffqup1h6-{0}-kz8gc8cxma-kz8gc8cxma.gz
 C:\Users\3346.ADM-UCDB\source\repos\BlazorFluentUICrud\BlazorFluentUICrud\obj\Debug\net10.0\compressed\3emkb5z5ma-{0}-sd59ooda5f-sd59ooda5f.gz
-C:\Users\3346.ADM-UCDB\source\repos\BlazorFluentUICrud\BlazorFluentUICrud\obj\Debug\net10.0\compressed\3rrwx3ogz1-{0}-g5ndc3bl4h-g5ndc3bl4h.gz
 C:\Users\3346.ADM-UCDB\source\repos\BlazorFluentUICrud\BlazorFluentUICrud\obj\Debug\net10.0\compressed\nyko60vpwf-{0}-a8m5cweeeb-a8m5cweeeb.gz
 C:\Users\3346.ADM-UCDB\source\repos\BlazorFluentUICrud\BlazorFluentUICrud\obj\Debug\net10.0\compressed\i70bhdr6jj-{0}-yai8rqrbjp-yai8rqrbjp.gz
 C:\Users\3346.ADM-UCDB\source\repos\BlazorFluentUICrud\BlazorFluentUICrud\obj\Debug\net10.0\compressed\6c8kwnqo9x-{0}-j6t2ausyso-j6t2ausyso.gz
@@ -133,3 +132,4 @@ C:\Users\3346.ADM-UCDB\source\repos\BlazorFluentUICrud\BlazorFluentUICrud\obj\De
 C:\Users\3346.ADM-UCDB\source\repos\BlazorFluentUICrud\BlazorFluentUICrud\obj\Debug\net10.0\BlazorFluentUICrud.pdb
 C:\Users\3346.ADM-UCDB\source\repos\BlazorFluentUICrud\BlazorFluentUICrud\obj\Debug\net10.0\BlazorFluentUICrud.genruntimeconfig.cache
 C:\Users\3346.ADM-UCDB\source\repos\BlazorFluentUICrud\BlazorFluentUICrud\obj\Debug\net10.0\ref\BlazorFluentUICrud.dll
+C:\Users\3346.ADM-UCDB\source\repos\BlazorFluentUICrud\BlazorFluentUICrud\obj\Debug\net10.0\compressed\3rrwx3ogz1-{0}-g5ndc3bl4h-g5ndc3bl4h.gz

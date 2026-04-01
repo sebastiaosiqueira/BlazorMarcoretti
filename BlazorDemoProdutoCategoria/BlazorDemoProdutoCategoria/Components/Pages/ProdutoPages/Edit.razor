@@ -1,0 +1,109 @@
+﻿@page "/produtos/edit"
+@using Microsoft.EntityFrameworkCore
+@using BlazorDemoProdutoCategoria.Models
+@inject IDbContextFactory<BlazorDemoProdutoCategoria.Data.BlazorDemoProdutoCategoriaContext> DbFactory
+@inject NavigationManager NavigationManager
+
+<PageTitle>Edit</PageTitle>
+
+<h1>Edit</h1>
+
+<h2>Produto</h2>
+<hr />
+@if (Produto is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="row">
+        <div class="col-md-4">
+            <EditForm method="post" Model="Produto" OnValidSubmit="UpdateProduto" FormName="edit" Enhance>
+                <DataAnnotationsValidator />
+                <ValidationSummary role="alert"/>
+                <input type="hidden" name="Produto.Id" value="@Produto.Id" />
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <InputText id="nome" @bind-Value="Produto.Nome" class="form-control" />
+                    <ValidationMessage For="() => Produto.Nome" class="text-danger" />
+                </div>
+                <div class="mb-3">
+                    <label for="descricao" class="form-label">Descricao:</label>
+                    <InputText id="descricao" @bind-Value="Produto.Descricao" class="form-control" />
+                    <ValidationMessage For="() => Produto.Descricao" class="text-danger" />
+                </div>
+                <div class="mb-3">
+                    <label for="imagemurl" class="form-label">ImagemUrl:</label>
+                    <InputText id="imagemurl" @bind-Value="Produto.ImagemUrl" class="form-control" />
+                    <ValidationMessage For="() => Produto.ImagemUrl" class="text-danger" />
+                </div>
+                <div class="mb-3">
+                    <label for="preco" class="form-label">Preco:</label>
+                    <InputNumber id="preco" @bind-Value="Produto.Preco" class="form-control" />
+                    <ValidationMessage For="() => Produto.Preco" class="text-danger" />
+                </div>
+                <div class="mb-3">
+                    <label for="categoriaid" class="form-label">CategoriaId:</label>
+                    <InputNumber id="categoriaid" @bind-Value="Produto.CategoriaId" class="form-control" />
+                    <ValidationMessage For="() => Produto.CategoriaId" class="text-danger" />
+                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </EditForm>
+        </div>
+    </div>
+}
+
+<div>
+    <a href="/produtos">Back to List</a>
+</div>
+
+@code {
+    [SupplyParameterFromQuery]
+    private int Id { get; set; }
+
+    [SupplyParameterFromForm]
+    private Produto? Produto { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        using var context = DbFactory.CreateDbContext();
+        Produto ??= await context.Produto.FirstOrDefaultAsync(m => m.Id == Id);
+
+        if (Produto is null)
+        {
+            NavigationManager.NotFound();
+        }
+    }
+
+    // To protect from overposting attacks, enable the specific properties you want to bind to.
+    // For more information, see https://learn.microsoft.com/aspnet/core/blazor/forms/#mitigate-overposting-attacks.
+    private async Task UpdateProduto()
+    {
+        using var context = DbFactory.CreateDbContext();
+        context.Attach(Produto!).State = EntityState.Modified;
+
+        try
+        {
+            await context.SaveChangesAsync();
+        }
+        catch (DbUpdateConcurrencyException)
+        {
+            if (!ProdutoExists(Produto!.Id))
+            {
+                NavigationManager.NotFound();
+            }
+            else
+            {
+                throw;
+            }
+        }
+
+        NavigationManager.NavigateTo("/produtos");
+    }
+
+    private bool ProdutoExists(int id)
+    {
+        using var context = DbFactory.CreateDbContext();
+        return context.Produto.Any(e => e.Id == id);
+    }
+}

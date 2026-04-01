@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "PP72O8sQHNc=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Livraria\\Livraria.Application\\Livraria.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\3346.ADM-UCDB\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
+    "C:\\Users\\3346.ADM-UCDB\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.1.1\\fluentvalidation.dependencyinjectionextensions.12.1.1.nupkg.sha512",
+    "C:\\Users\\3346.ADM-UCDB\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

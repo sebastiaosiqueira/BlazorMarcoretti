@@ -1,0 +1,31 @@
+version: '3.8'
+
+networks:
+  minhaAppNetwork:
+    driver: bridge
+
+services:
+  SqlServerDb:
+    container_name: SqlServerContainer
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    networks:
+      - minhaAppNetwork
+    ports:
+      - "8002:1433"
+    environment:
+      - ACCEPT_EULA=Y/  # Corrigido: era ACCPET
+      - MSSQL_SA_PASSWORD=Numsey#2024
+
+  blazorsqlserver:
+    container_name: BlazorContainer
+    image: ${DOCKER_REGISTRY-}blazorsqlserver
+    networks:
+      - minhaAppNetwork
+    ports:
+      - "8001:8080"
+    build:
+      context: .
+      dockerfile: BlazorSqlServer/Dockerfile
+    # CORREÇÃO: depends_on deve ficar alinhado com o build, não dentro dele
+    depends_on:
+      - SqlServerDb
