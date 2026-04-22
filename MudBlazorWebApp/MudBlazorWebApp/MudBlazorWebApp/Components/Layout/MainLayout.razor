@@ -1,0 +1,44 @@
+﻿@inherits LayoutComponentBase
+
+<MudSnackbarProvider></MudSnackbarProvider>
+<MudThemeProvider Theme="_temaLivraria" />
+<MudLayout>
+    <MudAppBar Elevation="1">
+        <MudStaticNavDrawerToggle DrawerId="nav-drawer" Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" />
+        <MudText Typo="Typo.h5" Class="ml-3">Application</MudText>
+    </MudAppBar>
+    <MudDrawer id="nav-drawer" @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
+        <NavMenu />
+    </MudDrawer>
+    <MudMainContent Class="pt-16 pa-4">
+        @Body
+    </MudMainContent>
+</MudLayout>
+
+
+<div id="blazor-error-ui" data-nosnippet>
+    An unhandled error has occurred.
+    <a href="." class="reload">Reload</a>
+    <span class="dismiss">🗙</span>
+</div>
+
+@code {
+    private bool _drawerOpen = true;
+
+    private MudTheme _temaLivraria = new MudTheme()
+    {
+        PaletteLight = new PaletteLight()
+        {
+            Primary = "#102C57",          // Azul Petróleo Profundo
+            Secondary = "#800020",        // Laranja "Cenoura" (ótimo para avisos de promoção)
+            AppbarBackground = "#102C57",
+            Background = "#FEFAF6",       // Off-white (Papel envelhecido)
+            Surface = "#FEFAF6",          // Branco puro para os cards de livros
+            LinesDefault = "#102C57",     // Borda suave estilo vintage
+            TextPrimary = "#1A1A1A",      // Quase preto para leitura fácil
+            ActionDefault = "#2C3E50"
+        }
+    };
+}
+
+

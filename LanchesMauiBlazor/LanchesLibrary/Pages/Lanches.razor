@@ -1,0 +1,37 @@
+﻿@page "/lanches"
+
+<h3>Lanches</h3>
+
+@if (lanches is null)
+{
+    <span>Carregando lanches...</span>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var lanche in lanches)
+            {
+                <tr>
+                    <td>@lanche.Name</td>
+                    <td>@lanche.Description</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private IEnumerable<Lanche>? lanches;
+
+    protected override async Task OnInitializedAsync()
+    {
+        lanches = await lancheService.LoadLanchesAsync();
+    }
+}

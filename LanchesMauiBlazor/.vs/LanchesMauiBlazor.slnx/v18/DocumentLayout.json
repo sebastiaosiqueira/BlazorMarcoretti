@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\LanchesMauiBlazor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B183934B-A53D-4D20-2F2E-3C44EBFDC046}|LanchesLibrary\\LanchesLibrary.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\lanchesmauiblazor\\lancheslibrary\\pages\\lanches.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B183934B-A53D-4D20-2F2E-3C44EBFDC046}|LanchesLibrary\\LanchesLibrary.csproj|solutionrelative:lancheslibrary\\pages\\lanches.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5957E0D-6816-4DEC-86F1-8B10E28465F4}|LanchesWeb\\LanchesWeb.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\lanchesmauiblazor\\lanchesweb\\data\\lancheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5957E0D-6816-4DEC-86F1-8B10E28465F4}|LanchesWeb\\LanchesWeb.csproj|solutionrelative:lanchesweb\\data\\lancheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Lanches.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\LanchesMauiBlazor\\LanchesLibrary\\Pages\\Lanches.razor",
+              "RelativeDocumentMoniker": "LanchesLibrary\\Pages\\Lanches.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\LanchesMauiBlazor\\LanchesLibrary\\Pages\\Lanches.razor",
+              "RelativeToolTip": "LanchesLibrary\\Pages\\Lanches.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-22T17:58:21.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LancheService.cs",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\LanchesMauiBlazor\\LanchesWeb\\Data\\LancheService.cs",
+              "RelativeDocumentMoniker": "LanchesWeb\\Data\\LancheService.cs",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\LanchesMauiBlazor\\LanchesWeb\\Data\\LancheService.cs",
+              "RelativeToolTip": "LanchesWeb\\Data\\LancheService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T17:44:51.435Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

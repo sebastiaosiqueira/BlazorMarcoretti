@@ -1,0 +1,7 @@
+wwwroot\app.css
+wwwroot\images\lanchesmac.png
+wwwroot\index.html
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+C:\Users\3346.ADM-UCDB\.nuget\packages\microsoft.aspnetcore.components.webview\10.0.0\build\..\staticwebassets\blazor.webview.js
+C:\Users\3346.ADM-UCDB\.nuget\packages\microsoft.aspnetcore.components.webview\10.0.0\build\..\staticwebassets\blazor.modules.json
