@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="RazorLibrary/RazorLibrary.csproj" />
+  <Project Path="WinformsBlazorHybrid/WinformsBlazorHybrid.csproj" />
+</Solution>

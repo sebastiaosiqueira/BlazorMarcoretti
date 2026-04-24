@@ -1,0 +1,10 @@
+C:\Users\3346.ADM-UCDB\source\repos\BlazorHybridWpf\BlazorHybridWpf\obj\Debug\net9.0-windows\BlazorHybridWpf.csproj.AssemblyReference.cache
+C:\Users\3346.ADM-UCDB\source\repos\BlazorHybridWpf\BlazorHybridWpf\obj\Debug\net9.0-windows\MainWindow.g.cs
+C:\Users\3346.ADM-UCDB\source\repos\BlazorHybridWpf\BlazorHybridWpf\obj\Debug\net9.0-windows\App.g.cs
+C:\Users\3346.ADM-UCDB\source\repos\BlazorHybridWpf\BlazorHybridWpf\obj\Debug\net9.0-windows\BlazorHybridWpf_Content.g.cs
+C:\Users\3346.ADM-UCDB\source\repos\BlazorHybridWpf\BlazorHybridWpf\obj\Debug\net9.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\3346.ADM-UCDB\source\repos\BlazorHybridWpf\BlazorHybridWpf\obj\Debug\net9.0-windows\BlazorHybridWpf_MarkupCompile.cache
+C:\Users\3346.ADM-UCDB\source\repos\BlazorHybridWpf\BlazorHybridWpf\obj\Debug\net9.0-windows\BlazorHybridWpf_MarkupCompile.lref
+C:\Users\3346.ADM-UCDB\source\repos\BlazorHybridWpf\BlazorHybridWpf\obj\Debug\net9.0-windows\BlazorHybridWpf.dll
+C:\Users\3346.ADM-UCDB\source\repos\BlazorHybridWpf\BlazorHybridWpf\obj\Debug\net9.0-windows\refint\BlazorHybridWpf.dll
+C:\Users\3346.ADM-UCDB\source\repos\BlazorHybridWpf\BlazorHybridWpf\obj\Debug\net9.0-windows\BlazorHybridWpf.pdb

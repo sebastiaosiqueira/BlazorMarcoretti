@@ -1,0 +1,3 @@
+wwwroot\favicon.ico
+wwwroot\images\alunos.png
+C:\Users\3346.ADM-UCDB\source\repos\MudBlazorAlunos\MudBlazorAlunos\wwwroot\favicon.ico
