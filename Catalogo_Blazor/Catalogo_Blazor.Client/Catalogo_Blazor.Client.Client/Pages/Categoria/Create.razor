@@ -1,0 +1,21 @@
+﻿@page "/categoria/create"
+@inject HttpClient http
+@inject NavigationManager navigation
+@rendermode InteractiveAuto
+<h2>Nova Categoria</h2>
+
+<CategoriaForm  OnValidSubmit="@CriarCategoria" ButtonTextSubmit="Salvar" ButtonTextCancelar="Cancelar">
+
+</CategoriaForm>
+
+@code {
+    [SupplyParameterFromForm(FormName = "FormCategoria")]
+    Categoria categoria { get; set; } = new Categoria();
+
+    public async Task CriarCategoria()
+    {
+        await http.PostAsJsonAsync("api/categoria", categoria);
+        navigation.NavigateTo("categoria");
+    }
+
+}

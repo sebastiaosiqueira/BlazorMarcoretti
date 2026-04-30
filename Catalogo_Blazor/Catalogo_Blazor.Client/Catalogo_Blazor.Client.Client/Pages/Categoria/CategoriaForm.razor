@@ -1,0 +1,52 @@
+﻿<EditForm Model="@Categoria" OnValidSubmit="@OnValidSubmit" FormName="FormCategoria">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label form="nome">Nome: </label>
+        <div>
+            <InputText id="txtCategoriaNome" @bind-Value="@Categoria.Nome" class="form-control" />
+            <ValidationMessage For="@(() => Categoria.Nome)" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label form="descricao">Descrição: </label>
+        <div>
+            <InputText @bind-Value="@Categoria.Descricao" class="form-control" />
+            <ValidationMessage For="@(() => Categoria.Descricao)" />
+        </div>
+    </div>
+    <br />
+
+    <button type="submit" class="btn btn-success">@ButtonTextSubmit</button>
+
+    @* Adicionado type="button" para evitar que o botão cancelar tente submeter o formulário *@
+    <button type="button" class="btn btn-danger" @onclick="@(() => navigation.NavigateTo("categoria"))">
+        @ButtonTextCancelar
+    </button>
+
+</EditForm>
+
+@code {
+    [Inject]
+    public NavigationManager navigation { get; set; }
+
+    // Importante: No .NET 8 SSR, usamos este atributo para receber os dados do form
+    [SupplyParameterFromForm(FormName = "FormCategoria")]
+    public Categoria Categoria { get; set; } = new();
+
+    [Parameter]
+    public string ButtonTextSubmit { get; set; } = "Salvar";
+
+    [Parameter]
+    public string ButtonTextCancelar { get; set; } = "Cancelar";
+
+    [Parameter]
+    public EventCallback OnValidSubmit { get; set; }
+
+    // Inicializa a categoria caso o parâmetro venha nulo
+    protected override void OnInitialized()
+    {
+        Categoria ??= new Categoria();
+    }
+}

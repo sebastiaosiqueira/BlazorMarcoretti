@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Catalogo_Blazor.Client/Catalogo_Blazor.Client.Client/Catalogo_Blazor.Client.csproj" Id="2a7ce341-9e3d-4ec0-952d-91b9fced8641" />
+  <Project Path="Catalogo_Blazor.Client/Catalogo_Blazor.Client/Catalogo_Blazor.csproj" Id="c5dd30dc-e669-4957-a8d8-4574c58edc1b" />
+  <Project Path="Catalogo_Blazor.Shared/Catalogo_Blazor.Shared.csproj" Id="f435087f-009b-48de-a61c-a9a235bdae30" />
+</Solution>

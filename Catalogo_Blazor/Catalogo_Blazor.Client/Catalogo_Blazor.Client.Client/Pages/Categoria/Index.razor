@@ -1,0 +1,111 @@
+﻿@page "/categoria"
+@using Catalogo_Blazor.Client.Shared
+@inject HttpClient http
+
+
+<div>
+    <a class="btn btn-success" href="categoria/create">Criar Categoria</a>
+</div>
+
+@if(categorias == null)
+{
+    <p><em>Carregando</em></p>
+}
+else if(categorias.Count==0)
+{
+    <p><em>Não existem categorias cadastradas...</em></p>
+}
+else{
+<table class="table">
+    <thread >
+       <tr>
+          <th>Categoria</th>
+            <th>Descricao</th>
+            <th>Edita</th>
+            <th>Deleta</th>
+       </tr>
+    </thread>
+    <tbody>
+        @foreach(var categoria in categorias){
+        <tr>
+            <td>@categoria.Nome</td>
+            <td>@categoria.Descricao</td>
+            <td><a class="btn btn-primary" href="categoria/edit/@categoria.CategoriaId">Editar</a></td>
+                <td><a class="btn btn-danger" @onclick="@(()=> DeletarCategoria(categoria.CategoriaId))">Deletar</a></td>
+        </tr>
+        }
+    </tbody>
+</table>
+}
+
+<Confirma @ref="confirma" onCancela="@CancelaConfirma" onConfirma="@DeletaConfirma">
+    <div>Deseja realmente exclir este item</div>
+</Confirma>
+
+<Paginacao QuantidadeTotalPaginas="QuantidadeTotalPaginas" paginaAtual="paginaAtual" Raio="2" PaginaSelecionada="PaginaSelecionada">
+
+</Paginacao>
+
+@code {
+    List<Categoria> categorias { get; set; }
+
+    private int QuantidadeTotalPaginas;
+    private int paginaAtual = 1;
+
+    Confirma confirma;
+    int codigocategoria;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await CarregaCategorias();
+    }
+    private async Task PaginaSelecionada(int pagina)
+    {
+        paginaAtual = pagina;
+        await CarregaCategorias();
+    }
+
+    public async Task CarregaCategorias(int pagina=1,int  quantidadePorPagina =5){
+        try
+        {
+            // Tente carregar
+            var httpResponse = await http.GetAsync($"api/categoria?pagina={pagina}&quantidadePorPagina={ quantidadePorPagina}");
+            if (httpResponse.IsSuccessStatusCode)
+            {
+                QuantidadeTotalPaginas = int.Parse(httpResponse.Headers.GetValues("totalPaginas").FirstOrDefault());
+                var responseString = await httpResponse.Content.ReadAsByteArrayAsync();
+                categorias = JsonSerializer.Deserialize<List<Categoria>>(responseString, new JsonSerializerOptions()
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
+            }
+        }
+        catch (Exception ex)
+        {
+            // Se der erro, ele não trava mais a tela
+            Console.WriteLine($"Erro ao carregar: {ex.Message}");
+        }
+    }
+
+    public void DeletarCategoria(int categoriaId)
+    {
+
+        confirma.Exibir();
+        codigocategoria = -categoriaId;
+
+    }
+
+    public async Task DeletaConfirma()
+    {
+        await http.DeleteAsync($"api/categoria/{codigocategoria}");
+        confirma.Ocultar();
+        await CarregaCategorias();
+
+    }
+    void CancelaConfirma()
+    {
+        confirma.Ocultar();
+    }
+
+
+}

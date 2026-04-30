@@ -3,48 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\MudBlazorAlunos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B1172C1A-834D-4B17-831B-3CF096DC95B6}|MudBlazorAlunos\\MudBlazorAlunos.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\mudblazoralunos\\mudblazoralunos\\components\\pages\\alunos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B1172C1A-834D-4B17-831B-3CF096DC95B6}|MudBlazorAlunos\\MudBlazorAlunos.csproj|solutionrelative:mudblazoralunos\\components\\pages\\alunos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9B4E9EF9-2FD4-25D8-137F-D72FBF35288F}|MudBlazorAlunos\\MudBlazorAlunos.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\mudblazoralunos\\mudblazoralunos\\components\\pages\\alunos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B4E9EF9-2FD4-25D8-137F-D72FBF35288F}|MudBlazorAlunos\\MudBlazorAlunos.csproj|solutionrelative:mudblazoralunos\\components\\pages\\alunos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1172C1A-834D-4B17-831B-3CF096DC95B6}|MudBlazorAlunos\\MudBlazorAlunos.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\mudblazoralunos\\mudblazoralunos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1172C1A-834D-4B17-831B-3CF096DC95B6}|MudBlazorAlunos\\MudBlazorAlunos.csproj|solutionrelative:mudblazoralunos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B4E9EF9-2FD4-25D8-137F-D72FBF35288F}|MudBlazorAlunos\\MudBlazorAlunos.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\mudblazoralunos\\mudblazoralunos\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B4E9EF9-2FD4-25D8-137F-D72FBF35288F}|MudBlazorAlunos\\MudBlazorAlunos.csproj|solutionrelative:mudblazoralunos\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1172C1A-834D-4B17-831B-3CF096DC95B6}|MudBlazorAlunos\\MudBlazorAlunos.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\mudblazoralunos\\mudblazoralunos\\services\\alunoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1172C1A-834D-4B17-831B-3CF096DC95B6}|MudBlazorAlunos\\MudBlazorAlunos.csproj|solutionrelative:mudblazoralunos\\services\\alunoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B4E9EF9-2FD4-25D8-137F-D72FBF35288F}|MudBlazorAlunos\\MudBlazorAlunos.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\mudblazoralunos\\mudblazoralunos\\services\\alunoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B4E9EF9-2FD4-25D8-137F-D72FBF35288F}|MudBlazorAlunos\\MudBlazorAlunos.csproj|solutionrelative:mudblazoralunos\\services\\alunoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1172C1A-834D-4B17-831B-3CF096DC95B6}|MudBlazorAlunos\\MudBlazorAlunos.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\mudblazoralunos\\mudblazoralunos\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B1172C1A-834D-4B17-831B-3CF096DC95B6}|MudBlazorAlunos\\MudBlazorAlunos.csproj|solutionrelative:mudblazoralunos\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9B4E9EF9-2FD4-25D8-137F-D72FBF35288F}|MudBlazorAlunos\\MudBlazorAlunos.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\mudblazoralunos\\mudblazoralunos\\services\\ialunoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B4E9EF9-2FD4-25D8-137F-D72FBF35288F}|MudBlazorAlunos\\MudBlazorAlunos.csproj|solutionrelative:mudblazoralunos\\services\\ialunoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1172C1A-834D-4B17-831B-3CF096DC95B6}|MudBlazorAlunos\\MudBlazorAlunos.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\mudblazoralunos\\mudblazoralunos\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B1172C1A-834D-4B17-831B-3CF096DC95B6}|MudBlazorAlunos\\MudBlazorAlunos.csproj|solutionrelative:mudblazoralunos\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9B4E9EF9-2FD4-25D8-137F-D72FBF35288F}|MudBlazorAlunos\\MudBlazorAlunos.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\mudblazoralunos\\mudblazoralunos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9B4E9EF9-2FD4-25D8-137F-D72FBF35288F}|MudBlazorAlunos\\MudBlazorAlunos.csproj|solutionrelative:mudblazoralunos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1172C1A-834D-4B17-831B-3CF096DC95B6}|MudBlazorAlunos\\MudBlazorAlunos.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\mudblazoralunos\\mudblazoralunos\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1172C1A-834D-4B17-831B-3CF096DC95B6}|MudBlazorAlunos\\MudBlazorAlunos.csproj|solutionrelative:mudblazoralunos\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B4E9EF9-2FD4-25D8-137F-D72FBF35288F}|MudBlazorAlunos\\MudBlazorAlunos.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\mudblazoralunos\\mudblazoralunos\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B4E9EF9-2FD4-25D8-137F-D72FBF35288F}|MudBlazorAlunos\\MudBlazorAlunos.csproj|solutionrelative:mudblazoralunos\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1172C1A-834D-4B17-831B-3CF096DC95B6}|MudBlazorAlunos\\MudBlazorAlunos.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\mudblazoralunos\\mudblazoralunos\\services\\ialunoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1172C1A-834D-4B17-831B-3CF096DC95B6}|MudBlazorAlunos\\MudBlazorAlunos.csproj|solutionrelative:mudblazoralunos\\services\\ialunoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B4E9EF9-2FD4-25D8-137F-D72FBF35288F}|MudBlazorAlunos\\MudBlazorAlunos.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\mudblazoralunos\\mudblazoralunos\\entities\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B4E9EF9-2FD4-25D8-137F-D72FBF35288F}|MudBlazorAlunos\\MudBlazorAlunos.csproj|solutionrelative:mudblazoralunos\\entities\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1172C1A-834D-4B17-831B-3CF096DC95B6}|MudBlazorAlunos\\MudBlazorAlunos.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\mudblazoralunos\\mudblazoralunos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B1172C1A-834D-4B17-831B-3CF096DC95B6}|MudBlazorAlunos\\MudBlazorAlunos.csproj|solutionrelative:mudblazoralunos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{9B4E9EF9-2FD4-25D8-137F-D72FBF35288F}|MudBlazorAlunos\\MudBlazorAlunos.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\mudblazoralunos\\mudblazoralunos\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B4E9EF9-2FD4-25D8-137F-D72FBF35288F}|MudBlazorAlunos\\MudBlazorAlunos.csproj|solutionrelative:mudblazoralunos\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1172C1A-834D-4B17-831B-3CF096DC95B6}|MudBlazorAlunos\\MudBlazorAlunos.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\mudblazoralunos\\mudblazoralunos\\entities\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1172C1A-834D-4B17-831B-3CF096DC95B6}|MudBlazorAlunos\\MudBlazorAlunos.csproj|solutionrelative:mudblazoralunos\\entities\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B4E9EF9-2FD4-25D8-137F-D72FBF35288F}|MudBlazorAlunos\\MudBlazorAlunos.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\mudblazoralunos\\mudblazoralunos\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B4E9EF9-2FD4-25D8-137F-D72FBF35288F}|MudBlazorAlunos\\MudBlazorAlunos.csproj|solutionrelative:mudblazoralunos\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1172C1A-834D-4B17-831B-3CF096DC95B6}|MudBlazorAlunos\\MudBlazorAlunos.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\mudblazoralunos\\mudblazoralunos\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B1172C1A-834D-4B17-831B-3CF096DC95B6}|MudBlazorAlunos\\MudBlazorAlunos.csproj|solutionrelative:mudblazoralunos\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9B4E9EF9-2FD4-25D8-137F-D72FBF35288F}|MudBlazorAlunos\\MudBlazorAlunos.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\mudblazoralunos\\mudblazoralunos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B4E9EF9-2FD4-25D8-137F-D72FBF35288F}|MudBlazorAlunos\\MudBlazorAlunos.csproj|solutionrelative:mudblazoralunos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1172C1A-834D-4B17-831B-3CF096DC95B6}|MudBlazorAlunos\\MudBlazorAlunos.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\mudblazoralunos\\mudblazoralunos\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B1172C1A-834D-4B17-831B-3CF096DC95B6}|MudBlazorAlunos\\MudBlazorAlunos.csproj|solutionrelative:mudblazoralunos\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9B4E9EF9-2FD4-25D8-137F-D72FBF35288F}|MudBlazorAlunos\\MudBlazorAlunos.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\mudblazoralunos\\mudblazoralunos\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B4E9EF9-2FD4-25D8-137F-D72FBF35288F}|MudBlazorAlunos\\MudBlazorAlunos.csproj|solutionrelative:mudblazoralunos\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -64,14 +64,14 @@
               "RelativeDocumentMoniker": "MudBlazorAlunos\\Components\\Pages\\Alunos.razor",
               "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\MudBlazorAlunos\\MudBlazorAlunos\\Components\\Pages\\Alunos.razor",
               "RelativeToolTip": "MudBlazorAlunos\\Components\\Pages\\Alunos.razor",
-              "ViewState": "AgIAADAAAAAAAAAAAAAowHQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-04-24T19:28:26.108Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\MudBlazorAlunos\\MudBlazorAlunos\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "MudBlazorAlunos\\Components\\Pages\\Home.razor",
@@ -79,8 +79,7 @@
               "RelativeToolTip": "MudBlazorAlunos\\Components\\Pages\\Home.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-24T19:25:00.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T19:25:00.222Z"
             },
             {
               "$type": "Document",
@@ -92,12 +91,11 @@
               "RelativeToolTip": "MudBlazorAlunos\\Services\\AlunoService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T19:05:25.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T19:05:25.182Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "IAlunoService.cs",
               "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\MudBlazorAlunos\\MudBlazorAlunos\\Services\\IAlunoService.cs",
               "RelativeDocumentMoniker": "MudBlazorAlunos\\Services\\IAlunoService.cs",
@@ -105,12 +103,11 @@
               "RelativeToolTip": "MudBlazorAlunos\\Services\\IAlunoService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T19:04:05.831Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T19:04:05.831Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\MudBlazorAlunos\\MudBlazorAlunos\\appsettings.json",
               "RelativeDocumentMoniker": "MudBlazorAlunos\\appsettings.json",
@@ -118,8 +115,7 @@
               "RelativeToolTip": "MudBlazorAlunos\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-24T19:00:49.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T19:00:49.69Z"
             },
             {
               "$type": "Document",
@@ -131,12 +127,11 @@
               "RelativeToolTip": "MudBlazorAlunos\\Context\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T18:56:32.847Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T18:56:32.847Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "Aluno.cs",
               "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\MudBlazorAlunos\\MudBlazorAlunos\\Entities\\Aluno.cs",
               "RelativeDocumentMoniker": "MudBlazorAlunos\\Entities\\Aluno.cs",
@@ -144,12 +139,11 @@
               "RelativeToolTip": "MudBlazorAlunos\\Entities\\Aluno.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T18:48:26.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T18:48:26.688Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\MudBlazorAlunos\\MudBlazorAlunos\\Components\\App.razor",
               "RelativeDocumentMoniker": "MudBlazorAlunos\\Components\\App.razor",
@@ -157,12 +151,11 @@
               "RelativeToolTip": "MudBlazorAlunos\\Components\\App.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-24T18:38:43.167Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T18:38:43.167Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\MudBlazorAlunos\\MudBlazorAlunos\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "MudBlazorAlunos\\Components\\Layout\\NavMenu.razor",
@@ -170,12 +163,11 @@
               "RelativeToolTip": "MudBlazorAlunos\\Components\\Layout\\NavMenu.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-24T18:38:40.904Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T18:38:40.904Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\MudBlazorAlunos\\MudBlazorAlunos\\Program.cs",
               "RelativeDocumentMoniker": "MudBlazorAlunos\\Program.cs",
@@ -183,8 +175,7 @@
               "RelativeToolTip": "MudBlazorAlunos\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T18:38:06.04Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T18:38:06.04Z"
             },
             {
               "$type": "Document",
@@ -196,8 +187,7 @@
               "RelativeToolTip": "MudBlazorAlunos\\Components\\Layout\\MainLayout.razor",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-24T18:38:36.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T18:38:36.948Z"
             }
           ]
         }

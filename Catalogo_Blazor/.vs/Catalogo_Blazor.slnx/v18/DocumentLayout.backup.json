@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Catalogo_Blazor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2A7CE341-9E3D-4EC0-952D-91B9FCED8641}|Catalogo_Blazor.Client\\Catalogo_Blazor.Client.Client\\Catalogo_Blazor.Client.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\catalogo_blazor\\catalogo_blazor.client\\catalogo_blazor.client.client\\pages\\categoria\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A7CE341-9E3D-4EC0-952D-91B9FCED8641}|Catalogo_Blazor.Client\\Catalogo_Blazor.Client.Client\\Catalogo_Blazor.Client.csproj|solutionrelative:catalogo_blazor.client\\catalogo_blazor.client.client\\pages\\categoria\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A7CE341-9E3D-4EC0-952D-91B9FCED8641}|Catalogo_Blazor.Client\\Catalogo_Blazor.Client.Client\\Catalogo_Blazor.Client.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\catalogo_blazor\\catalogo_blazor.client\\catalogo_blazor.client.client\\pages\\categoria\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A7CE341-9E3D-4EC0-952D-91B9FCED8641}|Catalogo_Blazor.Client\\Catalogo_Blazor.Client.Client\\Catalogo_Blazor.Client.csproj|solutionrelative:catalogo_blazor.client\\catalogo_blazor.client.client\\pages\\categoria\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A7CE341-9E3D-4EC0-952D-91B9FCED8641}|Catalogo_Blazor.Client\\Catalogo_Blazor.Client.Client\\Catalogo_Blazor.Client.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\catalogo_blazor\\catalogo_blazor.client\\catalogo_blazor.client.client\\pages\\categoria\\categoriaform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A7CE341-9E3D-4EC0-952D-91B9FCED8641}|Catalogo_Blazor.Client\\Catalogo_Blazor.Client.Client\\Catalogo_Blazor.Client.csproj|solutionrelative:catalogo_blazor.client\\catalogo_blazor.client.client\\pages\\categoria\\categoriaform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5DD30DC-E669-4957-A8D8-4574C58EDC1B}|Catalogo_Blazor.Client\\Catalogo_Blazor.Client\\Catalogo_Blazor.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\catalogo_blazor\\catalogo_blazor.client\\catalogo_blazor.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5DD30DC-E669-4957-A8D8-4574C58EDC1B}|Catalogo_Blazor.Client\\Catalogo_Blazor.Client\\Catalogo_Blazor.csproj|solutionrelative:catalogo_blazor.client\\catalogo_blazor.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Edit.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Catalogo_Blazor\\Catalogo_Blazor.Client\\Catalogo_Blazor.Client.Client\\Pages\\Categoria\\Edit.razor",
+              "RelativeDocumentMoniker": "Catalogo_Blazor.Client\\Catalogo_Blazor.Client.Client\\Pages\\Categoria\\Edit.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Catalogo_Blazor\\Catalogo_Blazor.Client\\Catalogo_Blazor.Client.Client\\Pages\\Categoria\\Edit.razor*",
+              "RelativeToolTip": "Catalogo_Blazor.Client\\Catalogo_Blazor.Client.Client\\Pages\\Categoria\\Edit.razor*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-30T17:16:29.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Catalogo_Blazor\\Catalogo_Blazor.Client\\Catalogo_Blazor.Client\\Program.cs",
+              "RelativeDocumentMoniker": "Catalogo_Blazor.Client\\Catalogo_Blazor.Client\\Program.cs",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Catalogo_Blazor\\Catalogo_Blazor.Client\\Catalogo_Blazor.Client\\Program.cs",
+              "RelativeToolTip": "Catalogo_Blazor.Client\\Catalogo_Blazor.Client\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T17:08:12.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CategoriaForm.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Catalogo_Blazor\\Catalogo_Blazor.Client\\Catalogo_Blazor.Client.Client\\Pages\\Categoria\\CategoriaForm.razor",
+              "RelativeDocumentMoniker": "Catalogo_Blazor.Client\\Catalogo_Blazor.Client.Client\\Pages\\Categoria\\CategoriaForm.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Catalogo_Blazor\\Catalogo_Blazor.Client\\Catalogo_Blazor.Client.Client\\Pages\\Categoria\\CategoriaForm.razor",
+              "RelativeToolTip": "Catalogo_Blazor.Client\\Catalogo_Blazor.Client.Client\\Pages\\Categoria\\CategoriaForm.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-30T17:05:44.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Catalogo_Blazor\\Catalogo_Blazor.Client\\Catalogo_Blazor.Client.Client\\Pages\\Categoria\\Create.razor",
+              "RelativeDocumentMoniker": "Catalogo_Blazor.Client\\Catalogo_Blazor.Client.Client\\Pages\\Categoria\\Create.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Catalogo_Blazor\\Catalogo_Blazor.Client\\Catalogo_Blazor.Client.Client\\Pages\\Categoria\\Create.razor*",
+              "RelativeToolTip": "Catalogo_Blazor.Client\\Catalogo_Blazor.Client.Client\\Pages\\Categoria\\Create.razor*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-30T17:05:42.115Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

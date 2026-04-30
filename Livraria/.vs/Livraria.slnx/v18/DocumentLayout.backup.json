@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Livraria\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{00023B8F-7785-B320-FF06-68E4610A94FC}|Livraria.Blazor\\Livraria.Blazor.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\livraria\\livraria.blazor\\components\\pages\\livroscard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00023B8F-7785-B320-FF06-68E4610A94FC}|Livraria.Blazor\\Livraria.Blazor.csproj|solutionrelative:livraria.blazor\\components\\pages\\livroscard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00023B8F-7785-B320-FF06-68E4610A94FC}|Livraria.Blazor\\Livraria.Blazor.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\livraria\\livraria.blazor\\components\\pages\\dialogocomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00023B8F-7785-B320-FF06-68E4610A94FC}|Livraria.Blazor\\Livraria.Blazor.csproj|solutionrelative:livraria.blazor\\components\\pages\\dialogocomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AC54BBB8-FD7F-1D74-65C8-9B7044AAC204}|Livraria.Domain\\Livraria.Domain.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\livraria\\livraria.domain\\entities\\livro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC54BBB8-FD7F-1D74-65C8-9B7044AAC204}|Livraria.Domain\\Livraria.Domain.csproj|solutionrelative:livraria.domain\\entities\\livro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -49,16 +57,42 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "LivrosCard.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Livraria\\Livraria.Blazor\\Components\\Pages\\LivrosCard.razor",
+              "RelativeDocumentMoniker": "Livraria.Blazor\\Components\\Pages\\LivrosCard.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Livraria\\Livraria.Blazor\\Components\\Pages\\LivrosCard.razor",
+              "RelativeToolTip": "Livraria.Blazor\\Components\\Pages\\LivrosCard.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-31T12:19:18.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DialogoComponent.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Livraria\\Livraria.Blazor\\Components\\Pages\\DialogoComponent.razor",
+              "RelativeDocumentMoniker": "Livraria.Blazor\\Components\\Pages\\DialogoComponent.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Livraria\\Livraria.Blazor\\Components\\Pages\\DialogoComponent.razor",
+              "RelativeToolTip": "Livraria.Blazor\\Components\\Pages\\DialogoComponent.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-31T12:18:42.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Editora.cs",
               "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Livraria\\Livraria.Domain\\Enums\\Editora.cs",
               "RelativeDocumentMoniker": "Livraria.Domain\\Enums\\Editora.cs",
-              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Livraria\\Livraria.Domain\\Enums\\Editora.cs*",
-              "RelativeToolTip": "Livraria.Domain\\Enums\\Editora.cs*",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Livraria\\Livraria.Domain\\Enums\\Editora.cs",
+              "RelativeToolTip": "Livraria.Domain\\Enums\\Editora.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-31T12:13:04.966Z",
@@ -66,12 +100,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Categoria.cs",
               "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Livraria\\Livraria.Domain\\Enums\\Categoria.cs",
               "RelativeDocumentMoniker": "Livraria.Domain\\Enums\\Categoria.cs",
-              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Livraria\\Livraria.Domain\\Enums\\Categoria.cs*",
-              "RelativeToolTip": "Livraria.Domain\\Enums\\Categoria.cs*",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Livraria\\Livraria.Domain\\Enums\\Categoria.cs",
+              "RelativeToolTip": "Livraria.Domain\\Enums\\Categoria.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-31T12:09:33.789Z",
@@ -79,20 +113,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Livro.cs",
               "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Livraria\\Livraria.Domain\\Entities\\Livro.cs",
               "RelativeDocumentMoniker": "Livraria.Domain\\Entities\\Livro.cs",
-              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Livraria\\Livraria.Domain\\Entities\\Livro.cs*",
-              "RelativeToolTip": "Livraria.Domain\\Entities\\Livro.cs*",
-              "ViewState": "AgIAABYAAAAAAAAAAAA3wCEAAAApAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Livraria\\Livraria.Domain\\Entities\\Livro.cs",
+              "RelativeToolTip": "Livraria.Domain\\Entities\\Livro.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAA3wCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-30T20:53:08.771Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Livros.razor",
               "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Livraria\\Livraria.Blazor\\Components\\Pages\\Livros.razor",
               "RelativeDocumentMoniker": "Livraria.Blazor\\Components\\Pages\\Livros.razor",
@@ -105,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Livraria\\Livraria.Blazor\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "Livraria.Blazor\\Components\\Layout\\NavMenu.razor",
@@ -117,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "NovoLivro.razor",
               "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Livraria\\Livraria.Blazor\\Components\\Pages\\NovoLivro.razor",
               "RelativeDocumentMoniker": "Livraria.Blazor\\Components\\Pages\\NovoLivro.razor",
@@ -129,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "LivroForm.razor",
               "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Livraria\\Livraria.Blazor\\Components\\Pages\\LivroForm.razor",
               "RelativeDocumentMoniker": "Livraria.Blazor\\Components\\Pages\\LivroForm.razor",
@@ -142,7 +176,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Livraria\\Livraria.Blazor\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Livraria.Blazor\\Components\\Pages\\Home.razor",
@@ -154,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "EditaLivro.razor",
               "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Livraria\\Livraria.Blazor\\Components\\Pages\\EditaLivro.razor",
               "RelativeDocumentMoniker": "Livraria.Blazor\\Components\\Pages\\EditaLivro.razor",
@@ -166,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "EditaLivro.razor",
               "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\Downloads\\Blazor_Livraria\\Livraria\\Livraria.Blazor\\Components\\Pages\\EditaLivro.razor",
               "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Blazor_Livraria\\Livraria\\Livraria.Blazor\\Components\\Pages\\EditaLivro.razor",

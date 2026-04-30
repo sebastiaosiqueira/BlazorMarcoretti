@@ -67,7 +67,7 @@
               "RelativeDocumentMoniker": "Livraria.Blazor\\Components\\Pages\\LivrosCard.razor",
               "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Livraria\\Livraria.Blazor\\Components\\Pages\\LivrosCard.razor",
               "RelativeToolTip": "Livraria.Blazor\\Components\\Pages\\LivrosCard.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAmwBcAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-03-31T12:19:18.854Z",
               "EditorCaption": ""
@@ -82,8 +82,7 @@
               "RelativeToolTip": "Livraria.Blazor\\Components\\Pages\\DialogoComponent.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-31T12:18:42.265Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-31T12:18:42.265Z"
             },
             {
               "$type": "Document",
@@ -95,8 +94,7 @@
               "RelativeToolTip": "Livraria.Domain\\Enums\\Editora.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T12:13:04.966Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-31T12:13:04.966Z"
             },
             {
               "$type": "Document",
@@ -108,8 +106,7 @@
               "RelativeToolTip": "Livraria.Domain\\Enums\\Categoria.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T12:09:33.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-31T12:09:33.789Z"
             },
             {
               "$type": "Document",
@@ -121,8 +118,7 @@
               "RelativeToolTip": "Livraria.Domain\\Entities\\Livro.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAA3wCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T20:53:08.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-30T20:53:08.771Z"
             },
             {
               "$type": "Document",
@@ -134,8 +130,7 @@
               "RelativeToolTip": "Livraria.Blazor\\Components\\Pages\\Livros.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-30T20:39:17.586Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-30T20:39:17.586Z"
             },
             {
               "$type": "Document",
@@ -171,8 +166,7 @@
               "RelativeToolTip": "Livraria.Blazor\\Components\\Pages\\LivroForm.razor",
               "ViewState": "AgIAAAcAAAAAAAAAAAAIwEQAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-30T20:36:38.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-30T20:36:38.858Z"
             },
             {
               "$type": "Document",
