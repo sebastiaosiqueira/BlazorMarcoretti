@@ -1,0 +1,62 @@
+﻿@using W8lessLabs.Blazor.LocalFiles
+
+
+<div>
+    <label>@Label</label>
+    <div>
+        <button type="button" @onclick="SelecionarImagem">Selecionar Imagem</button>
+        <FileSelect @ref="imagemSelecaoArquivo" Accept=".jpg,.jpeg,.png" FilesSelected="ImagemArquivoSelecionado"></FileSelect>
+    </div>
+</div>
+<div>
+    @if (imagemBase64 != null)
+    {
+        <div>
+            <div style="margin:10px;">
+                <img src="data:image/jpeg;base64, @imagemBase64" style="width: 150px;" />
+            </div>
+        </div>
+    }
+    @if (ImagemRemota != null)
+    {
+        <div>
+            <div style="margin:10px;">
+                @*<img src="@ImagemRemota" style="width: 150px;" />*@
+                <img src="data:image/jpeg;base64, @ImagemRemota" style="width: 150px;" />
+            </div>
+        </div>
+    }
+</div>
+@code {
+
+    [Parameter] public string Label { get; set; } = "Imagem";
+    [Parameter] public string ImagemRemota { get; set; }
+    [Parameter] public EventCallback<string> ImagemSelecionada { get; set; }
+
+    private string imagemBase64;
+    private FileSelect imagemSelecaoArquivo;
+
+    private void SelecionarImagem()
+    {
+        imagemSelecaoArquivo.SelectFiles();
+    }
+
+    async Task ImagemArquivoSelecionado(SelectedFile[] arquivosSelecionados)
+    {
+        //seleciona um arquivo
+        var arquivoSelecionado = arquivosSelecionados.FirstOrDefault();
+        if (arquivoSelecionado != null)
+        {
+            // Corrigido: A biblioteca W8lessLabs usa GetFileBytesAsync diretamente do componente
+            var imagesBytes = await imagemSelecaoArquivo.GetFileBytesAsync(arquivoSelecionado.Name);
+
+            imagemBase64 = Convert.ToBase64String(imagesBytes);
+            await ImagemSelecionada.InvokeAsync(imagemBase64);
+
+            ImagemRemota = null;
+            StateHasChanged();
+        }
+        //trata o arquivo selecionado
+        
+    }
+}

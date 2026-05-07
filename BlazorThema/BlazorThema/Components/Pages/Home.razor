@@ -1,0 +1,117 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<MudContainer Class="mt-16 px-8" MaxWidth="MaxWidth.False">
+    <MudGrid>
+        <MudItem xs="12" sm="6" md="4">
+            <MudPaper Elevation="2" Class="pa-4" Style="height: 200px;">
+                
+                            <MudText Typo="Typo.h6">Total de Usuários</MudText>
+                       
+                       
+                       
+                        <MudText Typo="Typo.h1" Align="Align.Center">6</MudText>
+                 
+
+            </MudPaper>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudPaper Elevation="2" Class="pa-4" Style="height: 200px;">
+                <MudText Typo="Typo.h6">Quantidade Laborátórios</MudText>
+
+
+
+                <MudText Typo="Typo.h1" Align="Align.Center">6</MudText>
+            </MudPaper>
+        </MudItem>
+        <MudItem xs="12" sm="12" md="4">
+            <MudPaper Elevation="2" Class="pa-4" Style="height: 200px;">
+                <MudText Typo="Typo.h6">Quantidade de Reservas</MudText>
+
+
+
+                <MudText Typo="Typo.h1" Align="Align.Center">6</MudText>
+            </MudPaper>
+        </MudItem>
+        <MudItem xs="12" sm="6">
+            <MudGrid>
+                <MudItem xs="12">
+                   
+
+                        <MudPaper Elevation="2" Class="pa-4" Style="height: 100%" title="Reservas">
+                            <MudChart ChartType="ChartType.Pie" Class="mx-auto"
+                                      InputData="@data"
+                                      @bind-SelectedIndex="Index"
+                                      InputLabels="@labels"
+                                      Width="120px"
+                                      Height="120px"
+                                      ChartOptions="@_options" />
+
+                            <MudText Typo="Typo.h6" Class="mt-4">
+                                Usuarios
+                            </MudText>
+
+
+                        </MudPaper>
+                  
+                </MudItem>
+                <MudItem xs="12">
+                    <MudPaper Elevation="2" Class="pa-4" Style="height: 100%" title="Reservas">
+
+
+                            <MudChart ChartType="ChartType.Pie" Class="mx-auto"
+                                      InputData="@data"
+                                      @bind-SelectedIndex="Index"
+                                      InputLabels="@labels"
+                                      Width="120px"
+                                      Height="120px"
+                                      ChartOptions="@_options" />
+
+                            <MudText Typo="Typo.h6" Class="mt-4">
+                                Laboratorios
+                            </MudText>
+
+
+                       
+                    </MudPaper>
+                </MudItem>
+            </MudGrid>
+        </MudItem>
+        <MudItem xs="12" sm="6" >
+            <MudPaper Elevation="2" Class="pa-4" Style="height: 100%" title="Reservas" >
+                <MudChart ChartType="ChartType.Pie" Class="mx-auto"
+          InputData="@data" 
+          @bind-SelectedIndex="Index" 
+          InputLabels="@labels" 
+          Width="300px" 
+          Height="300px"
+          ChartOptions="@_options"/>
+
+<MudText Typo="Typo.h6" Class="mt-4">
+     Relatorio de Reservas
+</MudText>
+
+               
+            </MudPaper>
+        </MudItem>
+    
+ 
+  
+    </MudGrid>
+</MudContainer>
+
+@code {
+
+    private int Index = -1; // Registra qual fatia está selecionada
+
+    public double[] data = { 50, 30, 20 };
+    public string[] labels = { "Resolvidos", "Em Aberto", "Cancelados" };
+
+    private ChartOptions _options = new ChartOptions()
+    {
+        ShowLegend =true,
+        // Define uma paleta de cores customizada
+        ChartPalette = new string[] { "#18BC9C", "#3498db", "#e74c3c" }
+    };
+}

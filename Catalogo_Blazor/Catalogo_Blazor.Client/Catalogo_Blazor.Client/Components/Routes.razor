@@ -1,11 +1,14 @@
-﻿<Router AppAssembly="typeof(Catalogo_Blazor.Client._Imports).Assembly" AdditionalAssemblies="new[] { typeof(Catalogo_Blazor.Client._Imports).Assembly }">
+﻿@using Microsoft.AspNetCore.Components.Authorization
+<Router AppAssembly="typeof(Catalogo_Blazor.Client._Imports).Assembly" AdditionalAssemblies="new[] { typeof(Catalogo_Blazor.Client._Imports).Assembly }">
     <Found Context="routeData">
-        <RouteView RouteData="routeData" DefaultLayout="typeof(Layout.MainLayout)" />
+        <AuthorizeRouteView RouteView RouteData="routeData" DefaultLayout="typeof(Layout.MainLayout)" />
         <FocusOnNavigate RouteData="routeData" Selector="h1" />
     </Found>
     <NotFound>
+        <CascadingAuthenticationState>
         <LayoutView Layout="typeof(Layout.MainLayout)">
             <p role="alert">Desculpe, não há nada neste endereço.</p>
         </LayoutView>
+        </CascadingAuthenticationState>
     </NotFound>
 </Router>

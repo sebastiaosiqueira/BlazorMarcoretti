@@ -1,0 +1,2 @@
+wwwroot\favicon.ico
+C:\Users\3346.ADM-UCDB\source\repos\BlazorThema\BlazorThema\wwwroot\favicon.ico

@@ -3,3 +3,12 @@
 <h1>Catálogo de Produtos</h1>
 <hr />
 <h2>Macoratti.net</h2>
+
+<AuthorizeView>
+    <Authorized>
+        <h2>, @context.User.Identity.Name!</h2>
+    </Authorized>
+    <NotAuthorized>
+        <h2> Nao autorizado</h2>
+    </NotAuthorized>
+</AuthorizeView>

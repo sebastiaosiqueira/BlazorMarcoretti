@@ -19,10 +19,22 @@ namespace Catalogo_Blazor.Controllers
             this.context = context;
         }
 
+        [HttpGet("todas")]
+        public async Task<ActionResult<List<Categoria>>> Get()
+        {
+            return await context.Categorias.AsNoTracking().ToListAsync();
+        }
+
+    
+
         [HttpGet]
-        public async Task<ActionResult<List<Categoria>>> Get([FromQuery] Paginacao paginacao)
+        public async Task<ActionResult<List<Categoria>>> Get([FromQuery] Paginacao paginacao, [FromQuery] string nome)
         {
             var queryable = context.Categorias.AsQueryable();
+            if (!string.IsNullOrEmpty(nome))
+            {
+                queryable = queryable.Where(x => x.Nome.Contains(nome));
+            }
             await HttpContext.InserirParametrosEmPageResponse(queryable, paginacao.QuantidadePorPagina);
             return await queryable.Paginar(paginacao).ToListAsync();
         }

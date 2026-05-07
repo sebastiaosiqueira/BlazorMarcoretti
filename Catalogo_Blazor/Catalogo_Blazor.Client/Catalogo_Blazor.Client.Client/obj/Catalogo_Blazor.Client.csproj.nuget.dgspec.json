@@ -55,6 +55,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[9.0.15, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[9.0.14, )"
@@ -70,6 +74,10 @@
               "target": "Package",
               "version": "[10.0.3, )",
               "autoReferenced": true
+            },
+            "W8lessLabs.Blazor.LocalFiles": {
+              "target": "Package",
+              "version": "[3.0.0, )"
             }
           },
           "imports": [

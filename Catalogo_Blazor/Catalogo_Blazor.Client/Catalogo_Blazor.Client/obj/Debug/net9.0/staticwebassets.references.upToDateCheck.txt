@@ -35,3 +35,6 @@ C:\Users\3346.ADM-UCDB\source\repos\Catalogo_Blazor\Catalogo_Blazor.Client\Catal
 C:\Users\3346.ADM-UCDB\source\repos\Catalogo_Blazor\Catalogo_Blazor.Client\Catalogo_Blazor.Client.Client\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\3346.ADM-UCDB\source\repos\Catalogo_Blazor\Catalogo_Blazor.Client\Catalogo_Blazor.Client.Client\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\3346.ADM-UCDB\source\repos\Catalogo_Blazor\Catalogo_Blazor.Client\Catalogo_Blazor.Client.Client\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\3346.ADM-UCDB\source\repos\Catalogo_Blazor\Catalogo_Blazor.Client\Catalogo_Blazor.Client.Client\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\3346.ADM-UCDB\source\repos\Catalogo_Blazor\Catalogo_Blazor.Client\Catalogo_Blazor.Client.Client\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\3346.ADM-UCDB\source\repos\Catalogo_Blazor\Catalogo_Blazor.Client\Catalogo_Blazor.Client.Client\obj\Debug\net9.0\staticwebassets.build.json

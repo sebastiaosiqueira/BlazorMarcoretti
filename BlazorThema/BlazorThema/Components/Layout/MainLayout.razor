@@ -1,0 +1,47 @@
+﻿@inherits LayoutComponentBase
+@using BlazorThema.Components.Thema
+
+<MudThemeProvider Theme="Flaty.Flatlytheme" @bind-IsDarkMode="@_isDarkMode" />
+
+<MudSnackbarProvider />
+
+<MudLayout>
+    <MudAppBar Elevation="1">
+        @* 1. BOTÃO DO MENU: Adicionado o OnClick para disparar o DrawerToggle *@
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@DrawerToggle" />
+
+        <MudText Typo="Typo.h5" Class="ml-3">Application</MudText>
+
+        @* 2. SPACER: Colocado aqui para empurrar os próximos itens para a direita *@
+        <MudSpacer />
+
+        @* 3. BOTÕES NO FINAL (DIREITA) *@
+        <MudToggleIconButton @bind-Toggled="_isDarkMode"
+                             Icon="@Icons.Material.Filled.LightMode"
+                             Color="Color.Inherit"
+                             ToggledIcon="@Icons.Material.Filled.DarkMode"
+                             ToggledColor="Color.Inherit" />
+
+        <MudIconButton Icon="@Icons.Custom.Brands.GitHub" Color="Color.Inherit" Edge="Edge.End" />
+    </MudAppBar>
+
+    @* 4. DRAWER: Vinculado à variável _drawerOpen *@
+    <MudDrawer id="nav-drawer" @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Docked" Elevation="2">
+        <NavMenu />
+    </MudDrawer>
+
+    <MudMainContent Class="pt-16 pa-4">
+        @Body
+    </MudMainContent>
+</MudLayout>
+
+@code {
+    private bool _drawerOpen = true;
+    private bool _isDarkMode = false;
+
+    // O método que faz a mágica de abrir/fechar
+    private void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+}
