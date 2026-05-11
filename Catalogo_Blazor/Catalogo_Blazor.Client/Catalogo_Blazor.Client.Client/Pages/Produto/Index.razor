@@ -3,6 +3,7 @@
 @inject HttpClient  http
 @inject NavigationManager navigation
 @using System.Text.Json
+@attribute [Authorize]
 
 
 <AuthorizeView Roles="root">

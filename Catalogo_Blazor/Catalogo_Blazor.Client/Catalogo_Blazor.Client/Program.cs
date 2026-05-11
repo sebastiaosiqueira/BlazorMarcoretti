@@ -1,7 +1,11 @@
 using Catalogo_Blazor.Client.Pages;
 using Catalogo_Blazor.Components;
 using Catalogo_Blazor.Context;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +24,23 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 options.UseSqlServer(connection));
 
 builder.Services.AddControllers();
+builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+    .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<AppDbContext>()
+    .AddDefaultTokenProviders();
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = false,
+        ValidateAudience = false,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("jwt:key")),
+        ClockSkew = TimeSpan.Zero
+
+    });
 
 var app = builder.Build();
 
@@ -36,6 +57,8 @@ else
 }
 
 app.UseHttpsRedirection();
+app.UseAuthentication();
+app.UseAuthorization();
 
 
 app.UseBlazorFrameworkFiles(); // ESSENCIAL: Permite que o servidor sirva os arquivos do WASM

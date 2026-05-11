@@ -1,6 +1,8 @@
 ﻿@page "/categoria"
 @inject HttpClient http
 
+<autorizeview>
+    <authorized>
 
 <div>
     <a class="btn btn-success" href="categoria/create">Criar Categoria</a>
@@ -44,6 +46,8 @@ else{
     </tbody>
 </table>
 }
+</authorized>
+</autorizeview>
 
 <Confirma @ref="confirma" onCancela="@CancelaConfirma" onConfirma="@DeletaConfirma">
     <div>Deseja realmente exclir este item</div>

@@ -10,7 +10,8 @@ namespace Catalogo_Blazor.Client.Auth
             var usuario = new ClaimsIdentity(new List<Claim>(){
                 new Claim("Chave","Valor"),
                 new Claim(ClaimTypes.Name,"Jose Carlos Macoratti"),
-                new Claim(ClaimTypes.Role, "Admin")}, "demo");
+                new Claim(ClaimTypes.Role, "Admin")}
+            , "demo");
 
             return await Task.FromResult(new AuthenticationState(new ClaimsPrincipal(usuario)));
 

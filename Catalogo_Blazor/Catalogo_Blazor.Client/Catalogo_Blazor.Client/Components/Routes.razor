@@ -1,7 +1,10 @@
 ﻿@using Microsoft.AspNetCore.Components.Authorization
+<CascadingAuthenticationState>
 <Router AppAssembly="typeof(Catalogo_Blazor.Client._Imports).Assembly" AdditionalAssemblies="new[] { typeof(Catalogo_Blazor.Client._Imports).Assembly }">
     <Found Context="routeData">
         <AuthorizeRouteView RouteView RouteData="routeData" DefaultLayout="typeof(Layout.MainLayout)" />
+        <Authorizing><h1> Autorizado  o usuário....</h1></Authorizing>
+        <NotAuthorized><h1> Usuário não autorizado</h1></NotAuthorized>
         <FocusOnNavigate RouteData="routeData" Selector="h1" />
     </Found>
     <NotFound>
@@ -12,3 +15,4 @@
         </CascadingAuthenticationState>
     </NotFound>
 </Router>
+</CascadingAuthenticationState>

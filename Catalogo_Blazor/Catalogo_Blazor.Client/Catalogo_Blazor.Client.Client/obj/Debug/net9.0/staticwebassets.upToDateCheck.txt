@@ -1,0 +1,6 @@
+C:\Users\3346.ADM-UCDB\source\repos\Catalogo_Blazor\Catalogo_Blazor.Client\Catalogo_Blazor.Client.Client\wwwroot\Utils.js
+C:\Users\3346.ADM-UCDB\source\repos\Catalogo_Blazor\Catalogo_Blazor.Client\Catalogo_Blazor.Client.Client\wwwroot\appsettings.json
+C:\Users\3346.ADM-UCDB\source\repos\Catalogo_Blazor\Catalogo_Blazor.Client\Catalogo_Blazor.Client.Client\wwwroot\appsettings.Development.json
+wwwroot\Utils.js
+wwwroot\appsettings.Development.json
+wwwroot\appsettings.json

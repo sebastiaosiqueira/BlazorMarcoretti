@@ -2,6 +2,8 @@
 using Catalogo_Blazor.Shared.Models;
 using Catalogo_Blazor.Shared.Recursos;
 using Catalogo_Blazor.Utils;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +12,7 @@ namespace Catalogo_Blazor.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
     public class CategoriaController : ControllerBase
     {
         private readonly AppDbContext context;
