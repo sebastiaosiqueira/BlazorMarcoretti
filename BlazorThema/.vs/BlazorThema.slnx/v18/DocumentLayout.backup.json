@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorThema\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FFCD43BA-A093-247E-F0EB-DD53AA1EF54F}|BlazorThema\\BlazorThema.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorthema\\blazorthema\\components\\thema\\flaty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFCD43BA-A093-247E-F0EB-DD53AA1EF54F}|BlazorThema\\BlazorThema.csproj|solutionrelative:blazorthema\\components\\thema\\flaty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFCD43BA-A093-247E-F0EB-DD53AA1EF54F}|BlazorThema\\BlazorThema.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorthema\\blazorthema\\components\\pages\\formpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFCD43BA-A093-247E-F0EB-DD53AA1EF54F}|BlazorThema\\BlazorThema.csproj|solutionrelative:blazorthema\\components\\pages\\formpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FFCD43BA-A093-247E-F0EB-DD53AA1EF54F}|BlazorThema\\BlazorThema.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorthema\\blazorthema\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FFCD43BA-A093-247E-F0EB-DD53AA1EF54F}|BlazorThema\\BlazorThema.csproj|solutionrelative:blazorthema\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -19,15 +27,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Flaty.cs",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorThema\\BlazorThema\\Components\\Thema\\Flaty.cs",
+              "RelativeDocumentMoniker": "BlazorThema\\Components\\Thema\\Flaty.cs",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorThema\\BlazorThema\\Components\\Thema\\Flaty.cs",
+              "RelativeToolTip": "BlazorThema\\Components\\Thema\\Flaty.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T20:44:56.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormPage.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorThema\\BlazorThema\\Components\\Pages\\FormPage.razor",
+              "RelativeDocumentMoniker": "BlazorThema\\Components\\Pages\\FormPage.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorThema\\BlazorThema\\Components\\Pages\\FormPage.razor",
+              "RelativeToolTip": "BlazorThema\\Components\\Pages\\FormPage.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-11T20:20:29.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorThema\\BlazorThema\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "BlazorThema\\Components\\Pages\\Home.razor",
               "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorThema\\BlazorThema\\Components\\Pages\\Home.razor",
               "RelativeToolTip": "BlazorThema\\Components\\Pages\\Home.razor",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAADQAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-06T19:00:54.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-06T19:00:54.396Z"
             }
           ]
         }

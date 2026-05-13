@@ -1,0 +1,95 @@
+﻿@page "/newarticle"
+@inject ISnackbar Snackbar
+@using Microsoft.Data.SqlClient
+
+@inject Microsoft.Extensions.Configuration.IConfiguration Configuration
+@rendermode InteractiveServer
+<MudGrid Style="text-align:center; padding:20px; margin:10px;">
+<MudItem md="8"  >
+    <MudPaper Style="padding:10px">
+    <MudTextField @bind-Value="@NewArticle.Title" Label="Title" HelperText="Title" Variant="@Variant.Filled" Placeholder="Insert your title" T="string"></MudTextField>
+        <MudTextField @bind-Value="@NewArticle.SubTitle" Label="Title" HelperText="SubTitle" Variant="@Variant.Filled" Placeholder="Insert your subtitle" T="string"></MudTextField>
+        <MudTextField @bind-Value="@NewArticle.ArticleBody" Label="Title" HelperText="Article body" Variant="@Variant.Filled" Placeholder="Insert your body" T="string" Lines="15"></MudTextField>
+        <MudButton Size="Size.Medium" Variant="Variant.Filled" Color="@Color.Primary" OnClick="@Submit">Submit</MudButton>
+        <p style="color:#ff0000">@error</p>
+         
+    </MudPaper>
+</MudItem>
+<MudItem md="4" Style="margin-bottom:20px">
+    <MudCard>
+        <MudCardContent>
+            <MudText>Category</MudText>
+                <MudSelect @bind-Value="@NewArticle.Category" T="int" @bind-Value="selectedSector" Label="Selecione um Setor">
+                <MudSelectItem Value="@(1)">Technology</MudSelectItem>
+                  <MudSelectItem Value="@(2)">Arts</MudSelectItem>
+                    <MudSelectItem Value="@(3)">Energy</MudSelectItem>
+            </MudSelect>
+        </MudCardContent>
+    </MudCard>
+    <MudCard>
+        <MudCardContent>
+            <MudText>Authors</MudText>
+            <p>
+                <MudTextField @bind-Value="authorinput" T="string"></MudTextField>
+                <MudIconButton OnClick="@(() => { NewArticle.Authors.Add(authorinput); StateHasChanged(); })" Icon="@Icons.Material.Filled.Add"></MudIconButton>
+            </p>
+
+            @foreach (var item in NewArticle.Authors)
+            {
+                var current = item;
+                <MudChip T="string" Color="Color.Default" Closeable="true" OnClose="@((MudChip<string> _) => { NewArticle.Authors.Remove(current); StateHasChanged(); })">@current</MudChip>
+            }
+             
+        </MudCardContent>
+    </MudCard>
+</MudItem>
+</MudGrid>
+
+@code{
+    string authorinput;
+    private int selectedSector;
+
+    Services.ArticleManager.newArticle NewArticle = new Services.ArticleManager.newArticle(){Authors = new List<string>(),Category=1};
+
+    string error;
+
+    async Task Submit()
+    {
+
+        var connString = Configuration.GetConnectionString("DefaultConnection") ?? Configuration["conn"];
+        await using var connection = new SqlConnection(connString);
+        await connection.OpenAsync();
+        // TODO: execute commands (use parameterized queries or an ORM)
+        error = null;
+        try
+        {
+            Services.ArticleManager articleManager = new Services.ArticleManager(connection);
+            bool result = await articleManager.InsertNewArticle(NewArticle);
+            if(result)
+            {
+                NewArticle = new Services.ArticleManager.newArticle() { Authors = new List<string>(), Category = 1 };
+                Snackbar.Add("Article submitted successfully!", Severity.Success);
+                StateHasChanged();
+            }
+            else
+            {
+                error = $"Unable to submit{Severity.Error}";
+                Snackbar.Add("Unable to submit article.", Severity.Error, config=> { config.OnClick = (Barrier) => { error = null; StateHasChanged(); return Task.CompletedTask; };config.ShowCloseIcon = false; });
+            }
+        }
+        catch (Exception ex)
+        {
+            await connection.CloseAsync();
+            // Isso vai mostrar o erro detalhado na janela "Output" (Saída) do Visual Studio
+            Console.WriteLine($"Erro detalhado: {ex.Message}");
+            if (ex.InnerException != null)
+            {
+                Console.WriteLine($"Causa interna: {ex.InnerException.Message}");
+            }
+
+            error = "Unable to submit";
+            Snackbar.Add($"Erro: {ex.Message}", Severity.Error); // Mostra o erro real no alerta
+        }
+    }
+}
+

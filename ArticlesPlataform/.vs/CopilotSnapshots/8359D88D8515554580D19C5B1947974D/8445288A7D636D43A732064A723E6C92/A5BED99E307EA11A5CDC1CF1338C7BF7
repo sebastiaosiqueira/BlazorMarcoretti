@@ -1,0 +1,13 @@
+﻿
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=(localdb)\\mssqllocaldb;AttachDbFilename=C:\\Users\\3346.ADM-UCDB\\source\\repos\\ArticlesPlataform\\ArticlesPlataform\\Data\\Database1.mdf;Database=MeuProjetoArtigos;Trusted_Connection=True;"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*"
+}

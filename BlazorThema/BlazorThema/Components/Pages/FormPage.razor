@@ -1,0 +1,54 @@
+﻿@page "/formPage"
+@using System.ComponentModel.DataAnnotations
+
+<div style="width:350px">
+    @* Usamos o objeto 'formModel' que instanciamos lá embaixo *@
+    <EditForm Model="@formModel" OnValidSubmit="@Submit">
+        <DataAnnotationsValidator />
+
+        <p>
+            <MudTextField T="string"
+                          Label="Telefone"
+                          @bind-Value="formModel.Phone"
+                          For="@(() => formModel.Phone)" />
+        </p>
+
+        <p>
+            <MudTextField T="string"
+                          Label="E-mail"
+                          @bind-Value="formModel.Email"
+                          For="@(() => formModel.Email)" />
+        </p>
+
+        <p>
+            <MudButton ButtonType="ButtonType.Submit"
+                       Variant="Variant.Filled"
+                       Color="Color.Primary">Submit</MudButton>
+        </p>
+    </EditForm>
+</div>
+
+@code {
+    // 1. Você PRECISA criar uma instância da classe para o formulário usar
+    private InputFormData formModel = new InputFormData();
+
+    public class InputFormData
+    {
+        [Required(ErrorMessage = "O telefone é obrigatório")]
+        [Phone(ErrorMessage = "O formato está errado")]
+        public string? Phone { get; set; }
+
+        [Required(ErrorMessage = "O e-mail é obrigatório")]
+        [EmailAddress(ErrorMessage = "E-mail inválido")]
+        public string? Email { get; set; }
+    }
+
+    private void Submit(EditContext context)
+    {
+        // Agora o 'context.Model' será o nosso 'formModel'
+        var dados = (InputFormData)context.Model;
+        Console.WriteLine($"Telefone: {dados.Phone}");
+
+        StateHasChanged();
+    }
+}

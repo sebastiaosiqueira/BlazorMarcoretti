@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="ArticlesPlataform/ArticlesPlataform.csproj" />
+  <Project Path="Database1/Database1.sqlproj" Id="cc00545e-63ad-492c-9366-542ee00468f2">
+    <Build />
+    <Deploy />
+  </Project>
+</Solution>

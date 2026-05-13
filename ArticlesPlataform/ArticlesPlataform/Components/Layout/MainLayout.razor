@@ -1,0 +1,78 @@
+﻿@inherits LayoutComponentBase
+@implements IDisposable
+@using ArticlesPlataform.Components.Theme
+@inject ArticlesPlataform.Services.IThemeService ThemeService
+
+<MudThemeProvider Theme="@_theme" IsDarkMode="_isDarkMode" />
+
+<MudDialogProvider />
+<MudSnackbarProvider />
+<MudLayout>
+    <MudAppBar Elevation="1">
+        <MudText Typo="Typo.h5" Class="ml-3">Blog Site</MudText>
+        <MudSpacer />
+        <MudIconButton Icon="@DarkLightModeButtonIcon" Color="Color.Inherit" OnClick="@DarkModeToggle" />
+    </MudAppBar>
+    <MudDrawer id="nav-drawer" @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
+        <NavMenu />
+    </MudDrawer>
+    <MudMainContent Class="pt-16 pa-4">
+        @Body
+    </MudMainContent>
+</MudLayout>
+
+
+<div id="blazor-error-ui" data-nosnippet>
+    An unhandled error has occurred.
+    <a href="." class="reload">Reload</a>
+    <span class="dismiss">🗙</span>
+</div>
+
+@code {
+    private bool _drawerOpen = true;
+    private bool _isDarkMode = false;
+    private MudTheme? _theme = null;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        // Initialize from theme service and subscribe to changes
+        _theme = ThemeService.CurrentTheme;
+        _isDarkMode = ThemeService.IsDarkMode;
+        ThemeService.OnThemeChanged += OnThemeChangedHandler;
+    }
+
+    private void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+
+    private void DarkModeToggle()
+    {
+        // Use the theme service to toggle mode so all components get notified
+        ThemeService.ToggleDarkMode();
+    }
+
+    private void OnThemeChangedHandler()
+    {
+        _isDarkMode = ThemeService.IsDarkMode;
+        _theme = ThemeService.CurrentTheme;
+        InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        ThemeService.OnThemeChanged -= OnThemeChangedHandler;
+    }
+
+    
+
+    public string DarkLightModeButtonIcon => _isDarkMode switch
+    {
+        true => Icons.Material.Rounded.AutoMode,
+        false => Icons.Material.Outlined.DarkMode,
+    };
+}
+
+

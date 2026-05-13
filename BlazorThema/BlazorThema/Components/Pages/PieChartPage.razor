@@ -1,0 +1,28 @@
+﻿@page "/piechartpage"
+<br />
+<div class="d-flex justify-center">
+    <MudChart ChartType="ChartType.Pie"
+              InputData="@piedata"
+              InputLabels="@pielabels"
+              Width="300px"
+              Height="300px"
+              SelectedIndex="newindex"
+              SelectedIndexChanged="@(args => NewIndex(args))" />
+    <MudText Typo="Typo.h6">Índice selecionado: @newindex</MudText>
+</div>
+
+
+
+@code {
+    int newindex;
+
+    double[] piedata = { 5.5, 8.5, 8.3 };
+    string[] pielabels = { "label1", "label2", "label3" };
+
+    private async Task NewIndex(int index)
+    {
+        newindex = index;
+        // Se precisar de alguma lógica extra (ex: buscar dados no banco), faça aqui.
+        await Task.CompletedTask;
+    }
+}

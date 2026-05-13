@@ -1,0 +1,11 @@
+﻿{
+  {
+    "DefaultConnection": "Server=.;Database=MinhaDb;User Id=sa;Password=Senha;",
+    "Logging": {
+      "LogLevel": {
+        "Default": "Information",
+        "Microsoft.AspNetCore": "Warning"
+      }
+    },
+    "AllowedHosts": "*"
+  }

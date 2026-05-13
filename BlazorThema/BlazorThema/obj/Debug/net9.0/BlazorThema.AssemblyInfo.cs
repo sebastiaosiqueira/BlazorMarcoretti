@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlazorThema")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+883527a4ec10ceca561a2270409c3527a218f75c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+697f1032df60e0c41d1f6f77891072b038a9bd7d")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlazorThema")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlazorThema")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

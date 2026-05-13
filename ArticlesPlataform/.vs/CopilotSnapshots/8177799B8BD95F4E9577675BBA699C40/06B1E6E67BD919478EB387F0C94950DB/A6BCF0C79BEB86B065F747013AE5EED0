@@ -1,0 +1,82 @@
+﻿@page "/newarticle"
+@using Microsoft.Data.SqlClient
+
+@inject Microsoft.Extensions.Configuration.IConfiguration Configuration
+@rendermode InteractiveServer
+<MudGrid Style="text-align:center; padding:20px; margin:10px;">
+<MudItem md="8"  >
+    <MudPaper Style="padding:10px">
+    <MudTextField Label="Title" HelperText="Title" Variant="@Variant.Filled" Placeholder="Insert your title" T="string"></MudTextField>
+        <MudTextField Label="Title" HelperText="SubTitle" Variant="@Variant.Filled" Placeholder="Insert your subtitle" T="string"></MudTextField>
+        <MudTextField Label="Title" HelperText="Article body" Variant="@Variant.Filled" Placeholder="Insert your body" T="string" Lines="15"></MudTextField>
+        <MudButton Size="Size.Medium" Variant="Variant.Filled" Color="@Color.Primary" OnClick="@Submit">Submit</MudButton>
+         
+    </MudPaper>
+</MudItem>
+<MudItem md="4" Style="margin-bottom:20px">
+    <MudCard>
+        <MudCardContent>
+            <MudText>Category</MudText>
+                <MudSelect T="int" @bind-Value="selectedSector" Label="Selecione um Setor">
+                <MudSelectItem Value="@(1)">Technology</MudSelectItem>
+                  <MudSelectItem Value="@(2)">Arts</MudSelectItem>
+                    <MudSelectItem Value="@(3)">Energy</MudSelectItem>
+            </MudSelect>
+        </MudCardContent>
+    </MudCard>
+    <MudCard>
+        <MudCardContent>
+            <MudText>Authors</MudText>
+            <p>
+                <MudTextField @bind-Value="authorinput" T="string"></MudTextField>
+                <MudIconButton OnClick="@(() => { NewArticle.Authors.Add(authorinput); StateHasChanged(); })" Icon="@Icons.Material.Filled.Add"></MudIconButton>
+            </p>
+
+            @foreach (var item in NewArticle.Authors)
+            {
+                var current = item;
+                <MudChip T="string" Color="Color.Default" Closable="true" OnClose="@((MudChip<string> _) => { NewArticle.Authors.Remove(current); StateHasChanged(); })">@current</MudChip>
+            }
+             
+        </MudCardContent>
+    </MudCard>
+</MudItem>
+</MudGrid>
+
+@code{
+    string authorinput = string.Empty;
+    private int selectedSector;
+
+    Services.ArticleManager.newArticle NewArticle = new Services.ArticleManager.newArticle(){Authors = new List<string>(),Category=1};
+
+    string error = string.Empty;
+
+    async Task Submit()
+    {
+
+        var connString = Configuration.GetConnectionString("DefaultConnection") ?? Configuration["conn"];
+            await using var connection = new SqlConnection(connString);
+        await connection.OpenAsync();
+        // TODO: execute commands (use parameterized queries or an ORM)
+            error = string.Empty;
+        try
+        {
+            Services.ArticleManager articleManager = new Services.ArticleManager(connection);
+            bool result = await articleManager.InsertNewArticle(NewArticle);
+            if(result)
+            {
+                NewArticle = new Services.ArticleManager.newArticle() { Authors = new List<string>(), Category = 1 };
+                StateHasChanged();
+            }
+            else
+            {
+                error = "Unable to submit";
+            }
+        }
+        catch (Exception ex)
+        {
+            error = ex.Message;
+        }
+    }
+}
+

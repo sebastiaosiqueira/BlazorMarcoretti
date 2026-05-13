@@ -45,8 +45,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/3346.ADM-UCDB/source/repos/BlazorThema/BlazorThema/Components/Pages/FormPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGb3JtUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/3346.ADM-UCDB/source/repos/BlazorThema/BlazorThema/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/3346.ADM-UCDB/source/repos/BlazorThema/BlazorThema/Components/Pages/PieChartPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQaWVDaGFydFBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/3346.ADM-UCDB/source/repos/BlazorThema/BlazorThema/Components/Pages/Weather.razor]
