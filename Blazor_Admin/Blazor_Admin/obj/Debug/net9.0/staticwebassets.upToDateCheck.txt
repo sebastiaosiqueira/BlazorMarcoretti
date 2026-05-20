@@ -1,0 +1,7 @@
+wwwroot\favicon.ico
+wwwroot\images\basicloader.gif
+wwwroot\images\naoautorizado1.jpg
+wwwroot\images\notfound.jpg
+wwwroot\images\roles.png
+wwwroot\images\roleuser.jpg
+C:\Users\3346.ADM-UCDB\source\repos\Blazor_Admin\Blazor_Admin\wwwroot\favicon.ico

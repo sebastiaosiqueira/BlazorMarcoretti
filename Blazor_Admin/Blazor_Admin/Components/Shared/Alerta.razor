@@ -1,0 +1,15 @@
+﻿@namespace Blazor_Admin.Components.Shared
+@if (Exibir)
+{
+    <MudAlert Severity="Severity.Warning" Variant="Variant.Filled" Elevation="2" Class="my-4">
+        @ChildContent
+    </MudAlert>
+}
+
+@code{
+    [Parameter]
+    public bool Exibir { get; set; }
+
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+}

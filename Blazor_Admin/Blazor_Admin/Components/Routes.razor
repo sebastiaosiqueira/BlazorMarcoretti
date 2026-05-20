@@ -1,0 +1,26 @@
+﻿@using Blazor_Admin.Components
+@using Blazor_Admin.Components.Account.Shared
+@using Blazor_Admin.Components.Account.Pages
+@using Microsoft.AspNetCore.Components.Authorization
+@using System.Reflection
+@using System.Linq
+
+<CascadingAuthenticationState>
+    <Router AppAssembly="typeof(App).Assembly">
+        <Found Context="routeData">
+            <AuthorizeRouteView RouteData="routeData" DefaultLayout="typeof(Layout.MainLayout)">
+                <NotAuthorized>
+                    <RedirectToLogin />
+                </NotAuthorized>
+            </AuthorizeRouteView>
+            <FocusOnNavigate RouteData="routeData" Selector="h1" />
+        </Found>
+        <NotFound>
+            <PageTitle>Não Encontrado</PageTitle>
+            <LayoutView Layout="@typeof(Layout.MainLayout)">
+                <MudAlert Severity="Severity.Error">Ops! Essa página não existe ou não foi carregada corretamente.</MudAlert>
+            </LayoutView>
+        </NotFound>
+    </Router>
+</CascadingAuthenticationState>
+

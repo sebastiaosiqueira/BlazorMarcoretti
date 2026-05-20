@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Blazor_Admin\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6B8160E9-F62D-2D22-A57E-D55E8BCA9700}|Blazor_Admin\\Blazor_Admin.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazor_admin\\blazor_admin\\components\\pages\\admin\\users\\addroleuser.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B8160E9-F62D-2D22-A57E-D55E8BCA9700}|Blazor_Admin\\Blazor_Admin.csproj|solutionrelative:blazor_admin\\components\\pages\\admin\\users\\addroleuser.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B8160E9-F62D-2D22-A57E-D55E8BCA9700}|Blazor_Admin\\Blazor_Admin.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazor_admin\\blazor_admin\\data\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B8160E9-F62D-2D22-A57E-D55E8BCA9700}|Blazor_Admin\\Blazor_Admin.csproj|solutionrelative:blazor_admin\\data\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B8160E9-F62D-2D22-A57E-D55E8BCA9700}|Blazor_Admin\\Blazor_Admin.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazor_admin\\blazor_admin\\components\\pages\\admin\\users\\users.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B8160E9-F62D-2D22-A57E-D55E8BCA9700}|Blazor_Admin\\Blazor_Admin.csproj|solutionrelative:blazor_admin\\components\\pages\\admin\\users\\users.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Users.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Blazor_Admin\\Blazor_Admin\\Components\\Pages\\Admin\\Users\\Users.razor",
+              "RelativeDocumentMoniker": "Blazor_Admin\\Components\\Pages\\Admin\\Users\\Users.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Blazor_Admin\\Blazor_Admin\\Components\\Pages\\Admin\\Users\\Users.razor",
+              "RelativeToolTip": "Blazor_Admin\\Components\\Pages\\Admin\\Users\\Users.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-19T19:53:59.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RoleService.cs",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Blazor_Admin\\Blazor_Admin\\Data\\Services\\RoleService.cs",
+              "RelativeDocumentMoniker": "Blazor_Admin\\Data\\Services\\RoleService.cs",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Blazor_Admin\\Blazor_Admin\\Data\\Services\\RoleService.cs",
+              "RelativeToolTip": "Blazor_Admin\\Data\\Services\\RoleService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T19:52:39.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddRoleUser.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Blazor_Admin\\Blazor_Admin\\Components\\Pages\\Admin\\Users\\AddRoleUser.razor",
+              "RelativeDocumentMoniker": "Blazor_Admin\\Components\\Pages\\Admin\\Users\\AddRoleUser.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Blazor_Admin\\Blazor_Admin\\Components\\Pages\\Admin\\Users\\AddRoleUser.razor",
+              "RelativeToolTip": "Blazor_Admin\\Components\\Pages\\Admin\\Users\\AddRoleUser.razor",
+              "ViewState": "AgIAACwAAAAAAAAAAAAkwEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-19T14:58:32.151Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

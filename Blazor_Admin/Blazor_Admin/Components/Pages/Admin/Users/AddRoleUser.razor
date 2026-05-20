@@ -1,0 +1,129 @@
+﻿@page "/addroleuser/{id}"
+@inject NavigationManager NavigationManager
+@inject IRoleService roleService
+@inject IUserService userService
+@inject IWebHostEnvironment Env
+
+<h3>Atribui Perfil ao usuário</h3>
+
+<br />
+<Alerta Exibir="Exibir">
+    <h3>@Mensagem</h3> </Alerta>
+ <MudGrid >  
+     <MudItem xs="12" sm="10">
+        <MudPaper Class="pa-4">
+            @if (user == null || roles == null)
+            {
+                <MudProgressLinear Color="Color.Primary" Indeterminate="true" Class="my-7" />
+            }
+            else
+            {
+                <MudForm>
+                    <MudTextField T="string" Label="Id" Disabled="true" Value="@(user?.Id.ToString() ?? string.Empty)" />
+                    <MudTextField T="string" Label="Nome" Disabled="true" Value="@user.UserName" />
+                    <MudTextField T="string" Label="Email" Disabled="true" Value="@user.Email" />
+                    <MudStack>
+                        <MudSelect T="string" Label="Perfil do Usuário" @bind-Value="user.RoleId">
+                            @foreach (var role in roles)
+                            {
+                                @* Value: O que o C# guarda internamente (ID) *@
+                                @* Conteúdo entre as tags: O que o usuário vê na tela (Nome) *@
+                                <MudSelectItem T="string" Value="@role.Id">@role.Name</MudSelectItem>
+                            }
+                        </MudSelect>
+                    </MudStack>
+                    <MudItem xs="12" sm="2">
+                        <MudButton Variant="Variant.Filled" Color="Color.Primary" @onclick="@UpdateRole">Adicionar Perfil</MudButton>
+                        <MudButton Variant="Variant.Outlined" Color="Color.Secondary" @onclick="@Cancel">Cancelar</MudButton>
+                    </MudItem>
+                </MudForm>
+            }
+        </MudPaper>
+        </MudItem>    </MudGrid>
+
+@code {
+    List<Role> roles = new List<Role>();
+    User user = new User();
+    bool Exibir = false;
+
+    [Parameter]
+    public string Mensagem { get; set; }
+    [Parameter]
+    public string id { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+    {
+        roles = await roleService.GetRoles() ?? new List<Role>();
+
+            if (Guid.TryParse(id, out Guid guidId))
+            {
+                // Se a string for um GUID válido, passamos o guidId (tipo Guid) para o serviço
+                user = await userService.GetUser(guidId);
+            }
+            else
+            {
+                // Se a string for inválida (como aquela '7f3a1b2c...'), tratamos o erro aqui
+                Exibir = true;
+                Mensagem = "O ID fornecido na URL não é um formato de GUID válido.";
+                return; // Para a execução para não tentar carregar o resto
+            }
+
+        // Se o erro acontece AQUI, é porque user.RoleId está vindo com lixo do banco
+        if (user.RoleId == string.Empty && roles.Any())
+        {
+            user.RoleId = roles[0].Id;
+        }
+    }
+    catch (Exception ex)
+    {
+        Exibir = true;
+        // O InnerException geralmente diz qual campo falhou na conversão
+        Mensagem = $"Erro: {ex.Message} | Detalhes: {ex.InnerException?.Message}";
+        user ??= new User();
+    }
+
+    }
+
+    // private async Task LoadRoles()
+    // {
+    //     roles = await roleService.GetRoles();
+    // }
+    // private void RoleSelectionChanged(Guid id)
+    // {
+    //     user.RoleId = id;
+    //     // Sua lógica extra aqui
+    // }
+
+    private async Task UpdateRole()
+    {
+        try
+        {
+            // Converte a string 'id' para Guid de forma segura
+            if (Guid.TryParse(id, out Guid guidId))
+            {
+                // Agora passamos 'guidId' (que é Guid) em vez de 'id' (que é string)
+                await userService.UpdateUserRole(guidId, user);
+
+                Exibir = true;
+                Mensagem = "Perfil atualizado com sucesso!";
+            }
+            else
+            {
+                Exibir = true;
+                Mensagem = "Erro: O ID do usuário possui um formato inválido.";
+            }
+        }
+        catch (Exception ex)
+        {
+            Exibir = true;
+            Mensagem = "Erro ao atualizar: " + ex.Message;
+        }
+    }
+    void Cancel()
+    {
+        NavigationManager.NavigateTo("users");
+    }
+
+}

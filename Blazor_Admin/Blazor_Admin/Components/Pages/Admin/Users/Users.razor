@@ -1,0 +1,72 @@
+﻿@page "/users"
+@inject IUserService userService
+@inject IWebHostEnvironment env
+
+
+@attribute [Authorize] 
+<h3>Usuarios</h3> 
+
+  
+    <Alerta Exibir="Exibir">
+        <h3>@Mensagem</h3>
+
+    </Alerta>
+
+
+@if(users == null)
+{
+    <MudProgressCircular Color="Color.Default" Indeterminate="true" />
+}
+else
+{
+    <MudTable Items="@users" Hover="true" Breakpoint="Breakpoint.Sm">
+        <HeaderContent>
+            <MudTr>
+                <MudTh>Id</MudTh>
+                <MudTh>Nome</MudTh>
+                <MudTh>Email</MudTh>
+                <MudTh></MudTh>
+            </MudTr>
+        </HeaderContent>
+        <RowTemplate>
+            <MudTd DataLabel="Id">@context.Id</MudTd>
+            <MudTd DataLabel="Usuario">@context.UserName</MudTd>
+            <MudTd DataLabel="Email">@context.Email</MudTd>
+            <MudTd DataLabel="Ações">
+                <MudButton Variant="Variant.Text" Color="Color.Primary" href="@($"/addroleuser/{context.Id}")">Novo Perfil</MudButton>
+                <MudButton Variant="Variant.Text" Color="Color.Error" href="@($"/deleteuser/{context.Id}")">Deletar</MudButton>
+            </MudTd>
+        </RowTemplate>
+    </MudTable>
+}
+
+
+@code {
+
+
+    List<User> users;
+    bool Exibir = false;
+    [Parameter]
+    public string Mensagem { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            users = await userService.GetUsers();
+          
+        }
+        catch (Exception ex)
+        {
+            Exibir = true;
+            if(env.IsDevelopment())
+            {
+                Mensagem = $"Ocorreu um erro ao carregar os usuários: {ex.StackTrace.ToString()}";
+                return;
+            }
+            Mensagem = $"Não foi possível ao acessar os dados dos perfisl do usuario: {ex.InnerException}";
+        }
+       
+    }
+
+}
