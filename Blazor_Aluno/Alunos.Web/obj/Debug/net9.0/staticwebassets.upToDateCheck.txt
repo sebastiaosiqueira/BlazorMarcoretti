@@ -1,0 +1,12 @@
+C:\Users\3346.ADM-UCDB\source\repos\Blazor_Aluno\Alunos.Web\wwwroot\favicon.ico
+wwwroot\favicon.ico
+wwwroot\images\alunos.jpg
+wwwroot\images\basicloader.gif
+wwwroot\images\foto1.jpg
+wwwroot\images\foto2.jpg
+wwwroot\images\foto3.jpg
+wwwroot\images\foto4.jpg
+wwwroot\images\foto5.jpg
+wwwroot\images\foto6.jpg
+wwwroot\images\maco1b.jpg
+wwwroot\images\notfound.jpg

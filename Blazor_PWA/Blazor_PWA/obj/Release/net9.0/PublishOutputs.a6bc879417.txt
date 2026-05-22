@@ -1,0 +1,2 @@
+C:\Users\3346.ADM-UCDB\source\repos\Blazor_PWA\Blazor_PWA\obj\Release\net9.0\browser-wasm\PubTmp\Out\segmentation-rules.json
+C:\Users\3346.ADM-UCDB\source\repos\Blazor_PWA\Blazor_PWA\obj\Release\net9.0\browser-wasm\PubTmp\Out\web.config

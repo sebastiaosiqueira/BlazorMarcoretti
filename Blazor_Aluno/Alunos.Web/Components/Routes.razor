@@ -1,0 +1,43 @@
+﻿
+<MudThemeProvider />
+<MudPopoverProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<Router AppAssembly="typeof(Program).Assembly">
+    <Found Context="routeData">
+        <RouteView RouteData="routeData" DefaultLayout="typeof(Layout.MainLayout)" />
+        <FocusOnNavigate RouteData="routeData" Selector="h1" />
+    </Found>
+    <NotFound>
+       
+        <PageTitle>404 - Não Encontrado</PageTitle>
+        <MudContainer MaxWidth="MaxWidth.Medium" Class="d-flex flex-column align-center justify-center" Style="height: 80vh;">
+
+            <MudImage Src="images/notfound.jpg"
+                      Alt="Página não encontrada"
+                      Elevation="0"
+                      Class="rounded-lg mb-4"
+                      ObjectFit="ObjectFit.Contain"
+                      Width="400" />
+
+            <MudText Typo="Typo.h4" Color="Color.Primary" GutterBottom="true">
+                Ops! Página não encontrada.
+            </MudText>
+
+            <MudText Typo="Typo.body1" Class="mb-8">
+                O link que você seguiu pode estar quebrado ou a página foi removida.
+            </MudText>
+
+            <MudButton Variant="Variant.Filled"
+                       Color="Color.Primary"
+                       Href="/"
+                       StartIcon="@Icons.Material.Filled.Home">
+                Voltar para o Início
+            </MudButton>
+
+        </MudContainer>
+
+      
+        </NotFound>
+</Router>

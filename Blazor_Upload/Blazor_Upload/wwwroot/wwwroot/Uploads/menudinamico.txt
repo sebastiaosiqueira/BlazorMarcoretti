@@ -1,0 +1,43 @@
+@page "/laboratorios"
+
+<MudTable Items="@_dados">
+    <ToolBarContent>
+        <MudText Typo="Typo.h6">Laboratórios</MudText>
+        <MudSpacer />
+        @* REGRA DE SEGURANÇA: CADASTRAR *@
+        @if (_perm.Inserir)
+        {
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" StartIcon="@Icons.Material.Filled.Add">
+                Novo Laboratório
+            </MudButton>
+        }
+    </ToolBarContent>
+    <RowTemplate>
+        <MudTd DataLabel="Nome">@context.Nome</MudTd>
+        <MudTd>
+            @* REGRA DE SEGURANÇA: EDITAR *@
+            @if (_perm.Editar)
+            {
+                <MudIconButton Icon="@Icons.Material.Filled.Edit" Color="Color.Warning" />
+            }
+            @* REGRA DE SEGURANÇA: EXCLUIR *@
+            @if (_perm.Excluir)
+            {
+                <MudIconButton Icon="@Icons.Material.Filled.Delete" Color="Color.Error" />
+            }
+        </MudTd>
+    </RowTemplate>
+</MudTable>
+
+@code {
+    private MenuPermissaoDTO _perm;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Pega as permissões já cacheadas no serviço para esta página específica
+        var todas = await PermissionService.GetUserPermissionsAsync(meuPerfilId);
+        // Busca a permissão deste menu específico (pelo URL ou ID)
+        _perm = todas.SelectMany(x => x.SubMenus.Append(x))
+                     .FirstOrDefault(m => m.Url == "/laboratorios");
+    }
+}

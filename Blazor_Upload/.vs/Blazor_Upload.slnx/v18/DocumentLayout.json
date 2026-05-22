@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Blazor_Upload\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FF10E18B-B476-4BDD-AC04-2B09EDC9A07D}|Blazor_Upload\\Blazor_Upload.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazor_upload\\blazor_upload\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF10E18B-B476-4BDD-AC04-2B09EDC9A07D}|Blazor_Upload\\Blazor_Upload.csproj|solutionrelative:blazor_upload\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF10E18B-B476-4BDD-AC04-2B09EDC9A07D}|Blazor_Upload\\Blazor_Upload.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazor_upload\\blazor_upload\\components\\layout\\aviso.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF10E18B-B476-4BDD-AC04-2B09EDC9A07D}|Blazor_Upload\\Blazor_Upload.csproj|solutionrelative:blazor_upload\\components\\layout\\aviso.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Aviso.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Blazor_Upload\\Blazor_Upload\\Components\\Layout\\Aviso.razor",
+              "RelativeDocumentMoniker": "Blazor_Upload\\Components\\Layout\\Aviso.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Blazor_Upload\\Blazor_Upload\\Components\\Layout\\Aviso.razor",
+              "RelativeToolTip": "Blazor_Upload\\Components\\Layout\\Aviso.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-21T19:53:22.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Blazor_Upload\\Blazor_Upload\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Blazor_Upload\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Blazor_Upload\\Blazor_Upload\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "Blazor_Upload\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvygAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-21T18:46:05.249Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

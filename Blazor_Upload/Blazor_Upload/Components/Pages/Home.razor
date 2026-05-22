@@ -1,0 +1,92 @@
+﻿@page "/"
+@rendermode InteractiveServer
+
+@inject IFileUpload fileUpload
+@inject IWebHostEnvironment Env
+
+
+<PageTitle>Home</PageTitle>
+
+<h1>Upload de Arquivo(s) : Selecione o(s) arquivo(s)</h1>
+
+<hr />
+@* Usamos o componente nativo agora *@
+<InputFile class="form-control" multiple OnChange="HandleFileSelected" />
+<hr />
+
+@if (arquivo != null)
+{
+    <p>Nome: @arquivo.Name</p>
+    <p>Tamanho em bytes: @arquivo.Size</p>
+    <p>Data última modificação: @arquivo.LastModified.DateTime.ToShortDateString()</p>
+    <p>Tipo: @arquivo.ContentType</p>
+}
+
+<Aviso Exibir="Exibir" TipoAlert="@ClasseStatus">
+    <strong>@Mensagem</strong>
+</Aviso>
+@if (arquivosEnviados.Count > 0)
+{
+    <div class="mt-4">
+        <h5>Arquivos na pasta:</h5>
+        <ul class="list-group">
+            @foreach (var nome in arquivosEnviados)
+            {
+                <li class="list-group-item d-flex align-items-center">
+                    <span class="me-2 text-success">✔</span> @nome
+                </li>
+            }
+        </ul>
+    </div>
+}
+
+@code {
+    private string ClasseStatus = "secondary";
+    // No .NET moderno, usamos IBrowserFile em vez de IFileListEntry
+    IBrowserFile arquivo;
+    bool Exibir = false;
+    private List<string> arquivosEnviados = new List<string>();
+    [Parameter]
+    public string Mensagem { get; set; }
+
+    // O evento agora recebe InputFileChangeEventArgs
+    private async Task HandleFileSelected(InputFileChangeEventArgs e)
+    {
+        Exibir = true;
+        ClasseStatus = "info";
+        // Limpa a lista anterior para mostrar apenas os novos (opcional)
+        arquivosEnviados.Clear();
+        try
+        {
+            // 1. Pegamos a lista de arquivos.
+            // O número 10 define o limite máximo de arquivos por seleção.
+            var arquivosSelecionados = e.GetMultipleFiles(10);
+            int totalArquivos = arquivosSelecionados.Count;
+            int enviados = 0;
+
+            foreach (var item in arquivosSelecionados)
+            {
+                Mensagem = $"Enviando {item.Name} ({enviados + 1} de {totalArquivos})...";
+                StateHasChanged();
+
+                // 2. Chama o serviço para cada arquivo individualmente
+                await fileUpload.UploadAsync(item);
+                arquivosEnviados.Add(item.Name);
+                enviados++;
+            }
+
+            // 3. Sucesso total
+            ClasseStatus = "success";
+            Mensagem = $"{arquivosEnviados.Count} arquivo(s) enviado(s) com sucesso!";
+        }
+        catch (Exception ex)
+        {
+            ClasseStatus = "danger";
+            Mensagem = $"Erro ao enviar: {ex.Message}";
+        }
+        finally
+        {
+            StateHasChanged();
+        }
+    }
+}

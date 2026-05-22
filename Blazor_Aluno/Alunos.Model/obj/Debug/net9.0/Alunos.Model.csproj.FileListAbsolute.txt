@@ -1,0 +1,12 @@
+C:\Users\3346.ADM-UCDB\source\repos\Blazor_Aluno\Alunos.Model\bin\Debug\net9.0\Alunos.Model.deps.json
+C:\Users\3346.ADM-UCDB\source\repos\Blazor_Aluno\Alunos.Model\bin\Debug\net9.0\Alunos.Model.dll
+C:\Users\3346.ADM-UCDB\source\repos\Blazor_Aluno\Alunos.Model\bin\Debug\net9.0\Alunos.Model.pdb
+C:\Users\3346.ADM-UCDB\source\repos\Blazor_Aluno\Alunos.Model\obj\Debug\net9.0\Alunos.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\3346.ADM-UCDB\source\repos\Blazor_Aluno\Alunos.Model\obj\Debug\net9.0\Alunos.Model.AssemblyInfoInputs.cache
+C:\Users\3346.ADM-UCDB\source\repos\Blazor_Aluno\Alunos.Model\obj\Debug\net9.0\Alunos.Model.AssemblyInfo.cs
+C:\Users\3346.ADM-UCDB\source\repos\Blazor_Aluno\Alunos.Model\obj\Debug\net9.0\Alunos.Model.csproj.CoreCompileInputs.cache
+C:\Users\3346.ADM-UCDB\source\repos\Blazor_Aluno\Alunos.Model\obj\Debug\net9.0\Alunos.Model.sourcelink.json
+C:\Users\3346.ADM-UCDB\source\repos\Blazor_Aluno\Alunos.Model\obj\Debug\net9.0\Alunos.Model.dll
+C:\Users\3346.ADM-UCDB\source\repos\Blazor_Aluno\Alunos.Model\obj\Debug\net9.0\refint\Alunos.Model.dll
+C:\Users\3346.ADM-UCDB\source\repos\Blazor_Aluno\Alunos.Model\obj\Debug\net9.0\Alunos.Model.pdb
+C:\Users\3346.ADM-UCDB\source\repos\Blazor_Aluno\Alunos.Model\obj\Debug\net9.0\ref\Alunos.Model.dll

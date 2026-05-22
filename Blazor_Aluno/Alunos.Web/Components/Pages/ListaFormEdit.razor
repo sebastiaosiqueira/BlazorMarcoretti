@@ -1,0 +1,143 @@
+﻿@page "/formeditlist"
+@using System.Net.Http.Json
+@using Alunos.Model;
+@using Alunos.Web.Components.Shared;
+@using Microsoft.AspNetCore.Components;
+@using MudBlazor;
+
+<MudDataGrid @ref="_elementGrid" T="Aluno" Items="@_elements" ReadOnly="@_readOnly"
+             EditMode="@(_isCellEditMode ? DataGridEditMode.Cell : DataGridEditMode.Form)"
+             StartedEditingItem="@StartedEditingItem" CanceledEditingItem="@CanceledEditingItem" CommittedItemChanges="@CommittedItemChanges"
+             Bordered="true" Dense="true" EditTrigger="@(_editTriggerRowClick ? DataGridEditTrigger.OnRowClick : DataGridEditTrigger.Manual)">
+    <ToolBarContent>
+        <MudText Typo="Typo.h6">Periodic Elements</MudText>
+        <MudSpacer />
+        <MudButtonGroup Class="ma-0 pa-0" Color="Color.Success" Variant="Variant.Filled">
+            <MudButton OnClick="NewItemAsync">
+                Add New Item
+            </MudButton>
+        </MudButtonGroup>
+    </ToolBarContent>
+    <Columns>
+        <PropertyColumn Property="x => x.AlunoId" Title="Nr" Editable="false" />
+        <PropertyColumn Property="x => x.Nome" />
+        <PropertyColumn Property="x => x.Sobrenome" />
+ 
+        <TemplateColumn Hidden="@_readOnly" CellClass="d-flex justify-between">
+            <CellTemplate>
+                @if (!_isCellEditMode && !_editTriggerRowClick)
+                {
+                    <MudIconButton Size="@Size.Small" Icon="@Icons.Material.Outlined.Edit" OnClick="@context.Actions.StartEditingItemAsync" />
+                }
+                <MudIconButton Size="@Size.Small" Icon="@Icons.Material.Outlined.Delete" OnClick="@(() => DeleteItem(context.Item))" />
+            </CellTemplate>
+            <EditTemplate>
+                @if (!_isCellEditMode && !_editTriggerRowClick)
+                {
+                    <MudIconButton Size="@Size.Small" Icon="@Icons.Material.Outlined.Edit" OnClick="@context.Actions.StartEditingItemAsync" />
+                }
+                <MudIconButton Size="@Size.Small" Icon="@Icons.Material.Outlined.Delete" OnClick="@(() => DeleteItem(context.Item))" />
+            </EditTemplate>
+        </TemplateColumn>
+    </Columns>
+</MudDataGrid>
+
+@code {
+
+    [Inject] protected ISnackbar Snackbar { get; set; }
+    public IEnumerable<Aluno> Alunos { get; set; }
+    public MensagemAlerta mensagemAlerta { get; set; }
+    private IEnumerable<Aluno> _elementMasterList = [];
+    private List<Aluno> _elements = new();
+    private bool _readOnly;
+    private bool _isCellEditMode;
+    private List<string> _events = new();
+    private bool _editTriggerRowClick;
+    private bool _validateOnCommit;
+    private MudDataGrid<Aluno> _elementGrid = default!;
+    protected async override Task OnInitializedAsync()
+    {
+        LoadAlunos();
+    }
+
+    public void LoadAlunos()
+    {
+
+        _elements = new List<Aluno>
+            {
+                new Aluno {
+                    AlunoId = 1,
+                    Nome = "João",
+                    Sobrenome = "Vieira",
+                    Email="joao@gmail.com",
+                    Nascimento = new DateTime(1990,10,5)
+                    , Genero = Genero.Masculino,
+                    Curso = new Curso{CursoId = 1, Nome="Quimica I", Creditos=4},
+                    Foto ="images/foto1.jpg"
+                    }
+
+            };
+    }
+
+    private async Task NewItemAsync()
+    {
+        var elem = new Aluno();
+        // Forçamos o modo Form para novos itens se quiser o pop-up
+        _isCellEditMode = false;
+
+        // Isso dispara a abertura do formulário de edição para o objeto vazio
+        await _elementGrid.SetEditingItemAsync(elem);
+    }
+
+    private void DeleteItem(Aluno item)
+    {
+        _elements.Remove(item);
+        Snackbar.Add($"Aluno {item.Nome} Excluido com Sucesso!", Severity.Success);
+    }
+
+    // events
+    private void StartedEditingItem(Aluno item)
+    {
+        _events.Insert(0, $"Event = StartedEditingItem, Data = {System.Text.Json.JsonSerializer.Serialize(item)}");
+
+    }
+
+    private void CanceledEditingItem(Aluno item)
+    {
+        // update code for backing data here if needed
+        _events.Insert(0, $"Event = CanceledEditingItem, Data = {System.Text.Json.JsonSerializer.Serialize(item)}");
+
+    }
+
+    private Task CommittedItemChanges(Aluno item)
+    {
+        // update code for the backing data here
+        if (item.AlunoId == 0) // new item
+        {
+            bool cellMode = _elements.Remove(item); // for cell mode
+            var maxMaster = _elementMasterList.Any() ? _elementMasterList.Max(x => x.AlunoId) : 0;
+            var maxElements = _elements.Any() ? _elements.Max(x => x.AlunoId) : 0;
+            item.AlunoId = Math.Max(maxMaster, maxElements) + 1;
+            if (cellMode)
+            {
+                _elements.Insert(0, item);
+               
+            }
+            else
+            {
+                _elements.Add(item);
+                Snackbar.Add($"Aluno {item.Nome} incluido com sucesso!", Severity.Success);
+            }
+        }
+        else
+        {
+            _events.Insert(0, $"Event = CommittedItemChanges, Data = {System.Text.Json.JsonSerializer.Serialize(item)}");
+            Snackbar.Add($"Aluno {item.Nome} alterado com sucesso!", Severity.Success);
+        }
+
+        if (_validateOnCommit && item.AlunoId < 0)
+            return Task.CompletedTask;
+
+        return Task.CompletedTask;
+    }
+}

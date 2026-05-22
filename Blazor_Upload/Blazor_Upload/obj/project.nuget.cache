@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+Z3qO9YoeSs=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Blazor_Upload\\Blazor_Upload\\Blazor_Upload.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\3346.ADM-UCDB\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.13\\microsoft.windowsdesktop.app.ref.9.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

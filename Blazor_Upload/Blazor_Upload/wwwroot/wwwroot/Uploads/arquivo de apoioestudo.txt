@@ -1,0 +1,68 @@
+[
+  {
+    "id": 3,
+    "local": "BH",
+    "dataEvento": "2023-10-20T13:53:45.12",
+    "tema": "Angular",
+    "qtdPessoas": 100,
+    "lote": "01",
+    "imagemURL": "foto.jpeg",
+    "telefone": "3363-1638",
+    "email": "sebastiao@gmail.com",
+    "lotes": [
+      {
+        "id": 7,
+        "nome": "1 lote alterado",
+        "preco": 20,
+        "dataInicio": "2023-10-25T22:00:00",
+        "dataFim": "2023-10-26T22:00:00",
+        "quantidade": 150,
+        "eventoId": 3
+      },
+      {
+        "id": 8,
+        "nome": "2 lote alterado",
+        "preco": 20,
+        "dataInicio": "2023-10-27T22:00:00",
+        "dataFim": "2023-10-28T22:00:00",
+        "quantidade": 150,
+        "eventoId": 3
+      }
+    ],
+    "redeSociais": null,
+    "palestrantes": null
+  },
+  {
+    "id": 6,
+    "local": "São Paulo",
+    "dataEvento": "2023-10-23T18:43:46.122",
+    "tema": "Ponto net",
+    "qtdPessoas": 150,
+    "lote": "01",
+    "imagemURL": "foto.jpg",
+    "telefone": "3387-6598",
+    "email": "user@example.com",
+    "lotes": [
+      {
+        "id": 9,
+        "nome": "1 lote novo lote",
+        "preco": 20,
+        "dataInicio": "2023-10-25T22:00:00",
+        "dataFim": "2023-10-26T22:00:00",
+        "quantidade": 150,
+        "eventoId": 6
+      },
+      {
+        "id": 10,
+        "nome": "2 lote alterado",
+        "preco": 35,
+        "dataInicio": "2023-10-27T22:00:00",
+        "dataFim": "2023-10-28T22:00:00",
+        "quantidade": 250,
+        "eventoId": 6
+      }
+    ],
+    "redeSociais": null,
+    "palestrantes": null
+  }
+]

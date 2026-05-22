@@ -1,0 +1,32 @@
+﻿@if (Exibir)
+{
+    <div class="alert alert-@TipoAlert mt-4 shadow" role="alert" style="display: block !important;">
+        <div class="d-flex align-items-center">
+            <strong class="me-2">
+                @if (TipoAlert == "success")
+                {
+                    <span>✅</span>
+                }
+                else if (TipoAlert == "danger")
+                {
+
+                    <span>❌</span>
+                }
+                else
+                {
+
+                    <span>ℹ️</span>
+                }
+            </strong>
+            <div>
+                @ChildContent
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter] public bool Exibir { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
+    [Parameter] public string TipoAlert { get; set; } = "secondary";
+}

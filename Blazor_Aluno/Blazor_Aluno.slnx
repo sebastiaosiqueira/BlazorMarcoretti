@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Alunos.Model/Alunos.Model.csproj" />
+  <Project Path="Alunos.Web/Alunos.Web.csproj" Id="91ce8191-8a42-44cb-a2e0-d375360d01aa" />
+</Solution>

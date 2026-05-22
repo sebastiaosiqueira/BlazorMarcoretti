@@ -1,0 +1,43 @@
+@inject PermissionService PermissionService
+@inject AuthenticationStateProvider AuthStateProvider
+
+<MudNavMenu Bordered="true">
+    @foreach (var menu in _menuItems)
+    {
+        @if (menu.SubMenus.Any())
+        {
+            @* Renderiza Grupo se houver submenus *@
+            <MudNavGroup Title="@menu.Titulo" Icon="@menu.Icone" @bind-Expanded="_expanded">
+                @foreach (var sub in menu.SubMenus)
+                {
+                    <MudNavLink Href="@sub.Url" Icon="@sub.Icone" IconColor="Color.Info">
+                        @sub.Titulo
+                    </MudNavLink>
+                }
+            </MudNavGroup>
+        }
+        else
+        {
+            @* Renderiza link direto (ex: Dashboard) *@
+            <MudNavLink Href="@menu.Url" Icon="@menu.Icone">@menu.Titulo</MudNavLink>
+        }
+    }
+</MudNavMenu>
+
+@code {
+    private List<MenuPermissaoDTO> _menuItems = new();
+    private bool _expanded = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        // Recupera o ID do perfil das Claims do usuário logado
+        var perfilClaim = user.FindFirst("PerfilId")?.Value;
+        if (int.TryParse(perfilClaim, out int perfilId))
+        {
+            _menuItems = await PermissionService.GetUserPermissionsAsync(perfilId);
+        }
+    }
+}

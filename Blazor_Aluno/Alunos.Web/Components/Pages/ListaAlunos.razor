@@ -1,0 +1,57 @@
+﻿@page "/alunos"
+@using Alunos.Web.Components.Shared
+@inherits ListaAlunosBase
+@inject ISnackbar Snackbar
+<h3>Alunos</h3>
+
+<MensagemAlerta @ref="mensagemAlerta" />
+@if(Alunos is null)
+{
+   <img src="/images/basicloader.gif"/>
+}
+else
+{
+    
+    @* Corrigido o erro de aspas duplas em EditMode e adicionado Bordered *@
+    <MudDataGrid Items="@Alunos"
+                 T="Alunos.Model.Aluno"
+                 ReadOnly="false"
+                 Filterable="true"
+                 SortMode="SortMode.Multiple"
+                 EditMode="DataGridEditMode.Cell"
+                 Hover="true"
+                 Bordered="true"
+                 CommittedItemChanges="@((item) => OnRowCommitted(item))">
+        <ToolBarContent>
+            <MudText Typo="Typo.h6">Lista de Alunos</MudText>
+            <MudSpacer />
+            <MudButton Variant="Variant.Filled"
+                       Color="Color.Primary"
+                       StartIcon="@Icons.Material.Filled.Add"
+                       OnClick="CriarNovo">Novo Aluno</MudButton>
+        </ToolBarContent>
+        <Columns>
+            <PropertyColumn Property="x => x.AlunoId" Title="Id" Editable="false" />
+
+            @* Adicionei Editable="true" explicitamente *@
+            <PropertyColumn Property="x => x.Nome" Title="Nome do Aluno" Editable="true" />
+            <PropertyColumn Property="x => x.Email" Title="E-mail" Editable="true" />
+
+            @* Adicionei um Título para a coluna não ficar com largura zero *@
+            <TemplateColumn Title="Ações" Align="Align.Center" HeaderStyle="width: 120px">
+                <CellTemplate>
+                    <MudButton Variant="Variant.Filled"
+                               Color="Color.Error"
+                               Size="Size.Small"
+                               OnClick="@(() => ConfirmarExclusao(context.Item))">
+                        EXCLUIR
+                    </MudButton>
+                </CellTemplate>
+            </TemplateColumn>
+        </Columns>
+    </MudDataGrid>
+    }
+
+
+  
+
