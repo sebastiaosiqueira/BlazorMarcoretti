@@ -1,0 +1,55 @@
+﻿@page "/produtos"
+@using eCatalogo.Core.Models
+@using eCatalogo.UseCases.Catalogo
+@using eCatalogo.Blazor.Components.Shared
+
+@inject IProcuraProduto procuraProduto
+
+<br />
+
+<MudText Typo="Typo.h3" Class="my-4">Procura Produtos</MudText>
+<ProcuroProdutoComponent OnSearch="HandleSearch" />
+
+@if (produtos == null)
+{
+    <MudProgressCircular Color="Color.Primary" Indeterminate="true" />
+}
+else
+{
+    <MudTable Items="@produtos" Hover="true" Breakpoint="Breakpoint.Sm" Elevation="4">
+        <HeaderContent>
+            <MudTh>Nome</MudTh>
+            <MudTh>Categoria</MudTh>
+            <MudTh>Preço</MudTh>
+        </HeaderContent>
+        <RowTemplate>
+            <ProcuraItemComponent Produto="@context" />
+           
+     
+        </RowTemplate>
+        <NoRecordsContent>
+            <MudText>Nenhum produto encontrado para o filtro aplicado.</MudText>
+        </NoRecordsContent>
+    </MudTable>
+}
+
+@code {
+    private List<Produto>? produtos;
+
+    protected override void OnInitialized()
+    {
+        AtualizarLista();
+    }
+
+    private void HandleSearch(string filter)
+    {
+        AtualizarLista(filter);
+    }
+
+    private async void AtualizarLista(string filter = "")
+    {
+        // Forçamos a conversão para List para evitar o problema do IEnumerable
+        produtos = procuraProduto.Execute(filter)?.ToList() ?? new List<Produto>();
+        await InvokeAsync(StateHasChanged);  ;
+    }
+}

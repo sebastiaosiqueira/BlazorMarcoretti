@@ -1,0 +1,20 @@
+﻿@using eCatalogo.Core.Models
+
+@if (Produto != null)
+{
+    <MudTd DataLabel="Nome">
+        <NavLink href="@($"/produto/{Produto.ProdutoId}")">
+            @Produto.Nome
+        </NavLink>
+    </MudTd>
+    <MudTd DataLabel="Categoria">@Produto.Categoria</MudTd>
+    <MudTd DataLabel="Preço">@Produto.Preco.ToString("C")</MudTd>
+}
+else
+{
+    <MudTd colspan="3">Carregando item...</MudTd>
+}
+
+@code {
+    [Parameter] public Produto Produto { get; set; }
+}

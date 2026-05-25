@@ -1,0 +1,56 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "eCatalogo.Data/1.0.0": {
+        "dependencies": {
+          "eCatalogo.Core": "1.0.0",
+          "eCatalogo.UseCases": "1.0.0"
+        },
+        "runtime": {
+          "eCatalogo.Data.dll": {}
+        }
+      },
+      "eCatalogo.Core/1.0.0": {
+        "runtime": {
+          "eCatalogo.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "eCatalogo.UseCases/1.0.0": {
+        "dependencies": {
+          "eCatalogo.Core": "1.0.0"
+        },
+        "runtime": {
+          "eCatalogo.UseCases.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "eCatalogo.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "eCatalogo.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "eCatalogo.UseCases/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

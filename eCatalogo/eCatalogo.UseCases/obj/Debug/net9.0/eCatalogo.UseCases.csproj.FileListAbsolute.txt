@@ -1,0 +1,16 @@
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.UseCases\bin\Debug\net9.0\eCatalogo.UseCases.deps.json
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.UseCases\bin\Debug\net9.0\eCatalogo.UseCases.dll
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.UseCases\bin\Debug\net9.0\eCatalogo.UseCases.pdb
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.UseCases\bin\Debug\net9.0\eCatalogo.Core.dll
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.UseCases\bin\Debug\net9.0\eCatalogo.Core.pdb
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.UseCases\obj\Debug\net9.0\eCatalogo.UseCases.csproj.AssemblyReference.cache
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.UseCases\obj\Debug\net9.0\eCatalogo.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.UseCases\obj\Debug\net9.0\eCatalogo.UseCases.AssemblyInfoInputs.cache
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.UseCases\obj\Debug\net9.0\eCatalogo.UseCases.AssemblyInfo.cs
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.UseCases\obj\Debug\net9.0\eCatalogo.UseCases.csproj.CoreCompileInputs.cache
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.UseCases\obj\Debug\net9.0\eCatalogo.UseCases.sourcelink.json
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.UseCases\obj\Debug\net9.0\eCatalog.D967992F.Up2Date
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.UseCases\obj\Debug\net9.0\eCatalogo.UseCases.dll
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.UseCases\obj\Debug\net9.0\refint\eCatalogo.UseCases.dll
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.UseCases\obj\Debug\net9.0\eCatalogo.UseCases.pdb
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.UseCases\obj\Debug\net9.0\ref\eCatalogo.UseCases.dll

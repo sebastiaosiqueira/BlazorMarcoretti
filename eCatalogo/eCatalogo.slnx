@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="eCatalogo.Blazor/eCatalogo.Blazor.csproj" />
+  <Project Path="eCatalogo.Core/eCatalogo.Core.csproj" />
+  <Project Path="eCatalogo.Data/eCatalogo.Data.csproj" />
+  <Project Path="eCatalogo.UseCases/eCatalogo.UseCases.csproj" />
+</Solution>

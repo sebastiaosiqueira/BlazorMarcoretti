@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{91CE8191-8A42-44CB-A2E0-D375360D01AA}|Alunos.Web\\Alunos.Web.csproj|solutionrelative:alunos.web\\components\\pages\\listaformedit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{91CE8191-8A42-44CB-A2E0-D375360D01AA}|Alunos.Web\\Alunos.Web.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazor_aluno\\alunos.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91CE8191-8A42-44CB-A2E0-D375360D01AA}|Alunos.Web\\Alunos.Web.csproj|solutionrelative:alunos.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{91CE8191-8A42-44CB-A2E0-D375360D01AA}|Alunos.Web\\Alunos.Web.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazor_aluno\\alunos.web\\components\\pages\\listaalunosbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91CE8191-8A42-44CB-A2E0-D375360D01AA}|Alunos.Web\\Alunos.Web.csproj|solutionrelative:alunos.web\\components\\pages\\listaalunosbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -18,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Blazor_Aluno\\Alunos.Web\\Program.cs",
+              "RelativeDocumentMoniker": "Alunos.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Blazor_Aluno\\Alunos.Web\\Program.cs",
+              "RelativeToolTip": "Alunos.Web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T18:30:49.679Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,14 +45,14 @@
               "RelativeDocumentMoniker": "Alunos.Web\\Components\\Pages\\ListaFormEdit.razor",
               "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Blazor_Aluno\\Alunos.Web\\Components\\Pages\\ListaFormEdit.razor",
               "RelativeToolTip": "Alunos.Web\\Components\\Pages\\ListaFormEdit.razor",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAAAHsAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAAIAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-05-22T17:45:23.718Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ListaAlunosBase.cs",
               "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\Blazor_Aluno\\Alunos.Web\\Components\\Pages\\ListaAlunosBase.cs",
               "RelativeDocumentMoniker": "Alunos.Web\\Components\\Pages\\ListaAlunosBase.cs",
@@ -43,8 +60,7 @@
               "RelativeToolTip": "Alunos.Web\\Components\\Pages\\ListaAlunosBase.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAxwAwAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-22T15:25:39.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-22T15:25:39.042Z"
             }
           ]
         }

@@ -1,0 +1,25 @@
+﻿<div class="d-flex align-center gap-4 mb-4">
+    <MudTextField @bind-Value="filter" Immediate="true"
+                  Label="Procurar produto..."
+                  Variant="Variant.Outlined"
+                  Margin="Margin.Dense"
+                  OnKeyDown="@(e => e.Key == "Enter" ? HandleSearch() : null)" />
+
+    <MudButton Variant="Variant.Filled"
+               Color="Color.Primary"
+               OnClick="HandleSearch">
+        Procurar
+    </MudButton>
+</div>
+
+@code {
+    private string filter = string.Empty;
+
+    [Parameter]
+    public EventCallback<string> OnSearch { get; set; }
+
+    private async Task HandleSearch()
+    {
+        await OnSearch.InvokeAsync(filter);
+    }
+}

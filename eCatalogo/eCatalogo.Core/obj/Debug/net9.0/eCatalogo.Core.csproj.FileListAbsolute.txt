@@ -1,0 +1,12 @@
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.Core\bin\Debug\net9.0\eCatalogo.Core.deps.json
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.Core\bin\Debug\net9.0\eCatalogo.Core.dll
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.Core\bin\Debug\net9.0\eCatalogo.Core.pdb
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.Core\obj\Debug\net9.0\eCatalogo.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.Core\obj\Debug\net9.0\eCatalogo.Core.AssemblyInfoInputs.cache
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.Core\obj\Debug\net9.0\eCatalogo.Core.AssemblyInfo.cs
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.Core\obj\Debug\net9.0\eCatalogo.Core.csproj.CoreCompileInputs.cache
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.Core\obj\Debug\net9.0\eCatalogo.Core.sourcelink.json
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.Core\obj\Debug\net9.0\eCatalogo.Core.dll
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.Core\obj\Debug\net9.0\refint\eCatalogo.Core.dll
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.Core\obj\Debug\net9.0\eCatalogo.Core.pdb
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.Core\obj\Debug\net9.0\ref\eCatalogo.Core.dll

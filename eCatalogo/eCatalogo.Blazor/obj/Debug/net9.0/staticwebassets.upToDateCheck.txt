@@ -1,0 +1,2 @@
+C:\Users\3346.ADM-UCDB\source\repos\eCatalogo\eCatalogo.Blazor\wwwroot\favicon.ico
+wwwroot\favicon.ico
