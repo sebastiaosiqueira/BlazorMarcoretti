@@ -1,0 +1,33 @@
+﻿@page "/produtos"
+@using BlazorCatalogo.Data
+@rendermode InteractiveServer
+@inject NavigationManager Navigation
+
+@inject ProdutoRepository ProdutoRepository
+
+<h3>Produtos</h3>
+
+<div class="container-produtos">
+
+    @foreach (var produto in ProdutoRepository.ObterTodos())
+    {
+        <div class="produto">
+
+            <img src="@produto.ImagemUrl" class="img-produto" />
+
+            <h4>@produto.Nome</h4>
+
+            <button @onclick="() => IrParaDetalhe(produto.Id)">
+                Ver detalhes
+            </button>
+
+        </div>
+    }
+</div>
+
+@code {
+    void IrParaDetalhe(int id)
+    {
+        Navigation.NavigateTo($"/produto/{id}");
+    }
+}

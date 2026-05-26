@@ -1,0 +1,51 @@
+﻿@page "/produto/{Id:int}"
+@using BlazorCatalogo.Data
+@using BlazorCatalogo.Services
+@inject ProdutoAIService AI
+@inject ProdutoRepository _produtoRepository
+@rendermode InteractiveServer
+@inject ProdutoRAGService Rag
+
+
+@inject ProdutoAIService AI
+
+<h3>@produto?.Nome</h3>
+
+@if (produto is not null)
+{
+    <img src="@produto.ImagemUrl" width="300" />
+    <p>@produto.Descricao</p>
+    <p><strong>Preço:</strong> @produto.Preco.ToString("C")</p>
+
+    <hr />
+
+    <h4>Pergunte sobre este produto</h4>
+
+    <input @bind="pergunta" class="pergunta-box" />
+    <button @onclick="Perguntar">Perguntar</button>
+
+    <p><strong>Resposta:</strong></p>
+    <p>@resposta</p>
+
+}
+
+@code {
+    [Parameter] public int Id { get; set; }
+
+    Produto? produto;
+    string pergunta = "";
+    string resposta = "";
+
+    protected override void OnInitialized()
+    {
+        produto = _produtoRepository.ObterPorId(Id);
+    }
+
+    async Task Perguntar()
+    {
+        if (produto is null) return;
+        resposta = await Rag.PerguntarSobreProduto(pergunta, Id);
+
+        // resposta = await AI.PerguntarSobreProduto(produto, pergunta);
+    }
+}
