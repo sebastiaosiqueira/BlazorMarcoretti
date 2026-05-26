@@ -1,0 +1,2 @@
+wwwroot\favicon.ico
+C:\Users\3346.ADM-UCDB\source\repos\BlazorIAChat\BlazorIAChat\wwwroot\favicon.ico
