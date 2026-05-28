@@ -1,0 +1,43 @@
+﻿@page "/produtos"
+@inject IProdutoService produtoService
+
+@if(Produtos == null)
+{
+    <MudText Typo="Typo.h4">Carregando...</MudText>
+
+}
+else
+{
+    <MudText Typo="Typo.h4">Produtos</MudText>
+    @if (Produtos.Count() > 0)
+    {
+        var produtosPorCategoria = from produto in Produtos
+                                   group produto by produto.CategoriaId
+                                   into prodPorCatGrupo
+                                   orderby prodPorCatGrupo.Key
+                                   select prodPorCatGrupo;
+        @foreach (var prodGrupo in produtosPorCategoria)
+        {
+            <MudText Typo="Typo.h5">@prodGrupo.FirstOrDefault(pg => pg.CategoriaId == prodGrupo.Key).CategoriaNome</MudText>
+
+
+            <MudGrid>
+                <ExibirProdutos Produtos="@prodGrupo" />
+            </MudGrid>
+            <MudDivider DividerType="DividerType.Middle" Class="my-6" />
+        }
+       
+    }
+}
+
+@code {
+
+    public IEnumerable<ProdutoDto>? Produtos { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Produtos = await produtoService.GetItens();
+
+    }
+    }
+

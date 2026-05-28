@@ -1,0 +1,11 @@
+/* Classe para o Card */
+.card-hover-effect[b-ohndrvylbo] {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+    /* Efeito ao passar o mouse */
+    .card-hover-effect:hover[b-ohndrvylbo] {
+        transform: translateY(-8px); /* Sobe o card levemente */
+        box-shadow: 0 12px 20px rgba(0,0,0,0.2) !important; /* Aumenta a sombra */
+    }

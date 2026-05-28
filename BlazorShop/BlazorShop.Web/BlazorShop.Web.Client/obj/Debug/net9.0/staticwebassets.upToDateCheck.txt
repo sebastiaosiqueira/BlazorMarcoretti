@@ -1,0 +1,4 @@
+wwwroot\appsettings.Development.json
+wwwroot\appsettings.json
+C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\wwwroot\appsettings.Development.json
+C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\wwwroot\appsettings.json

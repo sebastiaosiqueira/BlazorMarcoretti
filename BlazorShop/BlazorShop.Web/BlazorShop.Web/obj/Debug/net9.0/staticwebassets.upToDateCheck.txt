@@ -1,0 +1,12 @@
+wwwroot\favicon.ico
+wwwroot\Imagens\Beleza\brush.png
+wwwroot\Imagens\Beleza\estojo.png
+wwwroot\Imagens\Calcados\tenisbranco.png
+wwwroot\Imagens\Calcados\tenispreto.png
+wwwroot\Imagens\Eletronicos\componentes.png
+wwwroot\Imagens\Eletronicos\notebook.png
+wwwroot\Imagens\Eletronicos\tela.png
+wwwroot\Imagens\Moveis\sofacolorido.png
+wwwroot\Imagens\Moveis\sofaduplo.png
+wwwroot\Imagens\Moveis\sofasimples.png
+C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\wwwroot\favicon.ico

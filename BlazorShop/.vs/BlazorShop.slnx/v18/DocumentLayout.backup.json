@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1D56D99A-122E-E65A-210E-6561CBEB0148}|BlazorShop.Web\\BlazorShop.Web\\BlazorShop.Web.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorshop\\blazorshop.web\\blazorshop.web\\components\\pages\\catalogo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D56D99A-122E-E65A-210E-6561CBEB0148}|BlazorShop.Web\\BlazorShop.Web\\BlazorShop.Web.csproj|solutionrelative:blazorshop.web\\blazorshop.web\\components\\pages\\catalogo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D56D99A-122E-E65A-210E-6561CBEB0148}|BlazorShop.Web\\BlazorShop.Web\\BlazorShop.Web.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorshop\\blazorshop.web\\blazorshop.web\\components\\pages\\exibirprodutos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D56D99A-122E-E65A-210E-6561CBEB0148}|BlazorShop.Web\\BlazorShop.Web\\BlazorShop.Web.csproj|solutionrelative:blazorshop.web\\blazorshop.web\\components\\pages\\exibirprodutos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A689CA5F-AC0A-CC45-B2D7-0871F07D08EE}|BlazorShop.Web\\BlazorShop.Web.Client\\BlazorShop.Web.Client.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\blazorshop\\blazorshop.web\\blazorshop.web.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A689CA5F-AC0A-CC45-B2D7-0871F07D08EE}|BlazorShop.Web\\BlazorShop.Web.Client\\BlazorShop.Web.Client.csproj|solutionrelative:blazorshop.web\\blazorshop.web.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorShop\\BlazorShop.Web\\BlazorShop.Web.Client\\Program.cs",
+              "RelativeDocumentMoniker": "BlazorShop.Web\\BlazorShop.Web.Client\\Program.cs",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorShop\\BlazorShop.Web\\BlazorShop.Web.Client\\Program.cs",
+              "RelativeToolTip": "BlazorShop.Web\\BlazorShop.Web.Client\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T18:41:50.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExibirProdutos.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorShop\\BlazorShop.Web\\BlazorShop.Web\\Components\\Pages\\ExibirProdutos.razor",
+              "RelativeDocumentMoniker": "BlazorShop.Web\\BlazorShop.Web\\Components\\Pages\\ExibirProdutos.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorShop\\BlazorShop.Web\\BlazorShop.Web\\Components\\Pages\\ExibirProdutos.razor",
+              "RelativeToolTip": "BlazorShop.Web\\BlazorShop.Web\\Components\\Pages\\ExibirProdutos.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-28T18:24:31.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Catalogo.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorShop\\BlazorShop.Web\\BlazorShop.Web\\Components\\Pages\\Catalogo.razor",
+              "RelativeDocumentMoniker": "BlazorShop.Web\\BlazorShop.Web\\Components\\Pages\\Catalogo.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\BlazorShop\\BlazorShop.Web\\BlazorShop.Web\\Components\\Pages\\Catalogo.razor",
+              "RelativeToolTip": "BlazorShop.Web\\BlazorShop.Web\\Components\\Pages\\Catalogo.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-28T17:28:45.84Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Novo Perfil",
+    "Projects": [
+      {
+        "Path": "BlazorShop.Api\\BlazorShop.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "BlazorShop.Web\\BlazorShop.Web\\BlazorShop.Web.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
