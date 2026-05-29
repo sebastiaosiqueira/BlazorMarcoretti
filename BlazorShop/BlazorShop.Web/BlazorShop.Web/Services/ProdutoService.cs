@@ -1,4 +1,5 @@
-﻿using BlazorShop.Models.DTOs;
+﻿using Azure;
+using BlazorShop.Models.DTOs;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlazorShop.Web.Services
@@ -12,6 +13,33 @@ namespace BlazorShop.Web.Services
         {
             _httpClient = httpClient;
             _logger = logger;
+        }
+
+        public async Task<ProdutoDto> GetItem(int id)
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync($"api/produtos/{id}");
+                if (response.IsSuccessStatusCode)
+                {
+                    if (response.StatusCode == System.Net.HttpStatusCode.NoContent)
+                    {
+                        return default(ProdutoDto);
+                    }
+                    return await response.Content.ReadFromJsonAsync<ProdutoDto>();
+                }
+                else
+                {
+                    var message = await response.Content.ReadAsStringAsync();
+                    _logger.LogError("Erro ao obter o produto. Status Code: {StatusCode}, Message: {Message}", response.StatusCode, message);
+                    throw new Exception($"Status Code: {response.StatusCode}, Message: {message}");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exceção ao obter o produto com ID {Id}.", id);
+                throw;
+            }
         }
 
         public async Task<IEnumerable<ProdutoDto>> GetItens()

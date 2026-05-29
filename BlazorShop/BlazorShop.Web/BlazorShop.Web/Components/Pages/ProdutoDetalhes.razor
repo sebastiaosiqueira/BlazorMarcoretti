@@ -1,0 +1,94 @@
+﻿@page "/produtodetalhes/{id:int}"
+
+@using BlazorShop.Web.Shared
+@inject IProdutoService produtoService
+<ExibirSpinner Carregando="@(Produto == null)">
+
+    @if (Produto != null)
+    {
+        <MudContainer Class="mt-16" MaxWidth="MaxWidth.Medium">
+            <MudText Typo="Typo.h3" Align="Align.Center" GutterBottom="true">Detalhes do Produto</MudText>
+            <MudGrid Spacing="12" Class="mt-16">
+                <MudItem xs="7">
+                  
+                    <MudGrid>
+                        <MudItem xs="12">
+                            <MudCard Style="width: 500px;">
+
+                                <MudCardMedia Image="@Produto.ImagemUrl" Height="300" Width="300" />
+                               
+
+
+                            </MudCard>
+                        </MudItem>
+
+                    </MudGrid>
+                </MudItem>
+                <MudItem xs="5">
+                  
+                    <MudPaper Class="d-flex flex-column" Style="height:100%;" Outlined="true">
+                    <MudGrid Justify="Justify.Center" Style="margin:20px">
+                          
+                        <MudCardContent>
+                              
+                            <MudText Typo="Typo.h5">@Produto.Nome</MudText>
+                            <MudText Typo="Typo.body1">@Produto.Preco.ToString("c")</MudText>
+
+                            <MudText Typo="Typo.body2">@Produto.CategoriaNome</MudText>
+                            <MudText Typo="Typo.body2">@Produto.Descricao</MudText>
+                        </MudCardContent>
+                         <MudItem xs="12">
+                            <MudButton Style="-o-object-position:center" Variant="Variant.Filled" DropShadow="false" Color="Color.Tertiary" Size="Size.Large" Class="mt-8">Incluir no Carrinho</MudButton>
+                    </MudItem>
+                        </MudGrid>
+                    </MudPaper>
+                    
+                           
+                        
+                </MudItem>
+            </MudGrid>
+        </MudContainer>
+       
+       <MudItem xs="12" sm="12" md="4" lg="12"  >
+           
+        </MudItem>
+    }
+    </ExibirSpinner>
+
+
+
+@code {
+
+    [Inject]
+    public IProdutoService? ProdutoService { get; set; }
+
+    [Parameter]
+    public int Id { get; set; }
+    public ProdutoDto? Produto { get; set; }
+   
+    protected override async Task OnInitializedAsync()
+    {
+        // Garante que o estado inicial é nulo
+        Produto = null;
+        try
+        {
+            // Busca os dados (o Task.Delay aqui vai fazer o spinner brilhar!)
+            await Task.Delay(300);
+            Produto = await produtoService.GetItem(Id);
+            
+        }
+        catch(Exception ex)
+        {
+            Snackbar.Add(ex.Message!, Severity.Error, config =>
+              {
+                  config.Icon = Icons.Material.Filled.Error;
+              });
+        }
+        finally
+        {
+            // O Blazor atualizará a tela automaticamente aqui para mostrar os produtos
+        }
+    }
+   
+
+}

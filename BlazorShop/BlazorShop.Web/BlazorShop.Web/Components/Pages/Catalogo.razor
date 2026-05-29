@@ -1,13 +1,10 @@
 ﻿@page "/produtos"
+@using BlazorShop.Web.Shared
 @inject IProdutoService produtoService
+@rendermode @(new InteractiveServerRenderMode(prerender: false))
+<ExibirSpinner Carregando="@(Produtos == null)">
 
-@if(Produtos == null)
-{
-    <MudText Typo="Typo.h4">Carregando...</MudText>
-
-}
-else
-{
+ 
     <MudText Typo="Typo.h4">Produtos</MudText>
     @if (Produtos.Count() > 0)
     {
@@ -28,15 +25,38 @@ else
         }
        
     }
-}
+</ExibirSpinner>
 
-@code {
+
+    @code {
 
     public IEnumerable<ProdutoDto>? Produtos { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
-        Produtos = await produtoService.GetItens();
+
+        // Garante que o estado inicial é nulo
+        Produtos = null;
+
+        try
+        {
+            // Busca os dados (o Task.Delay aqui vai fazer o spinner brilhar!)
+            await Task.Delay(300);
+
+            Produtos = await produtoService.GetItens();
+            
+        }
+        catch(Exception ex)
+        {
+            Snackbar.Add(ex.Message!, Severity.Error, config =>
+              {
+                  config.Icon = Icons.Material.Filled.Error;
+              });
+        }
+        finally
+        {
+            // O Blazor atualizará a tela automaticamente aqui para mostrar os produtos
+        }
 
     }
     }

@@ -1,0 +1,22 @@
+﻿@using MudBlazor
+
+@if (Carregando)
+{
+   <div class="d-flex align-center justify-center" style="min-height: 400px; height: 70vh; width: 100%;">
+        <MudProgressCircular Color="Color.Primary"
+                             Style="height:70px; width:70px;"
+                             Indeterminate="true" />
+    </div>
+}
+else
+{
+    @ChildContent
+}
+
+@code {
+    [Parameter] 
+    public bool Carregando { get; set; }
+
+    [Parameter] 
+    public RenderFragment? ChildContent { get; set; }
+}

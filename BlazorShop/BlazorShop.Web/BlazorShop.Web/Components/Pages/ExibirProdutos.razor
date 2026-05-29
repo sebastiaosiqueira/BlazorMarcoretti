@@ -2,8 +2,11 @@
 
 @foreach (var item in Produtos)
 {
+
     <MudItem xs="12" sm="6" md="4" lg="3">
+       <a href="/produtodetalhes/@item.Id" style="text-decoration: none;">
         <MudCard Style="width: 300px;">
+          
             <MudCardMedia Image="@item.ImagemUrl" Height="250" Width="250" />
             <MudCardContent>
                 <MudText Typo="Typo.h5">@item.Nome</MudText>
@@ -11,11 +14,12 @@
 
                 <MudText Typo="Typo.body2">@item.CategoriaNome</MudText>
             </MudCardContent>
-            <MudCardActions>
-                <MudButton Variant="Variant.Text" Color="Color.Primary">Detalhes</MudButton>
-            </MudCardActions>
+           
+            
         </MudCard>
+        </a>
     </MudItem>
+
 }
 @code {
     [Parameter]

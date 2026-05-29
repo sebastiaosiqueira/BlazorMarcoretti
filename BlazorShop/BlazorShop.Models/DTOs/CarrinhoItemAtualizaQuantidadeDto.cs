@@ -1,7 +1,7 @@
 ﻿
 namespace BlazorShop.Models.DTOs
 {
-    public class CarrinhoItemAtualizaQuantidade
+    public class CarrinhoItemAtualizaQuantidadeDto
     {
         public int CarrinhoItemId { get; set; }
     

@@ -46,6 +46,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/3346.ADM-UCDB/source/repos/BlazorShop/BlazorShop.Web/BlazorShop.Web/Components/Pages/ProdutoDetalhes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdXRvRGV0YWxoZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/3346.ADM-UCDB/source/repos/BlazorShop/BlazorShop.Web/BlazorShop.Web/Components/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -56,6 +60,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/3346.ADM-UCDB/source/repos/BlazorShop/BlazorShop.Web/BlazorShop.Web/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/3346.ADM-UCDB/source/repos/BlazorShop/BlazorShop.Web/BlazorShop.Web/Shared/ExibirSpinner.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEV4aWJpclNwaW5uZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/3346.ADM-UCDB/source/repos/BlazorShop/BlazorShop.Web/BlazorShop.Web/Shared/MensagemAlerta.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1lbnNhZ2VtQWxlcnRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/3346.ADM-UCDB/source/repos/BlazorShop/BlazorShop.Web/BlazorShop.Web/Components/Pages/ExibirProdutos.razor]
