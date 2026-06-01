@@ -34,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/3346.ADM-UCDB/source/repos/BlazorShop/BlazorShop.Web/BlazorShop.Web/Components/Pages/CarrinhoCompra.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXJyaW5ob0NvbXByYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/3346.ADM-UCDB/source/repos/BlazorShop/BlazorShop.Web/BlazorShop.Web/Components/Pages/Catalogo.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXRhbG9nby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

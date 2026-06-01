@@ -9,7 +9,7 @@ namespace BlazorShop.Api.Repositories
         Task<CarrinhoItem> AtualizaQuantidade(int id, CarrinhoItemAtualizaQuantidadeDto carrinhoItemAtualizaQuantidadeDto);
         Task<CarrinhoItem> DeletaItem(int id);
         Task<CarrinhoItem> GetItem(int id);
-        Task<IEnumerable<CarrinhoItem>> GetItens(string usuarioId);
+        Task<IEnumerable<CarrinhoItem>> GetItens(int usuarioId);
 
     }
 }

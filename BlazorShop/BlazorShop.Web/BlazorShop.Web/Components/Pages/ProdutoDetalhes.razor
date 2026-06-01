@@ -38,7 +38,13 @@
                             <MudText Typo="Typo.body2">@Produto.Descricao</MudText>
                         </MudCardContent>
                          <MudItem xs="12">
-                            <MudButton Style="-o-object-position:center" Variant="Variant.Filled" DropShadow="false" Color="Color.Tertiary" Size="Size.Large" Class="mt-8">Incluir no Carrinho</MudButton>
+                            <MudButton OnClick="()=> AdicionarAoCarrinho_Click(new CarrinhoItemAdicionaDto{
+                                        CarrinhoId = UsuarioLogado.CarrinhoId,
+                                        ProdutoId = Produto.Id,
+                                        Quantidade = 1
+                                    })"  Style="-o-object-position:center" Variant="Variant.Filled" DropShadow="false" Color="Color.Tertiary" Size="Size.Large" Class="mt-8">Incluir no Carrinho
+                                    
+                            </MudButton>
                     </MudItem>
                         </MudGrid>
                     </MudPaper>
@@ -61,10 +67,38 @@
 
     [Inject]
     public IProdutoService? ProdutoService { get; set; }
+    [Inject] ICarrinhoCompraService? carrinhoCompraService { get; set; }
+
+     [Inject]
+     public NavigationManager navigationManager { get; set; }
 
     [Parameter]
     public int Id { get; set; }
     public ProdutoDto? Produto { get; set; }
+    public UsuarioLogado UsuarioLogado { get; set; } = new UsuarioLogado();
+
+ 
+
+    private async Task AdicionarAoCarrinho_Click(CarrinhoItemAdicionaDto carrinhoItemAdicionaDto)
+    {
+        try
+        {
+            var carrinhoItemDto = await carrinhoCompraService.AdicionaItem(carrinhoItemAdicionaDto);
+            await Task.Delay(300);
+            Snackbar.Add("Produto adicionado ao carrinho!", Severity.Success, config =>
+              {
+                  config.Icon = Icons.Material.Filled.CheckCircle;
+              });
+              navigationManager.NavigateTo("/carrinhocompra");
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add(ex.Message!, Severity.Error, config =>
+              {
+                  config.Icon = Icons.Material.Filled.Error;
+              });
+        }
+    }
    
     protected override async Task OnInitializedAsync()
     {

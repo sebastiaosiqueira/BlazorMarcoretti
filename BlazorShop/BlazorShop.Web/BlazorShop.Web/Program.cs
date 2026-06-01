@@ -28,6 +28,7 @@ builder.Services.AddMudServices(config =>
 });
 
 builder.Services.AddScoped<IProdutoService, ProdutoService>();
+builder.Services.AddScoped<ICarrinhoCompraService, CarrinhoCompraService>();
 
 var app = builder.Build();
 

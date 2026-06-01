@@ -110,10 +110,14 @@ C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\scopedcss\Components\Pages\ExibirProdutos.razor.rz.scp.css
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\scopedcss\bundle\BlazorShop.Web.styles.css
+C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\scopedcss\projectbundle\BlazorShop.Web.bundle.scp.css
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\compressed\tzxjg6is5z-{0}-7c7lhmh1j6-7c7lhmh1j6.gz
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\compressed\0wz98yz2xy-{0}-f96y5mhlyw-f96y5mhlyw.gz
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\compressed\b1fuugaarm-{0}-2jeq8efc6q-2jeq8efc6q.gz
+C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\compressed\itrb1wvp2u-{0}-nfn8yyjubr-nfn8yyjubr.gz
+C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\compressed\2u826xskjg-{0}-nfn8yyjubr-nfn8yyjubr.gz
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\staticwebassets.development.json
@@ -126,7 +130,3 @@ C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\BlazorShop.Web.pdb
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\BlazorShop.Web.genruntimeconfig.cache
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\ref\BlazorShop.Web.dll
-C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\scopedcss\Components\Pages\ExibirProdutos.razor.rz.scp.css
-C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\scopedcss\projectbundle\BlazorShop.Web.bundle.scp.css
-C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\compressed\itrb1wvp2u-{0}-nfn8yyjubr-nfn8yyjubr.gz
-C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\compressed\2u826xskjg-{0}-nfn8yyjubr-nfn8yyjubr.gz

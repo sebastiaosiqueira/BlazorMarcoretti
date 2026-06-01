@@ -1,0 +1,70 @@
+﻿using BlazorShop.Api.Context;
+using BlazorShop.Api.Entities;
+using BlazorShop.Models.DTOs;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+
+namespace BlazorShop.Api.Repositories
+{
+    public class CarrinhoCompraRepository : ICarrinhoCompraRepository
+    {
+        private readonly AppDbContext _context;
+
+        public CarrinhoCompraRepository(AppDbContext context)
+        {
+            _context = context;
+        }
+
+        public CarrinhoItemDto AdicionaItem(CarrinhoItemAdicionaDto carrinhoItemAdicionaDto)
+        {
+            // Se já existir, incrementa a quantidade
+            if (CarrinhoItemJaExiste(carrinhoItemAdicionaDto.CarrinhoId, carrinhoItemAdicionaDto.ProdutoId))
+            {
+                var existing = _context.CarrinhoItens
+                    .FirstOrDefault(ci => ci.CarrinhoId == carrinhoItemAdicionaDto.CarrinhoId && ci.ProdutoId == carrinhoItemAdicionaDto.ProdutoId);
+
+                if (existing != null)
+                {
+                    existing.Quantidade += carrinhoItemAdicionaDto.Quantidade;
+                    _context.CarrinhoItens.Update(existing);
+                    _context.SaveChanges();
+
+                    return new CarrinhoItemDto
+                    {
+                        Id = existing.Id,
+                        CarrinhoId = existing.CarrinhoId,
+                        ProdutoId = existing.ProdutoId,
+                        Quantidade = existing.Quantidade
+                    };
+                }
+            }
+
+            // Caso não exista, cria um novo registro
+            var novo = new Entities.CarrinhoItem
+            {
+                CarrinhoId = carrinhoItemAdicionaDto.CarrinhoId,
+                ProdutoId = carrinhoItemAdicionaDto.ProdutoId,
+                Quantidade = carrinhoItemAdicionaDto.Quantidade
+            };
+
+            _context.CarrinhoItens.Add(novo);
+            _context.SaveChanges();
+
+            return new CarrinhoItemDto
+            {
+                Id = novo.Id,
+                CarrinhoId = novo.CarrinhoId,
+                ProdutoId = novo.ProdutoId,
+                Quantidade = novo.Quantidade
+            };
+        }
+
+        public bool CarrinhoItemJaExiste(int carrinhoId, int produtoId)
+        {
+            // Implementação correta usando EF Core para evitar NotImplementedException
+            return _context.CarrinhoItens
+                           .AsNoTracking()
+                           .Any(ci => ci.CarrinhoId == carrinhoId && ci.ProdutoId == produtoId);
+        }
+    }
+}
