@@ -104,7 +104,6 @@ C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\BlazorShop.Web.AssemblyInfoInputs.cache
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\BlazorShop.Web.AssemblyInfo.cs
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\BlazorShop.Web.csproj.CoreCompileInputs.cache
-C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\BlazorShop.Web.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\BlazorShop.Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\BlazorShop.Web.sourcelink.json
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web\obj\Debug\net9.0\rjimswa.dswa.cache.json

@@ -203,8 +203,6 @@ C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Cli
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\bin\Debug\net9.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\bin\Debug\net9.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\bin\Debug\net9.0\wwwroot\_framework\segmentation-rules.json
-C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\bin\Debug\net9.0\wwwroot\_framework\BlazorShop.Web.Client.7sxy6uo9mb.wasm
-C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\bin\Debug\net9.0\wwwroot\_framework\BlazorShop.Web.Client.x9r0t3w0og.pdb
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\bin\Debug\net9.0\wwwroot\_framework\blazor.webassembly.js.gz
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.mss3h30ktc.wasm.gz
@@ -411,8 +409,6 @@ C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Cli
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\bin\Debug\net9.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat.gz
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\bin\Debug\net9.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat.gz
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\bin\Debug\net9.0\wwwroot\_framework\segmentation-rules.json.gz
-C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\bin\Debug\net9.0\wwwroot\_framework\BlazorShop.Web.Client.7sxy6uo9mb.wasm.gz
-C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\bin\Debug\net9.0\wwwroot\_framework\BlazorShop.Web.Client.x9r0t3w0og.pdb.gz
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json.gz
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\bin\Debug\net9.0\BlazorShop.Web.Client.staticwebassets.runtime.json
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\bin\Debug\net9.0\BlazorShop.Web.Client.staticwebassets.endpoints.json
@@ -1038,9 +1034,6 @@ C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Cli
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\obj\Debug\net9.0\compressed\hc3oj2e4t6-{0}-tptq2av103-tptq2av103.gz
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\obj\Debug\net9.0\compressed\vb52gxh2sh-{0}-lfu7j35m59-lfu7j35m59.gz
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\obj\Debug\net9.0\compressed\lrzkw1bvtu-{0}-ec9yy67949-ec9yy67949.gz
-C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\obj\Debug\net9.0\compressed\tjwj9qk5sj-{0}-7sxy6uo9mb-7sxy6uo9mb.gz
-C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\obj\Debug\net9.0\compressed\dq5jvtwfxx-{0}-x9r0t3w0og-x9r0t3w0og.gz
-C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\obj\Debug\net9.0\compressed\q9wb7wiium-{0}-ujxihftzyf-ujxihftzyf.gz
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\obj\Debug\net9.0\staticwebassets.development.json
@@ -1052,3 +1045,10 @@ C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Cli
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\obj\Debug\net9.0\refint\BlazorShop.Web.Client.dll
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\obj\Debug\net9.0\BlazorShop.Web.Client.pdb
 C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\obj\Debug\net9.0\ref\BlazorShop.Web.Client.dll
+C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\bin\Debug\net9.0\wwwroot\_framework\BlazorShop.Web.Client.v1ydt91d62.wasm
+C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\bin\Debug\net9.0\wwwroot\_framework\BlazorShop.Web.Client.5v7zjukv5g.pdb
+C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\bin\Debug\net9.0\wwwroot\_framework\BlazorShop.Web.Client.v1ydt91d62.wasm.gz
+C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\bin\Debug\net9.0\wwwroot\_framework\BlazorShop.Web.Client.5v7zjukv5g.pdb.gz
+C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\obj\Debug\net9.0\compressed\tjwj9qk5sj-{0}-v1ydt91d62-v1ydt91d62.gz
+C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\obj\Debug\net9.0\compressed\dq5jvtwfxx-{0}-5v7zjukv5g-5v7zjukv5g.gz
+C:\Users\3346.ADM-UCDB\source\repos\BlazorShop\BlazorShop.Web\BlazorShop.Web.Client\obj\Debug\net9.0\compressed\q9wb7wiium-{0}-uq32jewebm-uq32jewebm.gz

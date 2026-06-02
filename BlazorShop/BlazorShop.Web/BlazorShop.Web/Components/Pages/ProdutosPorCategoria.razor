@@ -1,0 +1,62 @@
+﻿@page "/produtosporcategoria/{CategoriaId:int}"
+
+@if(!string.IsNullOrEmpty(MensagemErro))
+{
+    <div class="alert alert-danger">@MensagemErro</div>
+}
+else if (ProdutosDto == null)
+{
+    <p>Carregando produtos...</p>
+}
+else if (!ProdutosDto.Any())
+{
+    <p>Nenhum produto encontrado para esta categoria.</p>
+}
+else
+{
+    <h2>Produtos da Categoria: @NomeCategoria</h2>
+    <ul>
+        @foreach (var produto in ProdutosDto)
+        {
+            <MudGrid>
+                <ExibirProdutos Produtos="@ProdutosDto" />
+            </MudGrid>
+            <MudDivider DividerType="DividerType.Middle" Class="my-6" />
+        }
+    </ul>
+}
+
+@code {
+        [Parameter]
+        public int CategoriaId { get; set; }
+
+        [Inject]
+        public IProdutoService? ProdutoService { get; set; }    
+    public IEnumerable<ProdutoDto>? ProdutosDto { get; set; }
+
+    public string? NomeCategoria { get; set; }
+    public string? MensagemErro { get; set; }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        try
+        {
+            ProdutosDto = await ProdutoService?.GetItensPorCategoria(CategoriaId);
+            if(ProdutosDto !=null && ProdutosDto.Count() > 0)
+            {
+                var produtoDto = ProdutosDto.FirstOrDefault(p=> p.CategoriaId == CategoriaId);
+                if(produtoDto != null)
+                {
+                    NomeCategoria = produtoDto.CategoriaNome;
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            MensagemErro = $"Erro ao carregar produtos: {ex.Message}";
+        }
+    }
+
+        
+
+}

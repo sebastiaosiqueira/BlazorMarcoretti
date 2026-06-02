@@ -1,0 +1,74 @@
+﻿@using BlazorShop.Models.DTOs
+@using BlazorShop.Web.Services
+@using MudBlazor
+@using BlazorShop.Web.Shared
+
+
+@if (CategoriasDto == null)
+{
+    <ExibirSpinner Carregando="true" />
+}
+else if (!string.IsNullOrEmpty(mensagemErro))
+{
+    <MudAlert Severity="Severity.Error">@mensagemErro</MudAlert>
+}
+else
+{
+
+        @foreach (var categoria in CategoriasDto)
+        {
+            var link = "/produtosporcategoria/" + categoria.Id;
+
+            <MudNavLink Href="@link" Icon="@ObterIcone(categoria.IconCSS)">
+                @categoria.Nome
+            </MudNavLink>
+        }
+   
+}
+
+@code {
+    [Inject]
+    public IProdutoService? ProdutoService { get; set; }
+
+    public IEnumerable<CategoriaDto>? CategoriasDto { get; set; }
+    public string mensagemErro { get; set; } = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            if (ProdutoService != null)
+            {
+                CategoriasDto = await ProdutoService.GetCategorias();
+            }
+        }
+        catch (Exception ex)
+        {
+            mensagemErro = $"Erro ao carregar categorias: {ex.Message}";
+        }
+    }
+
+    // Método mágico que transforma o texto do banco no Ícone do MudBlazor
+    private string ObterIcone(string nomeIcone)
+    {
+        if (string.IsNullOrWhiteSpace(nomeIcone))
+            return Icons.Material.Filled.Help; // Ícone padrão caso esteja nulo
+
+        try
+        {
+            // Busca o ícone dentro de Icons.Material.Filled usando o texto da sua tabela
+            var campo = typeof(Icons.Material.Filled).GetField(nomeIcone);
+
+            if (campo != null)
+            {
+                return campo.GetValue(null)?.ToString() ?? Icons.Material.Filled.Help;
+            }
+        }
+        catch
+        {
+            // Se houver erro de digitação no banco, não quebra a tela
+        }
+
+        return Icons.Material.Filled.Help;
+    }
+}

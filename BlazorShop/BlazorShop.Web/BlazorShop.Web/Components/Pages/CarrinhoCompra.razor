@@ -30,9 +30,10 @@ else
                                 <MudText Typo="Typo.body1" Class="mt-2" Color="Color.Primary">
                                     <b>@item.Preco.ToString("C")</b>
                                 </MudText>
-                                <MudText Typo="Typo.caption" Class="text-secondary">
-                                    Quantidade: @item.Quantidade
-                                </MudText>
+                                <MudTextField @bind-Value="@item.Quantidade" Label="Quantidade" />
+                                <MudButton OnClick="(() => AtualizaQuantidadeCarrinhoItem_Cick(item.Id, item.Quantidade))" Variant="Variant.Outlined" Color="Color.Primary" Size="Size.Small" StartIcon="@Icons.Material.Filled.Update">
+                                    Atualizar
+                                </MudButton>
                             </MudCardContent>
 
                             <MudCardActions>
@@ -98,6 +99,7 @@ else
             if(itens != null)
             {
                 CarrinhoCompraItens = itens.ToList();
+                CarrinhoChanged();
             }   
         }
         catch(Exception ex)
@@ -126,5 +128,51 @@ else
     {
         var carrinhoItemDto = GetCarrinhoItem(id);
         CarrinhoCompraItens.Remove(carrinhoItemDto);
+    }
+
+    protected async Task AtualizaQuantidadeCarrinhoItem_Cick(int id, int quantidade)
+    {
+        try
+        {
+            if (quantidade > 0)
+            {
+                var atualizaItemDto = new CarrinhoItemAtualizaQuantidadeDto
+                    {
+                        CarrinhoItemId = id,
+                        Quantidade = quantidade
+                    };
+
+                var retornaItemAtualiazado = await CarrinhoCompraService.AtualizaQuantidade(atualizaItemDto);
+
+            }
+            else
+            {
+                var item = CarrinhoCompraItens.FirstOrDefault(i => i.Id == id);
+                if(item is not null)
+                {
+                    item.Quantidade = 1;
+                    item.PrecoTotal = item.Preco;
+                }
+            }
+
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add(ex.Message!, Severity.Error, config =>
+            {
+                config.Icon = Icons.Material.Filled.Error;
+            });
+        }
+    }
+
+    private void CarrinhoChanged()
+    {
+        CalculaResmoCarrinhoTotal();
+        CarrinhoCompraService.RaiseEventOnCarrinhoCompraChanged(CarrinhoCompraItens.Sum(i => i.Quantidade));
+    }
+
+    private void CalculaResmoCarrinhoTotal()
+    {
+        var total = CarrinhoCompraItens.Sum(i => i.Preco * i.Quantidade);
     }
 }

@@ -13,6 +13,14 @@ namespace BlazorShop.Api.Repositories
             _context = context;
         }
 
+ 
+
+        public async Task<IEnumerable<Categoria>> GetCategorias()
+        {
+            var categorias = await _context.Categorias.ToListAsync();
+            return categorias;
+        }
+
         public async Task<Produto> GetIem(int id)
         {
           var produto = await _context.Produtos.Include(c=> c.Categoria).SingleOrDefaultAsync(c => c.Id == id);

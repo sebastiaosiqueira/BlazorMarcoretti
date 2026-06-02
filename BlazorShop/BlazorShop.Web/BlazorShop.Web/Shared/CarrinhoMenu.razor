@@ -1,0 +1,33 @@
+﻿@using BlazorShop.Web.Services
+@using MudBlazor
+
+@inject ICarrinhoCompraService carrinhoCompraService
+@implements IDisposable
+
+<MudBadge Content="@carrinhoCompraItemContador" Color="Color.Primary" Overlap="true" Class="mx-4">
+    <MudLink Href="carrinhocompra" Target="_blank">
+        Carrinho
+    </MudLink>
+</MudBadge>
+@code {
+
+    private int carrinhoCompraItemContador = 0;
+
+    protected override void OnInitialized()
+    {
+        carrinhoCompraService.OnCarrinhoCompraChanged += CarrinhoComprachanged;
+    }
+
+    protected void CarrinhoComprachanged(int totalQuantidade)
+    {
+        carrinhoCompraItemContador = totalQuantidade;
+        StateHasChanged();
+    }
+
+    void IDisposable.Dispose()
+    {
+        carrinhoCompraService.OnCarrinhoCompraChanged -= CarrinhoComprachanged;
+    }
+
+
+}

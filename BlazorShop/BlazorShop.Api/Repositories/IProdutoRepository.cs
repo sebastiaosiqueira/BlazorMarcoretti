@@ -7,6 +7,7 @@ namespace BlazorShop.Api.Repositories
             Task<IEnumerable<Produto>> GetItens();
             Task<Produto> GetIem(int id);
             Task<IEnumerable<Produto>> GetItensPorCategoria(int id);
+            Task<IEnumerable<Categoria>> GetCategorias();
        
     }
 }

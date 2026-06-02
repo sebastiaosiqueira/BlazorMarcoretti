@@ -1,4 +1,6 @@
 ﻿using BlazorShop.Models.DTOs;
+using System.Text;
+using System.Text.Json;
 
 namespace BlazorShop.Web.Services
 {
@@ -10,6 +12,8 @@ namespace BlazorShop.Web.Services
         {
             this.httpClient = httpClient;
         }
+
+        public event Action<int> OnCarrinhoCompraChanged;
 
         public async Task<CarrinhoItemDto> AdicionaItem(CarrinhoItemAdicionaDto carrinhoItemAdicionaDto)
         {
@@ -32,6 +36,25 @@ namespace BlazorShop.Web.Services
                 }
             }
             catch (Exception ex) { throw; }
+        }
+
+        public async  Task<CarrinhoItemDto> AtualizaQuantidade(CarrinhoItemAtualizaQuantidadeDto carrinhoItemAtualizaQuantidadeDto)
+        {
+            try
+            {
+                var jsonRequest = JsonSerializer.Serialize(carrinhoItemAtualizaQuantidadeDto);
+                var content = new StringContent(jsonRequest, Encoding.UTF8, "application/json");
+                var response = await httpClient.PatchAsync($"api/CarrinhoCompra/{carrinhoItemAtualizaQuantidadeDto.CarrinhoItemId}", content);
+                if (response.IsSuccessStatusCode)
+                {
+                    return await response.Content.ReadFromJsonAsync<CarrinhoItemDto>();
+                }
+                return default(CarrinhoItemDto);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public async  Task<CarrinhoItemDto> DeletaItem(int id)
@@ -76,6 +99,14 @@ namespace BlazorShop.Web.Services
             {
                 Console.WriteLine($"Erro ao obter itens do carrinho: {ex.Message}");
                 throw;
+            }
+        }
+
+        public void RaiseEventOnCarrinhoCompraChanged(int totalQuantidade)
+        {
+            if(OnCarrinhoCompraChanged != null)
+            {
+                OnCarrinhoCompraChanged.Invoke(totalQuantidade);
             }
         }
     }

@@ -66,7 +66,7 @@ namespace BlazorShop.Api.Controllers
         }
 
         [HttpGet]
-        [Route("GetItensPorCategoria/{categoriaId:int}")]
+        [HttpGet("{categoriaId:int}/GetItensPorCategoria")]
         public async Task<ActionResult<IEnumerable<ProdutoDto>>> GetItensPorCategoria(int categoriaId)
         {
             try
@@ -80,6 +80,24 @@ namespace BlazorShop.Api.Controllers
                 // Log the exception (not implemented here)
                 return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao obter os produtos por categoria.");
             }
+        }
+
+        [HttpGet]
+        [Route("GetCategorias")]
+        public async Task<ActionResult<IEnumerable<CategoriaDto>>> GetCategorias()
+        {
+            try
+            {
+                var categorias = await _produtoRepository.GetCategorias();
+                var categoriasDto = categorias.ConverterCategoriasParaDto();
+                return Ok(categoriasDto);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception (not implemented here)
+                return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao obter as categorias.");
+            }
+
         }
     }
 }
