@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Novo Perfil",
+    "Projects": [
+      {
+        "Path": "ApiMangas\\ApiMangas.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "BlazorMangas\\BlazorMangas.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

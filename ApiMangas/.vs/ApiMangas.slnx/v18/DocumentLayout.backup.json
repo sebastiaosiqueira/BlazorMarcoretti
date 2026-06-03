@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{121026F0-7EDD-6480-AC48-DDF0A4024D22}|ApiMangas\\ApiMangas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\apimangas\\apimangas\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121026F0-7EDD-6480-AC48-DDF0A4024D22}|ApiMangas\\ApiMangas.csproj|solutionrelative:apimangas\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC9544C-15BB-4A86-A420-2B6574E357A0}|BlazorMangas\\BlazorMangas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\apimangas\\blazormangas\\components\\pages\\autentica\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8BC9544C-15BB-4A86-A420-2B6574E357A0}|BlazorMangas\\BlazorMangas.csproj|solutionrelative:blazormangas\\components\\pages\\autentica\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\ApiMangas\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "ApiMangas\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\ApiMangas\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "ApiMangas\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwDMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T20:38:41.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\BlazorMangas\\Components\\Pages\\Autentica\\Login.razor",
+              "RelativeDocumentMoniker": "BlazorMangas\\Components\\Pages\\Autentica\\Login.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\BlazorMangas\\Components\\Pages\\Autentica\\Login.razor",
+              "RelativeToolTip": "BlazorMangas\\Components\\Pages\\Autentica\\Login.razor",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-03T20:35:28.104Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

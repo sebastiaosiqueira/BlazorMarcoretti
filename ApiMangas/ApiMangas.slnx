@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ApiMangas/ApiMangas.csproj" />
+  <Project Path="BlazorMangas/BlazorMangas.csproj" Id="8bc9544c-15bb-4a86-a420-2b6574e357a0" />
+</Solution>

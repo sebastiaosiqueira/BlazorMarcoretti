@@ -1,0 +1,13 @@
+﻿@using BlazorMangas.Service.Autentica
+@inject IAuthService AuthService
+<h3>Logout</h3>
+
+@code {
+
+    protected override async Task OnInitializedAsync()
+    {
+        await AuthService.Logout();
+        NavigationManager.NavigateTo("/");
+    }
+
+}

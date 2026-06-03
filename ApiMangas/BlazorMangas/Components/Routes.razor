@@ -1,0 +1,43 @@
+﻿@* Routes.razor *@
+
+<CascadingAuthenticationState>
+    <Router AppAssembly="@typeof(Program).Assembly">
+        <Found Context="routeData">
+            @* Substituímos o RouteView por AuthorizeRouteView para interceptar páginas com [Authorize] *@
+            <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(Layout.MainLayout)">
+                
+                <NotAuthorized>
+                    @* Mensagem personalizada do MudBlazor exibida quando o usuário não tem permissão *@
+                    <MudContainer>
+                        <MudIcon Icon="@Icons.Material.Filled.Lock" Color="Color.Error" Size="Size.Large" Class="mb-4" />
+                        <MudText Typo="Typo.h5" Align="Align.Center" GutterBottom="true">Acesso Negado</MudText>
+                        <MudText Typo="Typo.body1" Align="Align.Center" Class="text-muted mb-4">
+                            Você não tem permissão para acessar esta página. Por favor, faça login com uma conta autorizada.
+                        </MudText>
+                        <MudButton Variant="Variant.Filled" Color="Color.Primary" Link="/login">Ir para o Login</MudButton>
+                    </MudContainer>
+                </NotAuthorized>
+
+                <Authorizing>
+                    @* Tela exibida enquanto o Blazor valida o token JWT no LocalStorage *@
+                    <MudContainer ">
+                        <MudProgressCircular Color="Color.Primary" Size="Size.Large" Indeterminate="true" Class="mb-3" />
+                        <MudText Typo="Typo.body1">Verificando autenticação...</MudText>
+                    </MudContainer>
+                </Authorizing>
+
+            </AuthorizeRouteView>
+            <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+        </Found>
+        <NotFound>
+            <PageTitle>Não Encontrado</PageTitle>
+            <LayoutView Layout="@typeof(Layout.MainLayout)">
+                <MudContainer>
+                    <MudText Typo="Typo.h3" Color="Color.Error" GutterBottom="true">404</MudText>
+                    <MudText Typo="Typo.h5" GutterBottom="true">Página não encontrada</MudText>
+                    <MudButton Variant="Variant.Text" Color="Color.Primary" Link="/">Voltar para a Home</MudButton>
+                </MudContainer>
+            </LayoutView>
+        </NotFound>
+    </Router>
+</CascadingAuthenticationState>

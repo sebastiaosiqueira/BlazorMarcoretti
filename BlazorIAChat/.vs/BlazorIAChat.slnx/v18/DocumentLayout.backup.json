@@ -54,8 +54,7 @@
               "RelativeToolTip": "BlazorIAChat\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-26T12:21:41.301Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T12:21:41.301Z"
             },
             {
               "$type": "Document",
@@ -67,8 +66,7 @@
               "RelativeToolTip": "BlazorIAChat\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T12:18:25.293Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T12:18:25.293Z"
             },
             {
               "$type": "Document",
@@ -80,8 +78,7 @@
               "RelativeToolTip": "BlazorIAChat\\Services\\AIServiceCollectionExtensions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T12:16:43.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T12:16:43.758Z"
             },
             {
               "$type": "Document",
@@ -93,8 +90,7 @@
               "RelativeToolTip": "BlazorIAChat\\Components\\Pages\\CHATIA.razor",
               "ViewState": "AgIAAAIAAAAAAAAAAAAAwC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-25T20:52:42.021Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T20:52:42.021Z"
             }
           ]
         }

@@ -1,0 +1,112 @@
+﻿@page "/login"
+@using System.ComponentModel.DataAnnotations
+@using Microsoft.AspNetCore.Components.Forms
+@rendermode @(new InteractiveAutoRenderMode(prerender: false))
+@using BlazorMangas.Service.Autentica
+<MudText>Login</MudText>
+
+
+<MudContainer MaxWidth="MaxWidth.Small" Class="d-flex align-center justify-center" Style="min-height: 80vh;">
+    <MudPaper Elevation="4" Class="pa-8 rounded-lg w-100">
+
+        <div class="d-flex flex-column align-center justify-center mb-6">
+            <MudIcon Icon="@Icons.Material.Filled.MenuBook" Color="Color.Primary" Size="Size.Large" Class="mb-2" />
+            <MudText Typo="Typo.h4" Align="Align.Center" Style="font-weight: bold;">Blazor Mangás</MudText>
+            <MudText Typo="Typo.body2" Color="Color.Secondary" Align="Align.Center">Faça login para gerenciar sua coleção</MudText>
+        </div>
+
+        @* Ajustado: MudForm usando referência e validador nativo do MudBlazor *@
+        <MudForm @ref="form" Validation="@(@loginModel)">
+            
+            <MudTextField T="string"
+                          Label="E-mail"
+                          @bind-Value="loginModel.Email"
+                          For="@(() => loginModel.Email)"
+                          Variant="Variant.Outlined"
+                          Class="mb-4"
+                          InputType="InputType.Email"
+                          Adornment="Adornment.Start"
+                          AdornmentIcon="@Icons.Material.Filled.Email" />
+
+            <MudTextField T="string"
+                          Label="Senha"
+                          @bind-Value="loginModel.Password"
+                          For="@(() => loginModel.Password)"
+                          Variant="Variant.Outlined"
+                          Class="mb-6"
+                          InputType="@senhaInputType"
+                          Adornment="Adornment.End"
+                          AdornmentIcon="@senhaIcon"
+                          OnAdornmentClick="AlternarVisibilidadeSenha" />
+
+            @* Ajustado: OnClick chama o método que valida e envia o formulário *@
+            <MudButton Variant="Variant.Filled"
+                       Color="Color.Primary"
+                       FullWidth="true"
+                       Size="Size.Large"
+                       Disabled="@estaCarregando"
+                       OnClick="SubmitForm">
+                @if (estaCarregando)
+                {
+                    <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
+                    <MudText Class="ms-2">Autenticando...</MudText>
+                }
+                else
+                {
+                    <MudText>Entrar</MudText>
+                }
+            </MudButton>
+        </MudForm>
+
+    </MudPaper>
+</MudContainer>
+
+@code {
+    private MudForm form;
+    private LoginModel loginModel = new LoginModel();
+    private bool estaCarregando = false;
+    private bool mostrarSenha = false;
+
+
+
+    [Inject]
+    public IAuthService? AuthService { get; set; }
+
+
+    private InputType senhaInputType => mostrarSenha ? InputType.Text : InputType.Password;
+    private string senhaIcon => mostrarSenha ? Icons.Material.Filled.Visibility : Icons.Material.Filled.VisibilityOff;
+    private async Task SubmitForm()
+    {
+        // Força a validação usando as DataAnnotations do próprio Model atribuído ao MudForm
+        await form.Validate();
+
+        if (form.IsValid)
+        {
+            await HandleLogin();
+        }
+    }
+    private async Task HandleLogin()
+    {
+
+        try
+        {
+            var result = await AuthService.Login(loginModel);
+            if(result.Token is not null)
+            {
+                NavigationManager.NavigateTo("/");
+            }
+        }
+        catch (Exception ex)
+        {
+            snackbarService.Add(ex.Message!, Severity.Error, config =>
+    {
+        config.Icon = Icons.Material.Filled.Error;
+            });
+        }
+    }
+
+    private void AlternarVisibilidadeSenha()
+    {
+        mostrarSenha = !mostrarSenha;
+    }
+}
