@@ -3,12 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{121026F0-7EDD-6480-AC48-DDF0A4024D22}|ApiMangas\\ApiMangas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\apimangas\\apimangas\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{121026F0-7EDD-6480-AC48-DDF0A4024D22}|ApiMangas\\ApiMangas.csproj|solutionrelative:apimangas\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{121026F0-7EDD-6480-AC48-DDF0A4024D22}|ApiMangas\\ApiMangas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\apimangas\\apimangas\\repositories\\mangarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121026F0-7EDD-6480-AC48-DDF0A4024D22}|ApiMangas\\ApiMangas.csproj|solutionrelative:apimangas\\repositories\\mangarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BC9544C-15BB-4A86-A420-2B6574E357A0}|BlazorMangas\\BlazorMangas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\apimangas\\blazormangas\\components\\pages\\autentica\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8BC9544C-15BB-4A86-A420-2B6574E357A0}|BlazorMangas\\BlazorMangas.csproj|solutionrelative:blazormangas\\components\\pages\\autentica\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8BC9544C-15BB-4A86-A420-2B6574E357A0}|BlazorMangas\\BlazorMangas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\apimangas\\blazormangas\\components\\pages\\mangas\\fileuploader.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8BC9544C-15BB-4A86-A420-2B6574E357A0}|BlazorMangas\\BlazorMangas.csproj|solutionrelative:blazormangas\\components\\pages\\mangas\\fileuploader.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC9544C-15BB-4A86-A420-2B6574E357A0}|BlazorMangas\\BlazorMangas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\apimangas\\blazormangas\\models\\uploadresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC9544C-15BB-4A86-A420-2B6574E357A0}|BlazorMangas\\BlazorMangas.csproj|solutionrelative:blazormangas\\models\\uploadresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC9544C-15BB-4A86-A420-2B6574E357A0}|BlazorMangas\\BlazorMangas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\apimangas\\blazormangas\\service\\api\\fileuploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC9544C-15BB-4A86-A420-2B6574E357A0}|BlazorMangas\\BlazorMangas.csproj|solutionrelative:blazormangas\\service\\api\\fileuploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121026F0-7EDD-6480-AC48-DDF0A4024D22}|ApiMangas\\ApiMangas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\apimangas\\apimangas\\controllers\\fileuploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121026F0-7EDD-6480-AC48-DDF0A4024D22}|ApiMangas\\ApiMangas.csproj|solutionrelative:apimangas\\controllers\\fileuploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121026F0-7EDD-6480-AC48-DDF0A4024D22}|ApiMangas\\ApiMangas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\apimangas\\apimangas\\entities\\uploadresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121026F0-7EDD-6480-AC48-DDF0A4024D22}|ApiMangas\\ApiMangas.csproj|solutionrelative:apimangas\\entities\\uploadresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC9544C-15BB-4A86-A420-2B6574E357A0}|BlazorMangas\\BlazorMangas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\apimangas\\blazormangas\\components\\pages\\mangas\\mangas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8BC9544C-15BB-4A86-A420-2B6574E357A0}|BlazorMangas\\BlazorMangas.csproj|solutionrelative:blazormangas\\components\\pages\\mangas\\mangas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC9544C-15BB-4A86-A420-2B6574E357A0}|BlazorMangas\\BlazorMangas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\apimangas\\blazormangas\\shared\\confirma.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8BC9544C-15BB-4A86-A420-2B6574E357A0}|BlazorMangas\\BlazorMangas.csproj|solutionrelative:blazormangas\\shared\\confirma.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC9544C-15BB-4A86-A420-2B6574E357A0}|BlazorMangas\\BlazorMangas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\apimangas\\blazormangas\\components\\pages\\mangas\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8BC9544C-15BB-4A86-A420-2B6574E357A0}|BlazorMangas\\BlazorMangas.csproj|solutionrelative:blazormangas\\components\\pages\\mangas\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC9544C-15BB-4A86-A420-2B6574E357A0}|BlazorMangas\\BlazorMangas.csproj|c:\\users\\3346.adm-ucdb\\source\\repos\\apimangas\\blazormangas\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8BC9544C-15BB-4A86-A420-2B6574E357A0}|BlazorMangas\\BlazorMangas.csproj|solutionrelative:blazormangas\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +55,131 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\ApiMangas\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "ApiMangas\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\ApiMangas\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "ApiMangas\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAwwDMAAAAhAAAAAAAAAA==",
+              "Title": "MangaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\ApiMangas\\Repositories\\MangaRepository.cs",
+              "RelativeDocumentMoniker": "ApiMangas\\Repositories\\MangaRepository.cs",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\ApiMangas\\Repositories\\MangaRepository.cs",
+              "RelativeToolTip": "ApiMangas\\Repositories\\MangaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-03T20:38:41.952Z",
+              "WhenOpened": "2026-06-10T18:50:27.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UploadResult.cs",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\BlazorMangas\\Models\\UploadResult.cs",
+              "RelativeDocumentMoniker": "BlazorMangas\\Models\\UploadResult.cs",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\BlazorMangas\\Models\\UploadResult.cs",
+              "RelativeToolTip": "BlazorMangas\\Models\\UploadResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T18:35:18.414Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Login.razor",
-              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\BlazorMangas\\Components\\Pages\\Autentica\\Login.razor",
-              "RelativeDocumentMoniker": "BlazorMangas\\Components\\Pages\\Autentica\\Login.razor",
-              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\BlazorMangas\\Components\\Pages\\Autentica\\Login.razor",
-              "RelativeToolTip": "BlazorMangas\\Components\\Pages\\Autentica\\Login.razor",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFwAAAAMAAAAAAAAAA==",
+              "Title": "FileUploader.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\BlazorMangas\\Components\\Pages\\Mangas\\FileUploader.razor",
+              "RelativeDocumentMoniker": "BlazorMangas\\Components\\Pages\\Mangas\\FileUploader.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\BlazorMangas\\Components\\Pages\\Mangas\\FileUploader.razor",
+              "RelativeToolTip": "BlazorMangas\\Components\\Pages\\Mangas\\FileUploader.razor",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAACsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-03T20:35:28.104Z",
+              "WhenOpened": "2026-06-10T17:52:08.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FileUploadService.cs",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\BlazorMangas\\Service\\Api\\FileUploadService.cs",
+              "RelativeDocumentMoniker": "BlazorMangas\\Service\\Api\\FileUploadService.cs",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\BlazorMangas\\Service\\Api\\FileUploadService.cs",
+              "RelativeToolTip": "BlazorMangas\\Service\\Api\\FileUploadService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T17:51:03.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FileUploadController.cs",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\ApiMangas\\Controllers\\FileUploadController.cs",
+              "RelativeDocumentMoniker": "ApiMangas\\Controllers\\FileUploadController.cs",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\ApiMangas\\Controllers\\FileUploadController.cs",
+              "RelativeToolTip": "ApiMangas\\Controllers\\FileUploadController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T17:47:10.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UploadResult.cs",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\ApiMangas\\Entities\\UploadResult.cs",
+              "RelativeDocumentMoniker": "ApiMangas\\Entities\\UploadResult.cs",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\ApiMangas\\Entities\\UploadResult.cs",
+              "RelativeToolTip": "ApiMangas\\Entities\\UploadResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T17:47:00.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Confirma.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\BlazorMangas\\Shared\\Confirma.razor",
+              "RelativeDocumentMoniker": "BlazorMangas\\Shared\\Confirma.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\BlazorMangas\\Shared\\Confirma.razor",
+              "RelativeToolTip": "BlazorMangas\\Shared\\Confirma.razor",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-10T16:47:59.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Mangas.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\BlazorMangas\\Components\\Pages\\Mangas\\Mangas.razor",
+              "RelativeDocumentMoniker": "BlazorMangas\\Components\\Pages\\Mangas\\Mangas.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\BlazorMangas\\Components\\Pages\\Mangas\\Mangas.razor",
+              "RelativeToolTip": "BlazorMangas\\Components\\Pages\\Mangas\\Mangas.razor",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-10T16:37:03.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Edit.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\BlazorMangas\\Components\\Pages\\Mangas\\Edit.razor",
+              "RelativeDocumentMoniker": "BlazorMangas\\Components\\Pages\\Mangas\\Edit.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\BlazorMangas\\Components\\Pages\\Mangas\\Edit.razor",
+              "RelativeToolTip": "BlazorMangas\\Components\\Pages\\Mangas\\Edit.razor",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-10T16:32:35.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\BlazorMangas\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "BlazorMangas\\Components\\_Imports.razor",
+              "ToolTip": "C:\\Users\\3346.ADM-UCDB\\source\\repos\\ApiMangas\\BlazorMangas\\Components\\_Imports.razor",
+              "RelativeToolTip": "BlazorMangas\\Components\\_Imports.razor",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAjwBYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-09T20:59:07.624Z",
               "EditorCaption": ""
             }
           ]

@@ -1,12 +1,14 @@
 ﻿using ApiMangas.ApiPaginacao;
-using ApiMangas.DTOs;
 using ApiMangas.Entities;
 using ApiMangas.Repositories.Interfaces;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+
+using Microsoft.AspNetCore.Mvc;
+using SharedMangas.Models.DTOs;
+using SharedMangas.DTOs;
+
 
 namespace ApiMangas.Controllers
 {
@@ -28,7 +30,7 @@ namespace ApiMangas.Controllers
         [HttpGet("paginacao")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<List<MangaDTO>>> GetMangasPaginacao([FromQuery]
+        public async Task<ActionResult<List<SharedMangas.Models.DTOs.MangaDTO>>> GetMangasPaginacao([FromQuery]
                                                     Paginacao paginacao)
         {
             var mangasPaginados = _mangaRepository.GetMangasQueryable();

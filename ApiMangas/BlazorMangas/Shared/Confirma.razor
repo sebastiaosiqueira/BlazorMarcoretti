@@ -1,0 +1,52 @@
+﻿@using MudBlazor
+@inject IDialogService DialogService
+
+<MudMessageBox @ref="_mudMessageBox" Title="@Titulo" CancelText="Cancelar">
+    <MessageContent>
+        @if (ChildContent != null)
+        {
+            @ChildContent
+        }
+        else
+        {
+            <MudText>Tem certeza que deseja excluir este item? Esta ação não poderá ser desfeita.</MudText>
+        }
+    </MessageContent>
+    <YesButton>
+        <MudButton Variant="Variant.Filled" Color="Color.Error" StartIcon="@Icons.Material.Filled.DeleteForever">
+            Excluir
+        </MudButton>
+    </YesButton>
+</MudMessageBox>
+
+@code {
+    private MudMessageBox _mudMessageBox { get; set; } = null!;
+
+    [Parameter] public string Titulo { get; set; } = "Confirma Exclusão";
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+    [Parameter] public bool ExibirConfirmacao { get; set; } = false;
+    // Eventos disparados dependendo do botão que o usuário clicar
+    [Parameter] public EventCallback OnConfirma { get; set; }
+    [Parameter] public EventCallback OnCancela { get; set; }
+    public void Exibir() => ExibirConfirmacao = true;
+    public void Ocultar() => ExibirConfirmacao = false;
+    /// <summary>
+    /// Método público que será chamado pela página pai para abrir o modal
+    /// </summary>
+    public async Task ExibirAsync()
+    {
+        // O método ShowAsync do MudMessageBox retorna um bool?
+        // true = clicou no YesButton (Excluir)
+        // false ou null = clicou em Cancelar ou fechou o modal
+        bool? resultado = await _mudMessageBox.ShowAsync();
+
+        if (resultado == true)
+        {
+            await OnConfirma.InvokeAsync();
+        }
+        else
+        {
+            await OnCancela.InvokeAsync();
+        }
+    }
+}

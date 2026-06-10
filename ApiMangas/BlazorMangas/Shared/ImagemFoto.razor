@@ -1,0 +1,17 @@
+﻿@using MudBlazor
+<MudGrid>
+    @if (ImagemRemota != null)
+    {
+        <MudImage Src="@ImagemRemota" Style="width:150px"></MudImage>
+    }
+    else
+    {
+        <MudImage Src="/images;semfoto.jpg" Style="width:150px"></MudImage>
+    }
+</MudGrid>
+
+@code {
+    [Parameter]
+    public string? ImagemRemota{ get; set; }
+
+}

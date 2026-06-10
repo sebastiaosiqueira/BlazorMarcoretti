@@ -1,6 +1,45 @@
 ﻿@page "/categorias"
+@using SharedMangas.Models.DTOs
+@inject NavigationManager NavigationManager
+@inject ICategoriaService _categoriaService
 <h3>Categorias</h3>
 
+@if (categorias is not null)
+{
+    <MudTable Items="@categorias">
+        <HeaderContent>
+            <MudTh>Codigo</MudTh>
+            <MudTh>Nome</MudTh>
+        </HeaderContent>
+            <RowTemplate>
+                <MudTd>@context.Id </MudTd>
+                <MudTd>@context.Nome</MudTd>
+            </RowTemplate>
+    </MudTable>
+    
+}
+else
+{
+    <p> Não foi possivel acessar Categorias</p>
+}
 @code {
+
+    private IEnumerable<CategoriaDTO> categorias = new List<CategoriaDTO>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            categorias = await _categoriaService.GetCategorias();
+
+        }
+        catch (Exception ex)
+        {
+            snackbarService.Add(ex.Message!, Severity.Error, config =>
+    {
+        config.Icon = Icons.Material.Filled.Error;
+    });
+        }
+    }
 
 }

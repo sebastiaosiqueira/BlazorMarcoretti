@@ -1,6 +1,103 @@
 ﻿@page "/mangas"
+@using BlazorMangas.Service.Api
+@using BlazorMangas.Shared
+@using SharedMangas.Models.DTOs
+
+@inject IMangaService _mangaService
+@inject NavigationManager NavigationManager
+
+
 <h3>Mangas</h3>
+<MudGrid>
+    <MudItem xs="12" sm="8">
+        <MudButton Href="manga/create" Variant="Variant.Filled">Novo Mangá</MudButton>
+    </MudItem>
+  <MudItem xs="12" sm="4">
+        @if(mangas is not null)
+        {
+            <MudTable Items="@mangas">
+                <HeaderContent>
+                    <MudTh>Id</MudTh>
+                    <MudTh>Título</MudTh>
+                    <MudTh>Editora</MudTh>
+                    <MudTh>Preco</MudTh>
+                    <MudTh>Ações</MudTh>
+                </HeaderContent>
+                <RowTemplate>
+                    <MudTd>@context.Id </MudTd>
+                    <MudTd>@context.Titulo</MudTd>
+                    <MudTd>@context.Editora </MudTd>
+                    <MudTd>@context.Preco</MudTd>
+                    <MudTd> 
+                        <MudButton Variant="Variant.Filled"  Href="/manga/edit/{context.Id}" StartIcon="@Icons.Material.Filled.Edit">Editar</MudButton>
+                        <MudButton @OnClick="() => Deletar(context.Id)" Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Delete">Deletar</MudButton>
+                    </MudTd>
+                </RowTemplate>
+            </MudTable>
+        }
+    </MudItem>
+
+</MudGrid>
+<Confirma @ref="confirma" OnCancela="CancelaConfirma" @OnConfirma="=DeletaConfirma">
+    Deseja realmente excluir este item
+</Confirma>
 
 @code {
 
+    Confirma? confirma;
+    int codigoManga;
+    private Direction _direction = Direction.Right;
+
+    private IEnumerable<MangaDTO> mangas = new List<MangaDTO>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            await CarregaMangas();
+        }
+        catch(UnauthorizedAccessException)
+        {
+            NavigationManager.NavigateTo("notauthorized");
+
+        }
+        catch(Exception ex)
+        {
+            snackbarService.Add(ex.Message!, Severity.Error, config =>
+    {
+        config.Icon = Icons.Material.Filled.Error;
+    });
+        }
+    }
+
+    protected async Task CarregaMangas()
+    {
+        try
+        {
+            mangas = await _mangaService.GetMangas();
+        }
+        catch (Exception)
+        {
+            throw;
+        }
+
+    }
+
+    void Deletar(int mangaId)
+    {
+        confirma.ExibirAsync();
+        codigoManga = mangaId;
+    }
+    void CancelaConfirma()
+    {
+        confirma.Ocultar();
+    }
+
+    async  Task DeletaConfirma()
+    {
+        await _mangaService.DeleteManga(codigoManga);
+        confirma.Ocultar();
+        await CarregaMangas();
+
+    }
 }

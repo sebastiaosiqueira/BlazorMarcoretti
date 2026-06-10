@@ -1,3 +1,0 @@
-wwwroot\favicon.ico
-wwwroot\mangas.jpg
-C:\Users\3346.ADM-UCDB\source\repos\ApiMangas\BlazorMangas\wwwroot\favicon.ico

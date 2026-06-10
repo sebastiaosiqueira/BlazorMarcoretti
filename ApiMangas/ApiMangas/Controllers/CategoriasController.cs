@@ -1,10 +1,11 @@
-﻿using ApiMangas.DTOs;
+﻿
 using ApiMangas.Entities;
 using ApiMangas.Repositories.Interfaces;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SharedMangas.Models.DTOs;
 
 namespace ApiMangas.Controllers
 {

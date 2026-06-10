@@ -1,6 +1,7 @@
-﻿using ApiMangas.DTOs;
+﻿
 using ApiMangas.Entities;
 using AutoMapper;
+using SharedMangas.Models.DTOs;
 
 namespace ApiMangas.Mappings
 {

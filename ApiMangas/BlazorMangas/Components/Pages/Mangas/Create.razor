@@ -1,0 +1,39 @@
+﻿
+@page "/manga/create"
+@using SharedMangas.Models.DTOs
+<h3>Novo Manga</h3>
+
+@inject IMangaService _mangaService
+@inject NavigationManager navigation
+
+<MangaForm Manga="@manga" @OnValidSubmit="CriarManga" ButtonTextCancelar="Cancelar" ButtonTextSubmit="Salvar">
+
+</MangaForm>
+@code {
+
+    private MangaDTO manga = new MangaDTO();
+
+    async Task CriarManga()
+    {
+        try
+        {
+            await _mangaService.CreateManga(manga);
+            navigation.NavigateTo("mangas");
+            snackbarService.Add("Manga Cadastrado com sucesso!", Severity.Success
+                , config =>
+                {
+                    config.Icon = Icons.Material.Filled.Error;
+                });
+
+        }
+        catch(Exception e)
+        {
+            snackbarService.Add(e.Message, Severity.Success
+                , config =>
+                {
+                    config.Icon = Icons.Material.Filled.Error;
+                });
+        }
+    }
+
+}

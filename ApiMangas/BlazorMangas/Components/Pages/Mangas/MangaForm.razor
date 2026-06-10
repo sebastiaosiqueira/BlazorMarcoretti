@@ -1,0 +1,223 @@
+﻿@using BlazorMangas.Models.Enums
+@using MudBlazor
+@using SharedMangas.Models.DTOs
+
+<MudForm @ref="_form" Model="manga" @bind-IsValid="@_formSucesso">
+    <MudDataAnnotationValidator/>
+    
+    <MudGrid Justify="Justify.Center">
+        <MudItem xs="8">
+            <MudTextField @bind-Value="manga.Autor"
+                          For="@(() => manga.Autor)"
+                          Label="Autor"
+                          Variant="Variant.Outlined"
+                          FullWidth="true" />
+
+            <MudTextField @bind-Value="manga.Titulo"
+                          For="@(() => manga.Titulo)"
+                          Label="Titulo"
+                          Variant="Variant.Outlined"
+                          FullWidth="true" />
+
+            <MudTextField @bind-Value="manga.Descricao"
+                          Lines="5"
+                          For="@(() => manga.Descricao)"
+                          Label="Descricao"
+                          Variant="Variant.Outlined"
+                          FullWidth="true" />
+        </MudItem>
+        <MudItem xs="4">
+            <ImagemFoto ImagemFoto="@manga.Imagem"></ImagemFoto>
+        </MudItem>
+    </MudGrid>
+
+    <MudGrid>
+        <MudItem xs="12" sm="4">
+            <MudSelect @bind-Value="manga.Editora" Label="Selecione a Editora" Variant="Variant.Outlined" ShrinkLabel>
+                @foreach (var editoraItem in listaEditoras)
+                {
+                    <MudSelectItem Value="@editoraItem">@editoraItem.ToString()</MudSelectItem>
+                }
+            </MudSelect>
+        </MudItem>
+        <MudItem xs="12" sm="4">
+            <MudTextField @bind-Value="manga.Formato"
+                          For="@(() => manga.Formato)"
+                          Label="Formato"
+                          Variant="Variant.Outlined"
+                          FullWidth="true" />
+        </MudItem>
+        <MudItem xs="12" sm="4">
+            <MudNumericField HideSpinButtons="true" @bind-Value="manga.Paginas"
+                             For="@(() => manga.Paginas)"
+                             Label="Paginas"
+                             Variant="Variant.Outlined"
+                             Min="0" Max="10"
+                             FullWidth="true" />
+        </MudItem>
+    </MudGrid>
+
+    <MudGrid>
+        <MudItem xs="12" sm="4">
+            <MudDatePicker @bind-Value="manga.Publicacao"
+                           For="@(() => manga.Publicacao)"
+                           Label="Publicacao"
+                           Variant="Variant.Outlined"
+                           FullWidth="true" />
+        </MudItem>
+        <MudItem xs="12" sm="4">
+            @* Corrigido bind para manga.Origem (estava manga.Editora duplicado) *@
+            <MudSelect @bind-Value="manga.Origem" Label="Selecione a Origem" Variant="Variant.Outlined" ShrinkLabel>
+                @foreach (var origemItem in listaOrigem)
+                {
+                    <MudSelectItem Value="@origemItem">@origemItem.ToString()</MudSelectItem>
+                }
+            </MudSelect>
+        </MudItem>
+        <MudItem xs="12" sm="4">
+            <MudTextField @bind-Value="manga.Cor"
+                          For="@(() => manga.Cor)"
+                          Label="Cor"
+                          Variant="Variant.Outlined"
+                          FullWidth="true" />
+        </MudItem>
+    </MudGrid>
+
+    <MudGrid>
+        <MudItem xs="12" sm="4">
+            <MudNumericField @bind-Value="manga.Preco"
+                             For="@(() => manga.Preco)"
+                             Label="Preço" Format="F1" Variant="Variant.Outlined"
+                             FullWidth="true" />
+        </MudItem>
+        <MudItem xs="12" sm="4">
+            <MudNumericField HideSpinButtons="true" @bind-Value="manga.Estoque"
+                             For="@(() => manga.Estoque)"
+                             Label="Estoque"
+                             Variant="Variant.Outlined"
+                             FullWidth="true" />
+        </MudItem>
+        <MudItem xs="12" sm="4">
+            @* Removido o MudItem duplicado de dentro que quebrava as tags *@
+            <MudSelect T="string"
+                       Value="@manga.CategoriaId.ToString()"
+                       ValueChanged="CategoriaSelectionChanged"
+                       Label="Selecione Categoria"
+                       Variant="Variant.Outlined"
+                       ShrinkLabel>
+                @if (categorias != null)
+                {
+                    @foreach (var state in categorias)
+                    {
+                        @* Passamos o Id como string no Value, e exibimos o Nome *@
+                        <MudSelectItem Value="@state.Id.ToString()">@state.Nome</MudSelectItem>
+                    }
+                }
+            </MudSelect>
+        </MudItem>
+    </MudGrid>
+
+    <MudGrid>
+        <MudItem xs="12" sm="12">
+            <MudFileUpload T="IBrowserFile" @ref="_fileUpload" FilesChanged="CarregaImagem">
+                <ButtonTemplate>
+                    <MudFab HtmlTag="label"
+                            Color="Color.Warning"
+                            StartIcon="@Icons.Material.Filled.Image"
+                            Label="Carregue a Imagem"
+                            OnClick="@(() => _fileUpload.OpenFilePickerAsync())" />
+                </ButtonTemplate>
+            </MudFileUpload>
+        </MudItem>
+    </MudGrid>
+    
+    <MudGrid>
+        <MudItem xs="12" sm="12">
+            <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.TurnedIn" Color="Color.Error">Voltar</MudButton>
+            @* Adicionado o ButtonType="ButtonType.Submit" para o MudForm reconhecer o disparo *@
+            <MudButton ButtonType="ButtonType.Submit" OnClick="SubmeterFormulario" Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Save" Color="Color.Secondary" Size="Size.Large">Salvar</MudButton>
+        </MudItem>
+    </MudGrid>
+</MudForm>
+
+@code {
+    [Inject] private NavigationManager? navigation { get; set; }
+    [Inject] private ICategoriaService? _categoriaService { get; set; }
+    [Inject] private IHttpClientFactory? http { get; set; }
+
+    [Parameter] public string ButtonTextSubmit { get; set; } = "Salvar";
+    [Parameter] public string ButtonTextCancelar { get; set; } = "Cancelar";
+    [Parameter] public EventCallback OnValidSubmit { get; set; } // Corrigido erro de digitação (Submit)
+    [Parameter] public string? ImagemRemota { get; set; }
+
+    private MudForm _form = null!;
+    private bool _formSucesso;
+    private bool _fullWidth;
+    private bool _fitContent;
+
+    private MangaDTO manga = new MangaDTO();
+    private List<CategoriaDTO> categorias = new List<CategoriaDTO>(); // Inicializado para evitar null reference no render inicial
+
+    private IEnumerable<Editora> listaEditoras = Enum.GetValues(typeof(Editora)).Cast<Editora>();
+    private IEnumerable<Origem> listaOrigem = Enum.GetValues(typeof(Origem)).Cast<Origem>();
+
+    private MudFileUpload<IBrowserFile> _fileUpload = null!;
+    private StreamContent? fileContent;
+    private string? fileName;
+    private string? imagemUrl;
+    private string? imageType;
+    private string apiImagens = "https://localhost:7020/images/";
+
+    protected async override Task OnInitializedAsync()
+    {
+        manga.Imagem = null;
+        await CarregaCategorias();
+        if (categorias != null && categorias.Count > 0 && manga.CategoriaId == 0)
+        {
+            manga.CategoriaId = categorias[0].Id;
+        }
+    }
+
+    private async Task<IEnumerable<CategoriaDTO>> CarregaCategorias()
+    {
+        categorias = (await _categoriaService.GetCategorias()).ToList();
+        return categorias;
+    }
+
+    private void CategoriaSelectionChanged(string novoValor)
+    {
+        if (int.TryParse(novoValor, out int id))
+        {
+            manga.CategoriaId = id;
+        }
+    }
+
+    private async Task CarregaImagem(IBrowserFile file) // Corrigido cabeçalho que estava mesclado com comentários
+    {
+        if (file == null) return;
+
+        long maxFileSize = 1024 * 1024 * 5; // Ajustado para 5MB seguros
+
+        fileName = file.Name;
+        manga.Imagem = apiImagens + fileName;
+        imageType = file.ContentType;
+
+        fileContent = new StreamContent(file.OpenReadStream(maxFileSize));
+
+        using var memoryStream = new MemoryStream();
+        await file.OpenReadStream(maxFileSize).CopyToAsync(memoryStream);
+
+        imagemUrl = $"data:{imageType};base64,{Convert.ToBase64String(memoryStream.ToArray())}";
+
+        this.StateHasChanged();
+    }
+
+    private async Task SubmeterFormulario()
+    {
+        await _form.Validate();
+        if (_formSucesso)
+        {
+            await OnValidSubmit.InvokeAsync();
+        }
+    }
+}
